@@ -28,6 +28,8 @@
     <item href="ToC.xhtml" id="ToC" media-type="application/xhtml+xml" properties="nav"/>
     <!-- css -->
     <item href="css/fonts.css" id="css.fonts" media-type="text/css"/>
+    <item href="css/common.css" id="css.common" media-type="text/css"/>
+    <item href="css/a11y.css" id="css.a11y" media-type="text/css"/>
     <!-- fonts -->
     <item href="fonts/ClearSans-Regular-wlatin.ttf" id="font.ClearSans.Regular" media-type="font/otf"/>
     <item href="fonts/ClearSans-Bold-wlatin.ttf" id="font.ClearSans.Bold" media-type="font/otf"/>
