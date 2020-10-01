@@ -80,7 +80,7 @@ sh ../tools/epubcheck.sh OTA.kepub.epub
 
 if hash ace 2>/dev/null; then
   if [ ! -f ${CWD}/AceReport/noace.tmp ]; then
-    ace -f -s -o AceReport Quadrupeds-Illinois.kepub.epub
+    ace -f -s -o AceReport OTA.kepub.epub
     rm -rf ${CWD}/AceReport/data
     [ ! -d ${CWD}/AceReport ] && mkdir ${CWD}/AceReport
     mv AceReport/data ${CWD}/AceReport/
@@ -96,13 +96,13 @@ mv OTA.kepub.epub ${CWD}/
 
 popd
 
-#if hash ace 2>/dev/null; then
-#  if [ -f AceReport/.gitignore ]; then
-#    if [ ! -f AceReport/noace.tmp ]; then
-#      git commit -m "update AceReport" AceReport/report.*
-#    fi
-#  fi
-#fi
+if hash ace 2>/dev/null; then
+  if [ -f AceReport/.gitignore ]; then
+    if [ ! -f AceReport/noace.tmp ]; then
+      git commit -m "update AceReport" AceReport/report.*
+    fi
+  fi
+fi
 
 rm -rf ${TMP}
 

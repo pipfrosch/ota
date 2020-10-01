@@ -1,0 +1,191 @@
+{
+  "@type": "earl:report",
+  "@context": "http://daisy.github.io/ace/ace-report-1.0.jsonld",
+  "dct:title": "Ace Report",
+  "dct:description": "Report on automated accessibility checks for EPUB",
+  "dct:date": "9/30/2020, 6:33:49 PM",
+  "earl:assertedBy": {
+    "@type": "earl:software",
+    "doap:name": "DAISY Ace",
+    "doap:description": "DAISY Accessibility Checker for EPUB",
+    "doap:homepage": "http://daisy.github.io/ace",
+    "doap:created": "2017-07-01",
+    "doap:release": {
+      "doap:revision": "1.1.1"
+    }
+  },
+  "outlines": {
+    "toc": "<ol xmlns=\"http://www.w3.org/1999/xhtml\">\n    <li>Bonding, Earthing, and Grounding</li>\n  </ol>",
+    "headings": "<ul><li><span class=\"toc-h1\">Bonding, Earthing, and Grounding</span><ul><li><span class=\"toc-h2\">Bonding</span><li><span class=\"toc-h2\">Earthing</span><li><span class=\"toc-h2\">Grounding and Bonding to Ground</span><li><span class=\"toc-h2\">Summary</span><li><span class=\"toc-h2\">Notes</span></li></ul></li></ul>",
+    "html": "<ol><li><ol><li><i>Untitled BODY</i><ol><li>Bonding, Earthing, and Grounding<ol><li>Bonding</li><li>Earthing</li><li>Grounding and Bonding to Ground</li><li>Summary</li><li>Notes</li></ol></li></ol></li></ol></li></ol>"
+  },
+  "data": {
+    "images": [
+      {
+        "src": "EPUB/images/bonding.jpg",
+        "alt": "Photograph of two metal water pipes entering a wall. Attached to each pipe is a ground clamp. An unshielded heavy wire runs between the ground clamps.",
+        "role": null,
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/bonding.jpg\" alt=\"Photograph of two metal water pipes entering a wall. Attached to each pipe is a ground clamp. An unshielded heavy wire runs between the ground clamps.\" />",
+        "figcaption": "Two pipes bonded together with a solid core wire.",
+        "location": "bond_earth_fire.xhtml#epubcfi(/4/2/14[bonding]/6[figure.bonding]/2)"
+      },
+      {
+        "src": "EPUB/images/water_main.jpg",
+        "alt": "Photograph of the outside of a house showing the main electrical box, the water main, and the natural gas meter.",
+        "role": null,
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/water_main.jpg\" alt=\"Photograph of the outside of a house showing the main electrical box, the water main, and the natural gas meter.\" />",
+        "figcaption": "This house was built in 2001 and either does not have an actual ground rod or the ground rod is completely burried and is not accessible. However since the water main is within five feet of the main electrical box, the water main could be used as a ground rod. Paint would have to be scraped off before attaching the clamps for the earthing wires from an antenna.",
+        "location": "bond_earth_fire.xhtml#epubcfi(/4/2/22[notes]/8[figure.watermain]/2)"
+      }
+    ]
+  },
+  "properties": {
+    "hasManifestFallbacks": false,
+    "hasBindings": false,
+    "hasSVGContentDocuments": false,
+    "hasFormElements": false,
+    "hasMathML": false,
+    "hasPageBreaks": false
+  },
+  "earl:testSubject": {
+    "url": "../OTA.kepub.epub",
+    "metadata": {
+      "dc:title": "Cutting The Cable",
+      "dc:description": "A guide to switching to Over The Air digital broadcasts",
+      "dc:type": "Home Improvement",
+      "dc:language": "en-US",
+      "dc:publisher": "Pipfrosch Press",
+      "dc:date": "2021-06-30",
+      "dc:creator": "Michael A. Peters",
+      "dc:identifier": "5581b6ed-d616-414f-854b-5a9f2dc1d15e",
+      "schema:accessibilitySummary": "This publication attempts to conform to WCAG 2.0 Level AA. Validation by an accessibility expert has not yet been done.",
+      "schema:accessMode": [
+        "textual",
+        "visual"
+      ],
+      "schema:accessModeSufficient": [
+        "textual,visual",
+        "textual"
+      ],
+      "schema:accessibilityFeature": "structuralNavigation",
+      "schema:accessibilityHazard": [
+        "noFlashingHazard",
+        "noSoundHazard",
+        "noMotionSimulationHazard"
+      ],
+      "dcterms:modified": "2020-10-01T01:33:45Z"
+    },
+    "links": {}
+  },
+  "a11y-metadata": {
+    "missing": [
+      "schema:accessibilityAPI",
+      "schema:accessibilityControl",
+      "a11y:certifiedBy",
+      "dcterms:conformsTo"
+    ],
+    "empty": [],
+    "present": [
+      "schema:accessMode",
+      "schema:accessibilityFeature",
+      "schema:accessibilityHazard",
+      "schema:accessibilitySummary",
+      "schema:accessModeSufficient"
+    ]
+  },
+  "assertions": [
+    {
+      "@type": "earl:assertion",
+      "earl:result": {
+        "earl:outcome": "pass"
+      },
+      "assertions": [],
+      "earl:testSubject": {
+        "url": "EPUB/content.opf",
+        "dct:title": "Cutting The Cable"
+      }
+    },
+    {
+      "@type": "earl:assertion",
+      "earl:result": {
+        "earl:outcome": "fail"
+      },
+      "assertions": [
+        {
+          "@type": "earl:assertion",
+          "earl:result": {
+            "earl:outcome": "fail",
+            "dct:description": "Invalid ARIA attribute value: aria-labelledby=\"figure.watermain.label\"",
+            "earl:pointer": {
+              "cfi": [
+                "/4/2/22[notes]/8[figure.watermain]"
+              ],
+              "css": [
+                "#figure\\.watermain"
+              ]
+            },
+            "html": "<figure xmlns=\"http://www.w3.org/1999/xhtml\" id=\"figure.watermain\" aria-labelledby=\"figure.watermain.label\">"
+          },
+          "earl:assertedBy": "aXe",
+          "earl:mode": "automatic",
+          "earl:test": {
+            "earl:impact": "critical",
+            "dct:title": "aria-valid-attr-value",
+            "dct:description": "Ensures all ARIA attributes have valid values",
+            "help": {
+              "url": "http://kb.daisy.org/publishing/docs/script/aria.html",
+              "dct:title": "ARIA",
+              "dct:description": "ARIA attributes must conform to valid values"
+            },
+            "rulesetTags": [
+              "cat.aria",
+              "wcag2a",
+              "wcag412"
+            ]
+          }
+        },
+        {
+          "@type": "earl:assertion",
+          "earl:result": {
+            "earl:outcome": "fail",
+            "dct:description": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "earl:pointer": {
+              "cfi": [
+                "/4/2/16[earthing]",
+                "/4/2/18[grounding]"
+              ],
+              "css": [
+                "#earthing",
+                "#grounding"
+              ]
+            },
+            "html": "<section xmlns=\"http://www.w3.org/1999/xhtml\" id=\"earthing\" aria-labelledby=\"earthing.label\"> <!--##--> <section xmlns=\"http://www.w3.org/1999/xhtml\" id=\"grounding\" aria-labelledby=\"earthing.label\">"
+          },
+          "earl:assertedBy": "aXe",
+          "earl:mode": "automatic",
+          "earl:test": {
+            "earl:impact": "moderate",
+            "dct:title": "landmark-unique",
+            "dct:description": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
+            "help": {
+              "url": "http://kb.daisy.org/publishing/",
+              "dct:title": "(no specific entry)",
+              "dct:description": "Ensures landmarks are unique"
+            },
+            "rulesetTags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      ],
+      "earl:testSubject": {
+        "url": "bond_earth_fire.xhtml",
+        "dct:title": "Bonding, Earthing, and Grounding"
+      }
+    }
+  ],
+  "earl:result": {
+    "earl:outcome": "fail"
+  }
+}
