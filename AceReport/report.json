@@ -3,7 +3,7 @@
   "@context": "http://daisy.github.io/ace/ace-report-1.0.jsonld",
   "dct:title": "Ace Report",
   "dct:description": "Report on automated accessibility checks for EPUB",
-  "dct:date": "9/30/2020, 6:54:19 PM",
+  "dct:date": "9/30/2020, 6:57:13 PM",
   "earl:assertedBy": {
     "@type": "earl:software",
     "doap:name": "DAISY Ace",
@@ -73,7 +73,7 @@
         "noSoundHazard",
         "noMotionSimulationHazard"
       ],
-      "dcterms:modified": "2020-10-01T01:54:15Z"
+      "dcterms:modified": "2020-10-01T01:57:09Z"
     },
     "links": {}
   },
@@ -108,44 +108,9 @@
     {
       "@type": "earl:assertion",
       "earl:result": {
-        "earl:outcome": "fail"
+        "earl:outcome": "pass"
       },
-      "assertions": [
-        {
-          "@type": "earl:assertion",
-          "earl:result": {
-            "earl:outcome": "fail",
-            "dct:description": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-            "earl:pointer": {
-              "cfi": [
-                "/4/2/16[earthing]",
-                "/4/2/18[grounding]"
-              ],
-              "css": [
-                "#earthing",
-                "#grounding"
-              ]
-            },
-            "html": "<section xmlns=\"http://www.w3.org/1999/xhtml\" id=\"earthing\" aria-labelledby=\"earthing.label\"> <!--##--> <section xmlns=\"http://www.w3.org/1999/xhtml\" id=\"grounding\" aria-labelledby=\"earthing.label\">"
-          },
-          "earl:assertedBy": "aXe",
-          "earl:mode": "automatic",
-          "earl:test": {
-            "earl:impact": "moderate",
-            "dct:title": "landmark-unique",
-            "dct:description": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination",
-            "help": {
-              "url": "http://kb.daisy.org/publishing/",
-              "dct:title": "(no specific entry)",
-              "dct:description": "Ensures landmarks are unique"
-            },
-            "rulesetTags": [
-              "cat.semantics",
-              "best-practice"
-            ]
-          }
-        }
-      ],
+      "assertions": [],
       "earl:testSubject": {
         "url": "bond_earth_fire.xhtml",
         "dct:title": "Bonding, Earthing, and Grounding"
@@ -153,6 +118,6 @@
     }
   ],
   "earl:result": {
-    "earl:outcome": "fail"
+    "earl:outcome": "pass"
   }
 }
