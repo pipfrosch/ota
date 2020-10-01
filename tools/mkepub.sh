@@ -42,9 +42,9 @@ git clone https://github.com/pipfrosch/ota.git
 cd ota
 # switch to branch goes here
 
-##getfonts ${CWD}/TheArticle/EPUB/fonts ${TMP}/ota/TheArticle/EPUB/fonts
+##getfonts ${CWD}/TheBook/EPUB/fonts ${TMP}/ota/TheBook/EPUB/fonts
 
-cd TheArticle/EPUB
+cd TheBook/EPUB
 
 python3 ../../tools/updateTimestamp.py content.opf
 cd ../..
@@ -56,15 +56,15 @@ cd ../..
 ##              > epub-noitalics.json
 ##popd
 
-##python3 tools/generateOPDS.py TheArticle/EPUB/content.opf ${CWD}/opds/epub.json
-##python3 tools/generateOPDS.py TheArticle/EPUB/content.opf ${CWD}/opds/epub-noitalics.json
+##python3 tools/generateOPDS.py TheBook/EPUB/content.opf ${CWD}/opds/epub.json
+##python3 tools/generateOPDS.py TheBook/EPUB/content.opf ${CWD}/opds/epub-noitalics.json
 
 ##cat opds/OTA.atom > ${CWD}/opds/Quadrupeds-Illinois.atom
 ##cat opds/OTA-noitalics.atom > ${CWD}/opds/Quadrupeds-Illinois-noitalics.atom
 
 #rm -f ${CWD}/opds/epub-noitalics.json
 
-cd TheArticle
+cd TheBook
 
 echo -n application/epub+zip >mimetype
 
