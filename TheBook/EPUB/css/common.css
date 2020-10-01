@@ -1,0 +1,39 @@
+body {
+  font-family: 'Clear Sans', -apple-system, 'Segoe UI', 'Avenir Next', 'Noto Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+p {
+  widows: 1;
+  orphans: 1;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+/* for benefit of grayscale viewers */
+a:link {
+  color: purple;
+}
+a:visited {
+  color: purple;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr.half {
+  width: 50%;
+  margin: auto;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.pbb {
+  page-break-before: always;
+}

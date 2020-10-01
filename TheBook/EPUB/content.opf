@@ -26,6 +26,14 @@
   </metadata>
   <manifest>
     <item href="ToC.xhtml" id="ToC" media-type="application/xhtml+xml" properties="nav"/>
+    <!-- css -->
+    <item href="css/fonts.css" id="css.fonts" media-type="text/css"/>
+    <!-- fonts -->
+    <item href="fonts/ClearSans-Regular-wlatin.ttf" id="font.ClearSans.Regular" media-type="font/otf"/>
+    <item href="fonts/ClearSans-Bold-wlatin.ttf" id="font.ClearSans.Bold" media-type="font/otf"/>
+    <item href="fonts/ClearSans-Italic-wlatin.ttf" id="font.ClearSans.Italic" media-type="font/otf"/>
+    <item href="fonts/ClearSans-BoldItalic-wlatin.ttf" id="font.ClearSans.BoldItalic" media-type="font/otf"/>
+    <item href="fonts/ClearSans-LICENSE-2.0.txt" id="font.ClearSans.LICENSE" media-type="text/plain"/>
     <!-- images -->
     <item href="images/bonding.jpg" id="images.bonding.jpg" media-type="image/jpeg"/>
     <item href="images/water_main.jpg" id="images.water_main.jpg" media-type="image/jpeg"/>

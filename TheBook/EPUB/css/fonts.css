@@ -1,0 +1,25 @@
+/* font-face declarations */
+@font-face {
+font-family: 'Clear Sans';
+font-weight: normal;
+font-style: normal;
+src: url(../fonts/ClearSans-Regular-wlatin.ttf);
+}
+@font-face {
+font-family: 'Clear Sans';
+font-weight: bold;
+font-style: normal;
+src: url(../fonts/ClearSans-Bold-wlatin.ttf);
+}
+@font-face {
+font-family: 'Clear Sans';
+font-weight: normal;
+font-style: italic;
+src: url(../fonts/ClearSans-Italic-wlatin.ttf);
+}
+@font-face {
+font-family: 'Clear Sans';
+font-weight: bold;
+font-style: italic;
+src: url(../fonts/ClearSans-BoldItalic-wlatin.ttf);
+}

@@ -42,7 +42,7 @@ git clone https://github.com/pipfrosch/ota.git
 cd ota
 # switch to branch goes here
 
-##getfonts ${CWD}/TheBook/EPUB/fonts ${TMP}/ota/TheBook/EPUB/fonts
+getfonts ${CWD}/TheBook/EPUB/fonts ${TMP}/ota/TheBook/EPUB/fonts
 
 cd TheBook/EPUB
 
