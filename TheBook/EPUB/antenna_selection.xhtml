@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8"/>
+  <title>Antenna Selection</title>
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" role="doc-chapter" aria-labelledby="antenna.label">
+  <h1 id="antenna.label">Antenna Selection</h1>
+  <p>Selecting the right antenna(s) can be a difficult task. There are several things to take into consideration.</p>
+  <section id="bands" aria-labelledby="bands.label">
+    <h2 id="bands.label">Frequency Bands and Antennas</h2>
+    <p>For starters, there are five different broadcast bands you may be interested in receiving through your antenna system:</p>
+    <dl>
+      <dt>TV VHF-Lo</dt>
+        <dd>54&#8211;88 MHz (<abbr>RF</abbr> Channels 2&#8211;6)</dd>
+      <dt><abbr>FM</abbr> Radio</dt>
+        <dd>88&#8211;108 MHz</dd>
+      <dt>TV VHF-Hi</dt>
+        <dd>174&#8211;216 MHz (<abbr>RF</abbr> Channels 7&#8211;13)</dd>
+      <dt>TV UHF</dt>
+        <dd>470&#8211;608 MHz (<abbr>RF</abbr> Channels 14&#8211;36)</dd>
+    </dl>
+    <p>There are basically three models of antenna that work:</p>
+    <ol>
+      <li>Loop antenna</li>
+      <li>Dipole antenna</li>
+      <li>Monopole (whip) antenna</li>
+    </ol>
+    <p>Loop antenaas have the best gain but with a loop antenna, the circumfrence of the loop should equal the wavelength of the lowest frequency you wish to receive well. Wavelength decreases as frequency increases and can be calculated with the following formula where L is the wavelength, c is the speed of light (aproximately 3.8 x 10^8 m/s) and f is the frequency:</p>
+    <span class="math">L=c/f</span>
+    <p>The lowest frequency in the television broadcast UHF band is 608 MHz resulting in a circumfrence of roughly half a meter and if a perfect cicle is used, a diameter of 16 centimeters. That is a relatively small loop, many of the antennas on the market today have two of these loops, some even have four. This allows for excellent gain at the antenna of everything in the television broadcast UHF band even with the compact size used for indoor antennas that only use one loop. My cheap indoor antenna is a rectangle 9 inches by 8 inches which easily accomodates a loop of that size contained within.</p>
+    <p>The highest frequency in the television broadcast VHF range (taking into account 6 MHz of bandwidth) is 102 MHz. That would require a loop of roughly 3 meters and if a perfect circle was used, a diameter of about 0.9 meters. Such a loop would be very large and use a lot of material and it would degrade for anything below RF channel 13, so dipole antennas are typically used for television broadcast UHF and broadcast <abbr>FM</abbr> radio at the cost of some gain.</p>
+    <p>With a dipole, two different rods of the same length are used, with each rod being &#188; of the wave-length for a total of &#189; of the wavelength between them. On large outdoor VHF antennas installed on a roof you will see an array of dipoles.</p>
+    <p>The dipole ideal length for the lowest frequency in VHF-Hi band would be about 43 centimeters (just under 18 inches) and for the VHF-Lo band it would be about 1.4 meters!</p>
+    <p>The length of the rods needed can be shortened by using a loading coil but a cost of reduction in gain.</p>
+    <p>Monopole antennas are generally only used on portable devices such as an <abbr>FM</abbr> radio or a vehicle.</p>
+  </section>
+  <section id="uhf" aria-labelledby="uhf.label">
+    <h2 id="uhf.label">Ultra High Frequency Television</h2>
+    <p>The vast majority of <abbr>OTA</abbr> television broadcast takes place within the 470&#8211;608 MHz <abbr>UHF</abbr> band.</p>
+    <p>The distinctive advantage that <abbr>UHF</abbr> has is that due to the higher frequency, the wavelength is shorter allowing for the antenna to be smaller. Also, <abbr>VHF</abbr> is more susceptible to noise and the power that <abbr>VHF</abbr> broadcasters are allowed to use is limited by the <abbr>FCC</abbr>.</p>
+    <p>Your antenna almost certainly will need to adequately cover the <abbr>UHF</abbr> band and the vast majority on the market do but you still need to make sure.</p>
+  </section>
+  <section id="vhf" aria-labelledby="vhf.label">
+    <h2>Very High Frequency Television</h2>
+    <p>For historical allocation reasons, television broadcasts that use <abbr>VHF</abbr> are split into two distinct frequency ranges with a rather larger gap between them. RF channels 2&#8211;5 are what is called VHF-Lo and RF channels 6&#8211;13 are what is called VHF-Hi.</p>
+    <p>The compact antennas that easily install inside an attic (or often even in a room) very rarely do well with VHF.</p>
+    <p>When they offer VHF at all, VHF is usually added as an afterthought and if you look at the gain, VHF gain is <em>much</em> lower than UHF gain. For example, the ClearStream 2MAX® that we have installed in our attic here specifies 8.7 dBi gain for UHF but only 2.6 dBi for VHF. Combine that lower gain with the lower transmission power the <abbr>FCC</abbr> requires for VHF broadcast and you will likely see the problem.</p>
+    <p>Attic/Indoor antennas that offer UFH + VHF usually only work well for VHF with VHF-Hi but with a shorter range than you would get with UHF. If they work at all with VHF-Lo you have to be really close.</p>
+    <p>If you have multiple VHF stations you really want to receive, a Yagi-Uda (sometimes just called a Yagi even though it was likely invented by Shintaro Uda) installed on your roof is probably your best bet.</p>
+    <p>Yagi-Uda antennas are directional so if you need VHF stations from multiple directions, you may need turn it or you can install two of them (they can be installed on the same mast) and use a signal combiner.</p>
+    <p>When VHF reception is not quite as critical but it still desired or when an antenna install is not installed, the potential solutions vary upon the desired VHF stations.</p>
+    <p>For VHF-Hi (RF channels 7&#8211;13) there is a decent chance a UHF+VFH antenna will in fact pull them in for you.</p>
+    <p>If they do not, Antennas Direct sells one called the <a href="https://store.antennasdirect.com/C5-Clearstream-5-vhf-uhf-long-range-outdoor-DTV-antenna.html" title="Internet Resource">ClearStream® 5 VHF Attic/Outdoor HDTV Antenna</a>.</p>
+    <p>That antenna has a list price of $160 but is often sale. Looking at it, is is a loop antenna with a reflector. The technical data sheet seems to indicate it is good for VHF-Hi (RF channels 7&#8211;13) so it may not help very much if at all with VHF-Lo (RF channels 2&#8211;6)</p>
+    <p>If you also want UHF you will likely need to use a combiner to join the signal from this antenna with an antenna for UHF.</p>
+    <p>For VHF-Lo where a Yagi-Uda antenna is not an option, you may need to build your own.</p>
+    <p>In my case, VHF-Lo Channel 6 is a channel I want. I have an idea for building an antenna that should pick it up, along with <abbr>FM</abbr> radio stations, while still remaining small enough for a practical attic install. If my idea pans out I will add a section on how to replicate it. Demand for VHF-Lo from an attic antenna just seems to be too low for antenna manufacturers to address it.</p>
+  </section>
+  <section id="radio" aria-labelledby="radio.label">
+    <h2 id="radio.label">The Spirit of Radio</h2>
+    <p>Many people are not very interested in the <abbr>FM</abbr> Radio band however it is worth mentioning because most component <abbr>AM</abbr>/<abbr>FM</abbr> receivers have a 75Ω coaxial female F-connector antenna jack and can have improved reception from a television antenna that picks up that radio band.</p>
+    <figure aria-labelledby="figure.stereo.label">
+      <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
+      <figcaption>The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack</figcaption>
+    </figure>
+    <p>While analog <abbr>FM</abbr> broadcasts will likely be around for a very long time, some stations also broadcast digital and you can buy a digital FM receiver that receives additional substations on the same frequency that are not available on analog.</p>
+    <p>If you or someone in your home likes listening to the radio then receiving <abbr>FM</abbr> broadcasts through your antenna may be a legitimate consideration.</p>
+    <p>With a quality VHF antenna like the Yagi-Uda that receives both VHF-Lo and VHF-Hi, <abbr>FM</abbr> reception is likely to be very good from it. Just plug a 75Ω coax line from your antenna in and see if reception of the stations you want improves.</p>
+    <p>Another option is to buy an antenna specifically for <abbr>FM</abbr> reception and use a signal combiner to add it to the signal used for UHF/VHF-Hi.</p>
+    <p>Of course if there are only a few radios in the house that need <abbr>FM</abbr> reception you could just run it seperately from the coax for your television.</p>
+    <p>Some preamplifiers intentionally block the broadcast <abbr>FM</abbr> band to prevent overload from a close radio station that when amplified could interfere with television reception. If you do combine an <abbr>FM</abbr> antenna with another antenna, either make sure the amplifier does not block that frequency range or combine the signals after the preamplifier.</p>
+    <p><abbr>AM</abbr> radio operates from 550&#8211;1720 kHz (within the Medium Frequency band) and would not benefit from a television antenna like <abbr>FM</abbr> radio does.</p>
+  <section>
+  <section id="combiner" aria-labelledby="combiner.label">
+    <h2 id="combiner.label">Signal Combiner</h2>
+    <p>In cases where one antenna does not meet your priorities but two can, you can combine the signals from multiple antennas into a single feed. This does however come with a decibel loss.</p>
+    <p>In theory, an inexpensive <em>passive</em> coax splitter can be also be used as a combiner although I have heard reports some models do not work well. I suspect user error. Amplified distributors can not be used as a combiner.</p>
+    <p>The &#8216;out&#8217; ports are where you connect the feed from the signals you want to combine. The &#8216;in&#8217; port then becomes the output that carries the combined signal.</p>
+    <p>Usually you will only need to combine a signal from two different antennas. In that case, a passive two-way splitter does the job at a cost of about 4dB of signal strength.</p>
+    <p>To combine 3 signals, use a three-way passive splitter and put the antenna with the weakest signal on the 3.5/4 dB output with the other two on the 7/8 dB output. The input then becomes the output with the combined signal. The weakest signal will have a cost of 4 dB signal loss and the other two will have a cost of 8 dB signal loss.</p>
+    <p>In the unlikely but possible scenario where you want to join four signals, use a four way passive splitter could be used and each signal would suffer an 8 dB strength loss.</p>
+    <p>With some exceptions, you want to combine the signals <em>before</em> the preamplifier if you use one.</p>
+    <p>One scenario where you do not want to join them before the pre-amplifier is if one antenna is pointed at a broadcast cluster very close to you and does not need amplification and another is pointed at a distant broadcast cluster that does need amplification. In that scenario, only the antenna pointing to the distant cluster should be amplified or you risk overload from the broadcast cluster that is close to you.</p>
+    <p>Another possible scenerio where you do not want to join them before the preamplifier is sometimes with broadcast <abbr>FM</abbr> radio.</p>
+    <p>Many cities that do not have local television broadcast transmitters do have local <abbr>FM</abbr> broadcast transmitters. In that case, amplifying the broadcast <abbr>FM</abbr> signal can cause signal overload that prevents television from signals from working. In that scenario, you want to combine the signal from the broadcast <abbr>FM</abbr> antenna after preamplification of the antennas for television.</p>
+    <p>If you have two antennas <em>pointed in the same direction</em> and there is overlap in the frequencies they receive, the signal for those frequencies can be damaged by the reception from the two antennas being out of phase. In that scenario, you can use a low-pass or high-pass filter on one or both antenna <em>before</em> joining their signal.</p>
+    <p>For example, if using one antenna for VHF and another for UHF, you may want a low-pass filter on the feed from the VHF antenna to filter out every frequency above the VHF band and a high-pass filter on the UHF feed to filter out every frequency below the UHF band. Then it will be safe to combine them. There are some combiners sold specifically for that purpose that have those filters built-in.</p>
+  </section>
+</section>
+</body>
+</html>

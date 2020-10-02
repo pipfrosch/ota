@@ -39,10 +39,13 @@
     <!-- images -->
     <item href="images/bonding.jpg" id="images.bonding.jpg" media-type="image/jpeg"/>
     <item href="images/water_main.jpg" id="images.water_main.jpg" media-type="image/jpeg"/>
+    <item href="images/stereo75.jpg" id="images.stereo75.jpg" media-type="image/jpeg"/>
     <!-- pages -->
-    <item href="bond_earth_fire.xhtml" id="bond.earth.fire.xhtml" media-type="application/xhtml+xml"/>
+    <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml"/>
+    <item href="bond_earth_fire.xhtml" id="bond.earth.fire" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>
-    <itemref idref="bond.earth.fire.xhtml"/>
+    <itemref idref="antenna.selection"/>
+    <itemref idref="bond.earth.fire"/>
   </spine>
 </package>
