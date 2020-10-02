@@ -12,6 +12,33 @@
 <section epub:type="chapter" role="doc-chapter" aria-labelledby="antenna.label">
   <h1 id="antenna.label">Antenna Selection</h1>
   <p>Selecting the right antenna(s) can be a difficult task. There are several things to take into consideration.</p>
+  <section id="location" aria-labelledby="location.label">
+    <h2 id="location.label">Install Location</h2>
+    <p>Generally speaking there are three options for your antenna install location:</p>
+    <ol>
+      <li>Roof Install</li>
+      <li>Attic Install</li>
+      <li>Bedroom/Living Room install</li>
+    </ol>
+    <p>If you are only interested in one television <em>and</em> you are relatively close to the broadcast towers you are interested in, an antenna installed in the same room as the television it is intended to service.</p>
+    <p>Be careful, a lot of indoor antennas are cheap junk. In some rooms of your home they will not work very well at all, and there often will be glitches in decoding when people walk around.</p>
+    <p>Antennas installed on the roof typically will have the best reception, but the antenna has to be earthed the appendix chapter (see <a href="bond_earth_ground.xhtml">Bonding, Earthing, and Grounding</a>) which means it almost certainly needs to be installed on the same side of the house as your main electrical panel because that is where your ground rod is and no, you can not just install another ground rod elsewhere as doing so can actually increase the risk of lightening damage. Antennas installed on the roof are also subject to the elements and may need to be re-adjusted after strong winds.</p>
+    <p>If you have an attic and the broadcast stations you want are within 60 miles, attic installs can often work quite well and do not need to be earthed. However if you have radiant heat shielding in your attic, that will interfere with the signal. Air ducts in the attic with a shiny coating also can be problematic, so you will need to make sure to pick an antenna model that has a reflector to reduce stray signals bounced off of them. If there are solar panels on your roof, the inverters in the attic may interfere with the signal reception as well.</p>
+    <p>Unless you have radiant heat shielding in the attic (which likely saves you a lot of money on <abbr title="Heating, Ventilation, and Air Conditioning">HVAC</abbr> power consumption if you do) if you have an attic, that is where I would recommend trying an antenna install. If you just can not get reception in the attic for the stations you want, most antennas designed to work in an attic will also work on your roof.</p>
+    <p>The point is, you do need to decide where you want to install your antenna as that makes a difference in the model you choose.</p>
+    <p>I would recommend against models with a built-in preamplifier. Amplification, if needed, is best provided by a separate device.</p>
+  </section>
+  <section id="clusters" aria-labelledby="clusters.label">
+    <h2 id="clusters.label">Distance and Direction</h2>
+    <p>Part of determining the proper antenna that meets your needs is determining which broadcast antennas are important to your reception.</p>
+    <p>For example, there is a good chance you want an ABC, CBS, NBC, and Fox affiliate in order to have local news available as Internet streaming packages that include them are often expensive if available at all. Some special interest broadcasters, such as broadcasts in a non-English language, may not be available through a streaming service at all. Some broadcasts, such as Ion and Comet, are often readily available through inexpensive Internet streaming services.</p>
+    <p>Antennas Direct has an excellent &#8216;<a href="https://www.antennasdirect.com/transmitter-locator.html" title="Internet Resource">TV Transmitter Locator and Mapping Tool</a>&#8217; to help you determine what broadcasters are <em>potentially</em> in your range. Other websites also offer similar tools, but I found that as of <time datetime="2020-10-02">2 October 2020</time> their tool had the most accurate database for broadcasters in my area. Some of the other websites had outdated information.</p>
+    <p>This is what the map looked like for me:</p>
+    <figure id="transmap" aria-labelledby="figure.transmap.label">
+      <img src="images/transmap.jpg"/>
+      <figcaption id="figure.transmap.label">Generated map showing broadcast transmitter locations centered around the city of Brentwood in the San Francisco Bay Area</figcaption>
+    </figure>
+  </section>
   <section id="bands" aria-labelledby="bands.label">
     <h2 id="bands.label">Frequency Bands and Antennas</h2>
     <p>For starters, there are five different broadcast bands you may be interested in receiving through your antenna system:</p>
@@ -31,6 +58,7 @@
       <li>Dipole antenna</li>
       <li>Monopole (whip) antenna</li>
     </ol>
+    <p>If you want very detailed presentation on how antennas work, I highly recommend the <a href="https://www.tutorialspoint.com/antenna_theory/" title="Internet Resource">Antenna Theory Tutorial</a> at Tutorialspoint. Hopefully enough to just get by is presented here.</p>
     <p>Loop antenaas have the best gain but with a loop antenna, the circumfrence of the loop should equal the wavelength of the lowest frequency you wish to receive well. Wavelength decreases as frequency increases and can be calculated with the following formula where L is the wavelength, c is the speed of light (aproximately 3.8 x 10^8 m/s) and f is the frequency:</p>
     <span class="math">L=c/f</span>
     <p>The lowest frequency in the television broadcast UHF band is 608 MHz resulting in a circumfrence of roughly half a meter and if a perfect cicle is used, a diameter of 16 centimeters. That is a relatively small loop, many of the antennas on the market today have two of these loops, some even have four. This allows for excellent gain at the antenna of everything in the television broadcast UHF band even with the compact size used for indoor antennas that only use one loop. My cheap indoor antenna is a rectangle 9 inches by 8 inches which easily accomodates a loop of that size contained within.</p>
