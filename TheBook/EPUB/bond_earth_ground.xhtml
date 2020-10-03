@@ -16,6 +16,12 @@
   <p>The semantics discussed here are related to how we let electrical current outside a circuit and thus seeking the Earth reach it as safely as possible.</p>
   <p>In the context of an <strong>outdoor</strong> antenna install, the term &#8216;grounding&#8217; that is used means something different than what most people think of when they hear the term &#8216;grounding&#8217; and it is different from uses of the term &#8216;grounding&#8217; in other contexts. Different meanings to the term &#8216;grounding&#8217; that are still within the context of electrical current can cause confusion in understanding, and that confusion that I believe can be dangerous.</p>
   <p>For that reason, I will be using a <em>different</em> term &#8216;earthing&#8217; for one of the meanings and the term &#8216;bond to ground&#8217; for a another meaning but continue to use the term &#8216;grounding&#8217; in a more limited scope. This I hope will help avoid confusion. The NEC actually considered using the term &#8216;earthing&#8217; at one point themselves but the proposal did not seem to make it into their publications. The term &#8216;bond to ground&#8217; I do see used fairly often elsewhere, though I do not know if the NEC uses it.</p>
+  <div role="navigation">
+    <ol>
+      <li><a href="#bonding">Bonding</a></li>
+      <li><a href="#earthing">Earthing</a></li>
+    </ol>
+  </div>
   <section id="bonding" aria-labelledby="bonding.label">
     <h2 id="bonding.label">Bonding</h2>
     <p><dfn>Bonding</dfn> is placing a highly conductive path (frequently a solid core copper wire) between two conductive objects so that they do not have any potential voltage between them.</p>
@@ -57,6 +63,15 @@
     <p>With a grounded circuit, the ground wire from the NM sheathed electrical cable (often called Romex though that is actually a brand name) is wired directly to the third prong receptacle and is much less likely to come undone. With a grounded appliance, the conductive surfaces of the appliance that we might touch are bonded to the ground prong and are only properly grounded when that ground prong is plugged into a grounded outlet. That to me is what actually counts as being &#8216;grounded&#8217; rather than just being &#8216;bonded to ground&#8217;.</p>
     <p>The distinction I make to some may be purely academic but to me the distinction is a matter of safety.</p>
     <p>Just to note, my father did renovate the wiring in that house when money allowed so that it had grounded circuits throughout and a Ground Fault Circuit Interrupt (often abbreviated as <abbr>GFCI</abbr> or <abbr>GFI</abbr>) in the bathroom and kitchen (which happened to be the same circuit). He wanted to add arc-fault circuit interrupters for the bedrooms but the breaker box did not support them and replacing the breaker box with one that did was out of our price range. Off topic but that is one of the reasons I have socialist leanings. Life saving advances in technology should not be restricted by socio-economic class.</p>
+  </section>
+  <section id="loop" aria-labelledby="loop.label">
+    <h2 id="loop.label">Ground Loop</h2>
+    <p>A ground loop is where a conductive object has two different paths to the house ground circuit.</p>
+    <p>This effectively creates a loop antenna which can result in signals that interfere with your reception.</p>
+    <p>For example, as is required by code, you have a coaxial ground block where the coax from a roof antenna enters the house and that grounding block is properly earthed. You also install a grounding block inside the attic and it is bound to ground via a water pipe.</p>
+    <p>Congratulations, you just created a very large loop antenna.</p>
+    <p>When bonding to ground, make sure there is only ONE path to ground.</p>
+    <p>Also, while on the topic of ground loops, <em>never</em> bond to <abbr title="Heating, Ventilation, and Air Conditioning">HVAC</abbr> equipment as your source of bonding to ground. <abbr>HVAC</abbr> systems sometimes have sensors that are sensitive to ground loops and if you inadvertantly create a ground loop connected to the <abbr>HVAC</abbr> system then you may have created a problem.</p>
   </section>
   <section id="summary" aria-labelledby="summary.label">
     <h2 id="summary.label">Summary</h2>

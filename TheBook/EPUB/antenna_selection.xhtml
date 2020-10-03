@@ -14,19 +14,87 @@
   <p>Selecting the right antenna(s) can be a difficult task. There are several things to take into consideration.</p>
   <section id="location" aria-labelledby="location.label">
     <h2 id="location.label">Install Location</h2>
-    <p>Generally speaking there are three options for your antenna install location:</p>
+    <p>Generally speaking there are three options for your home antenna install location:</p>
     <ol>
       <li>Roof Install</li>
       <li>Attic Install</li>
       <li>Bedroom/Living Room install</li>
     </ol>
-    <p>If you are only interested in one television <em>and</em> you are relatively close to the broadcast towers you are interested in, an antenna installed in the same room as the television it is intended to service.</p>
-    <p>Be careful, a lot of indoor antennas are cheap junk. In some rooms of your home they will not work very well at all, and there often will be glitches in decoding when people walk around.</p>
-    <p>Antennas installed on the roof typically will have the best reception, but the antenna has to be earthed the appendix chapter (see <a href="bond_earth_ground.xhtml">Bonding, Earthing, and Grounding</a>) which means it almost certainly needs to be installed on the same side of the house as your main electrical panel because that is where your ground rod is and no, you can not just install another ground rod elsewhere as doing so can actually increase the risk of lightening damage. Antennas installed on the roof are also subject to the elements and may need to be re-adjusted after strong winds.</p>
-    <p>If you have an attic and the broadcast stations you want are within 60 miles, attic installs can often work quite well and do not need to be earthed. However if you have radiant heat shielding in your attic, that will interfere with the signal. Air ducts in the attic with a shiny coating also can be problematic, so you will need to make sure to pick an antenna model that has a reflector to reduce stray signals bounced off of them. If there are solar panels on your roof, the inverters in the attic may interfere with the signal reception as well.</p>
-    <p>Unless you have radiant heat shielding in the attic (which likely saves you a lot of money on <abbr title="Heating, Ventilation, and Air Conditioning">HVAC</abbr> power consumption if you do) if you have an attic, that is where I would recommend trying an antenna install. If you just can not get reception in the attic for the stations you want, most antennas designed to work in an attic will also work on your roof.</p>
+    <p>If you are only interested in one television <em>and</em> you are relatively close to the broadcast towers you are interested in, an antenna installed in the same room as the television it is intended to service is often very practical.</p>
+    <p>Be careful, a lot of indoor antennas are cheap junk. In some rooms of your home they will not work very well at all, and there often will be glitches in stream decoding when people walk around in or even near the room.</p>
+    <p>Antennas installed on the roof typically will have the best reception, but the antenna has to be earthed (see the appendix chapter <a href="bond_earth_ground.xhtml">Bonding, Earthing, and Grounding</a>) which means it almost certainly needs to be installed on the same side of the house as your main electrical panel because that is where your ground rod is and no, you can not just install another ground rod elsewhere without major additional electrician work beyond just physically installing the ground rod. Antennas installed on the roof are also subject to the elements and may need to be re-adjusted after strong winds.</p>
+    <p>If you have an attic and the broadcast stations you want are within 60 miles, attic installs can often work quite well and do not need to be earthed. However if you have radiant heat shielding in your attic, that will interfere with the signal. Air ducts in the attic with a shiny coating also can be problematic, so you will need to make sure to pick an antenna model that has an available reflector (sometimes sold separately) to reduce stray signals bouncing off of the ducts. If there are solar panels on your roof, the inverters in the attic may interfere with the signal reception as well so a attic install should be physically distant from the inverters. The previously mentioned reflector may help with that as well.</p>
+    <p>Unless you have radiant heat shielding in the attic (which likely saves you a lot of money on <abbr title="Heating, Ventilation, and Air Conditioning">HVAC</abbr> power consumption if you do) if you have an attic, that is where I generally recommend trying an antenna install. If you just can not get reception in the attic for the stations you want, most antennas designed to work in an attic can also be installed on your roof.</p>
     <p>The point is, you do need to decide where you want to install your antenna as that makes a difference in the model you choose.</p>
-    <p>I would recommend against models with a built-in preamplifier. Amplification, if needed, is best provided by a separate device.</p>
+    <p>With the exception of Bedroom/Living Room antennas I would recommend against buying an antenna with a built-in preamplifier. Amplification&#8212;if needed&#8212;is best provided by a separate device.</p>
+  </section>
+  <section id="bands" aria-labelledby="bands.label">
+    <h2 id="bands.label">Frequency Bands and Antennas</h2>
+    <p>There are four different broadcast bands you may be interested in receiving through your antenna system:</p>
+    <dl>
+      <dt>TV VHF-Lo</dt>
+        <dd>54&#8211;88 MHz (<abbr>RF</abbr> Channels 2&#8211;6)</dd>
+      <dt><abbr>FM</abbr> Radio</dt>
+        <dd>88&#8211;108 MHz</dd>
+      <dt>TV VHF-Hi</dt>
+        <dd>174&#8211;216 MHz (<abbr>RF</abbr> Channels 7&#8211;13)</dd>
+      <dt>TV UHF</dt>
+        <dd>470&#8211;608 MHz (<abbr>RF</abbr> Channels 14&#8211;36)</dd>
+    </dl>
+    <p>There are basically three models of antenna that work:</p>
+    <ol>
+      <li>Loop antenna</li>
+      <li>Dipole antenna</li>
+      <li>Folded Dipole antenna</li>
+      <li>Monopole (whip) antenna</li>
+    </ol>
+    <p>If you want very detailed presentation on how antennas work, I highly recommend the <a href="https://www.tutorialspoint.com/antenna_theory/" title="Internet Resource">Antenna Theory Tutorial</a> at Tutorialspoint. Hopefully enough to just get by is presented here.</p>
+    <p>Loop antenaas have the best gain but with a loop antenna, the circumfrence of the loop should equal the wavelength of the lowest frequency you wish to receive well. Wavelength decreases as frequency increases and can be calculated with the following formula where L is the wavelength, c is the speed of light (aproximately 3.8 x 10^8 m/s) and f is the frequency:</p>
+    <span class="math">L=c/f</span>
+    <p>The lowest frequency in the television broadcast UHF band is 608 MHz resulting in a circumfrence of roughly half a meter and if a perfect cicle is used, a diameter of 16 centimeters. That is a relatively small loop, many of the antennas on the market today have two of these loops, some even have four. This allows for excellent gain at the antenna of everything in the television broadcast UHF band even with the compact size used for indoor antennas that only use one loop. My cheap indoor antenna is a rectangle 9 inches by 8 inches which easily accomodates a loop of that size contained within.</p>
+    <p>The highest frequency in the television broadcast VHF range (taking into account 6 MHz of bandwidth) is 102 MHz. That would require a loop of roughly 3 meters and if a perfect circle was used, a diameter of about 0.9 meters. Such a loop would be very large and use a lot of material and it would degrade for anything below RF channel 13, so dipole antennas are typically used for television broadcast UHF and broadcast <abbr>FM</abbr> radio at the cost of some gain.</p>
+    <p>With a dipole, two different rods of the same length are used, with each rod being &#188; of the wave-length for a total of &#189; of the wavelength between them. On large outdoor VHF antennas installed on a roof you will see an array of dipoles.</p>
+    <p>The dipole ideal length for the lowest frequency in VHF-Hi band would be about 43 centimeters (just under 18 inches) and for the VHF-Lo band it would be about 1.4 meters!</p>
+    <p>The length of the rods needed can be shortened by using a loading coil but a cost of reduction in gain.</p>
+    <p>Monopole antennas are generally only used on portable devices such as an <abbr>FM</abbr> radio or a vehicle.</p>
+  </section>
+  <section id="uhf" aria-labelledby="uhf.label">
+    <h2 id="uhf.label">Ultra High Frequency Television</h2>
+    <p>The vast majority of <abbr>OTA</abbr> television broadcast takes place within the 470&#8211;608 MHz <abbr>UHF</abbr> band.</p>
+    <p>The distinctive advantage that <abbr>UHF</abbr> has is that due to the higher frequency, the wavelength is shorter allowing for the antenna to be smaller. Also, <abbr>VHF</abbr> is more susceptible to noise and the power that <abbr>VHF</abbr> broadcasters are allowed to use is limited by the <abbr>FCC</abbr>.</p>
+    <p>Your antenna almost certainly will need to adequately cover the <abbr>UHF</abbr> band and the vast majority on the market do but you still need to make sure.</p>
+  </section>
+  <section id="vhf" aria-labelledby="vhf.label">
+    <h2 id="vhf.label">Very High Frequency Television</h2>
+    <p>For historical allocation reasons, television broadcasts that use <abbr>VHF</abbr> are split into two distinct frequency ranges with a rather larger gap between them. RF channels 2&#8211;5 are what is called VHF-Lo and RF channels 6&#8211;13 are what is called VHF-Hi.</p>
+    <p>The compact antennas that easily install inside an attic (or often even in a room) very rarely do well with VHF.</p>
+    <p>When they offer VHF at all, VHF is usually added as an afterthought and if you look at the gain, VHF gain is <em>much</em> lower than UHF gain. For example, the ClearStream 2MAX® that we have installed in our attic here specifies 8.7 dBi gain for UHF but only 2.6 dBi for VHF. Combine that lower gain with the lower transmission power the <abbr>FCC</abbr> requires for VHF broadcast and you will likely see the problem.</p>
+    <p>Attic/Indoor antennas that offer UFH + VHF usually only work well for VHF with VHF-Hi but with a shorter range than you would get with UHF. If any of them work at all with VHF-Lo you would have to be really close.</p>
+    <p>If you have multiple VHF stations you really want to receive, a Yagi-Uda (sometimes just called a Yagi even though it was likely invented by Shintaro Uda) installed on your roof is probably your best bet.</p>
+    <p>Yagi-Uda antennas are directional so if you need VHF stations from multiple directions, you may need turn it or you can install two of them (they can be installed on the same mast) and use a signal combiner.</p>
+    <p>When VHF reception is not quite as critical but it still desired or when an outdoor antenna is not desired, the potential solutions vary upon the desired VHF stations.</p>
+    <p>For VHF-Hi (RF channels 7&#8211;13) there is a decent chance a UHF+VFH antenna will in fact pull them in for you.</p>
+    <p>If they do not, Antennas Direct sells one called the <a href="https://store.antennasdirect.com/C5-Clearstream-5-vhf-uhf-long-range-outdoor-DTV-antenna.html" title="Internet Resource">ClearStream® 5 VHF Attic/Outdoor HDTV Antenna</a>.</p>
+    <p>That antenna has a list price of $160 but is often on sale. Looking at it, it is basically a loop antenna with a reflector. The technical data sheet seems to indicate it is good for VHF-Hi (RF channels 7&#8211;13) so it may not help very much if at all with VHF-Lo (RF channels 2&#8211;6)</p>
+    <p>With the ClearStream® 5, if you also want UHF you will likely need to use a combiner to join the signal from this antenna with an antenna for UHF.</p>
+    <p>For VHF-Lo where a Yagi-Uda antenna is not an option, you may need to build your own.</p>
+    <p>I have an idea for a &#8216;3D Folded loop&#8217; antenna that should pick up VHF-Lo along with <abbr>FM</abbr> radio stations while still remaining small enough for a practical attic install. If my idea pans out I will add a section on how to build one but right now it is just an untested idea in my head. Demand for VHF-Lo from an attic antenna just seems to be too low for antenna manufacturers to address it.</p>
+  </section>
+  <section id="radio" aria-labelledby="radio.label">
+    <h2 id="radio.label">The Spirit of Radio</h2>
+    <blockquote>Invisible airwaves crackle with life&#8212;Bright antennae bristle with the energy (Rush)</blockquote>
+    <p>Many people are not very interested in the <abbr>FM</abbr> Radio band however it is worth mentioning because most component <abbr>AM</abbr>/<abbr>FM</abbr> receivers do have a 75Ω coaxial female F-connector antenna jack and can have improved reception from a television antenna that picks up that radio band.</p>
+    <figure aria-labelledby="figure.stereo.label">
+      <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
+      <figcaption id="figure.stereo.label">The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack</figcaption>
+    </figure>
+    <p>While analog <abbr>FM</abbr> broadcasts will likely be around for a very long time, some stations also now broadcast digital with a digital FM receiver you will often get additional substations on the same frequency that are not available on an analog receiver.</p>
+    <p>If you or someone in your home likes listening to the radio then receiving <abbr>FM</abbr> broadcasts through your antenna may be a legitimate consideration.</p>
+    <p>With a quality VHF antenna like the Yagi-Uda that receives both VHF-Lo and VHF-Hi, <abbr>FM</abbr> reception is likely to be very good from it. Just plug a 75Ω coax line from your antenna in and see if reception of the stations you want improves.</p>
+    <p>Another option is to buy an antenna specifically for <abbr>FM</abbr> reception and use a signal combiner to add it to the signal used for UHF/VHF-Hi.</p>
+    <p>Of course if there are only a few radios in the house that need <abbr>FM</abbr> reception you could just run seperate coax specifically for the <abbr>FM</abbr> receivers.</p>
+    <p>Note that some preamplifiers intentionally block the broadcast <abbr>FM</abbr> band to prevent overload from a close radio station that <em>when amplified</em> could interfere with television reception. If you do combine an <abbr>FM</abbr> antenna with another antenna and you use a preamplifier, either make sure the preamplifier does not block that frequency range or combine the signals after the preamplifier.</p>
+    <p><abbr>AM</abbr> radio operates from 550&#8211;1720 kHz (within the Medium Frequency band) and would not benefit from a television antenna like <abbr>FM</abbr> radio does.</p>
   </section>
   <section id="clusters" aria-labelledby="clusters.label">
     <h2 id="clusters.label">Distance and Direction</h2>
@@ -54,72 +122,8 @@
     <p>If I was interested in Assyrian programming, I would want a second antenna to pick up that station (or an antenna with rotating base) that has at least a 40&#8211;50 mile range.</p>
     <p>If I was interested in additional Spanish programming, I would want a second antenna to pick up that station (or an antenna with rotating base) that has at least a 60 mile range.</p>
     <p>As one of the stations in my target cluster (the PBS affiliate) does broadcast on VHF-Hi RF channel 9, the antenna should have VHF-Hi capabilities. In my case with a desired attic install, the <a href="https://store.antennasdirect.com/ClearStream-2MAX-Indoor-Outdoor-TV-Antenna.html" title="Internet Resource">ClearStream 2MAX® UHF/VHF</a> is likely the best choice. That antenna clames a 60 mile range but in an attic install opposed to a rood install, that range is likely reduced to 45 miles. If a longer range was needed, such as a second antenna for the Univision station I could potentially pick up, the <a href="https://store.antennasdirect.com/ClearStream-4MAX-Outdoor-TV-Antenna.html" title="Internet Resource">ClearStream 4MAX® UHF/VHF</a> would be a better fit.</p>
-  </section>
-  <section id="bands" aria-labelledby="bands.label">
-    <h2 id="bands.label">Frequency Bands and Antennas</h2>
-    <p>For starters, there are five different broadcast bands you may be interested in receiving through your antenna system:</p>
-    <dl>
-      <dt>TV VHF-Lo</dt>
-        <dd>54&#8211;88 MHz (<abbr>RF</abbr> Channels 2&#8211;6)</dd>
-      <dt><abbr>FM</abbr> Radio</dt>
-        <dd>88&#8211;108 MHz</dd>
-      <dt>TV VHF-Hi</dt>
-        <dd>174&#8211;216 MHz (<abbr>RF</abbr> Channels 7&#8211;13)</dd>
-      <dt>TV UHF</dt>
-        <dd>470&#8211;608 MHz (<abbr>RF</abbr> Channels 14&#8211;36)</dd>
-    </dl>
-    <p>There are basically three models of antenna that work:</p>
-    <ol>
-      <li>Loop antenna</li>
-      <li>Dipole antenna</li>
-      <li>Monopole (whip) antenna</li>
-    </ol>
-    <p>If you want very detailed presentation on how antennas work, I highly recommend the <a href="https://www.tutorialspoint.com/antenna_theory/" title="Internet Resource">Antenna Theory Tutorial</a> at Tutorialspoint. Hopefully enough to just get by is presented here.</p>
-    <p>Loop antenaas have the best gain but with a loop antenna, the circumfrence of the loop should equal the wavelength of the lowest frequency you wish to receive well. Wavelength decreases as frequency increases and can be calculated with the following formula where L is the wavelength, c is the speed of light (aproximately 3.8 x 10^8 m/s) and f is the frequency:</p>
-    <span class="math">L=c/f</span>
-    <p>The lowest frequency in the television broadcast UHF band is 608 MHz resulting in a circumfrence of roughly half a meter and if a perfect cicle is used, a diameter of 16 centimeters. That is a relatively small loop, many of the antennas on the market today have two of these loops, some even have four. This allows for excellent gain at the antenna of everything in the television broadcast UHF band even with the compact size used for indoor antennas that only use one loop. My cheap indoor antenna is a rectangle 9 inches by 8 inches which easily accomodates a loop of that size contained within.</p>
-    <p>The highest frequency in the television broadcast VHF range (taking into account 6 MHz of bandwidth) is 102 MHz. That would require a loop of roughly 3 meters and if a perfect circle was used, a diameter of about 0.9 meters. Such a loop would be very large and use a lot of material and it would degrade for anything below RF channel 13, so dipole antennas are typically used for television broadcast UHF and broadcast <abbr>FM</abbr> radio at the cost of some gain.</p>
-    <p>With a dipole, two different rods of the same length are used, with each rod being &#188; of the wave-length for a total of &#189; of the wavelength between them. On large outdoor VHF antennas installed on a roof you will see an array of dipoles.</p>
-    <p>The dipole ideal length for the lowest frequency in VHF-Hi band would be about 43 centimeters (just under 18 inches) and for the VHF-Lo band it would be about 1.4 meters!</p>
-    <p>The length of the rods needed can be shortened by using a loading coil but a cost of reduction in gain.</p>
-    <p>Monopole antennas are generally only used on portable devices such as an <abbr>FM</abbr> radio or a vehicle.</p>
-  </section>
-  <section id="uhf" aria-labelledby="uhf.label">
-    <h2 id="uhf.label">Ultra High Frequency Television</h2>
-    <p>The vast majority of <abbr>OTA</abbr> television broadcast takes place within the 470&#8211;608 MHz <abbr>UHF</abbr> band.</p>
-    <p>The distinctive advantage that <abbr>UHF</abbr> has is that due to the higher frequency, the wavelength is shorter allowing for the antenna to be smaller. Also, <abbr>VHF</abbr> is more susceptible to noise and the power that <abbr>VHF</abbr> broadcasters are allowed to use is limited by the <abbr>FCC</abbr>.</p>
-    <p>Your antenna almost certainly will need to adequately cover the <abbr>UHF</abbr> band and the vast majority on the market do but you still need to make sure.</p>
-  </section>
-  <section id="vhf" aria-labelledby="vhf.label">
-    <h2 id="vhf.label">Very High Frequency Television</h2>
-    <p>For historical allocation reasons, television broadcasts that use <abbr>VHF</abbr> are split into two distinct frequency ranges with a rather larger gap between them. RF channels 2&#8211;5 are what is called VHF-Lo and RF channels 6&#8211;13 are what is called VHF-Hi.</p>
-    <p>The compact antennas that easily install inside an attic (or often even in a room) very rarely do well with VHF.</p>
-    <p>When they offer VHF at all, VHF is usually added as an afterthought and if you look at the gain, VHF gain is <em>much</em> lower than UHF gain. For example, the ClearStream 2MAX® that we have installed in our attic here specifies 8.7 dBi gain for UHF but only 2.6 dBi for VHF. Combine that lower gain with the lower transmission power the <abbr>FCC</abbr> requires for VHF broadcast and you will likely see the problem.</p>
-    <p>Attic/Indoor antennas that offer UFH + VHF usually only work well for VHF with VHF-Hi but with a shorter range than you would get with UHF. If they work at all with VHF-Lo you have to be really close.</p>
-    <p>If you have multiple VHF stations you really want to receive, a Yagi-Uda (sometimes just called a Yagi even though it was likely invented by Shintaro Uda) installed on your roof is probably your best bet.</p>
-    <p>Yagi-Uda antennas are directional so if you need VHF stations from multiple directions, you may need turn it or you can install two of them (they can be installed on the same mast) and use a signal combiner.</p>
-    <p>When VHF reception is not quite as critical but it still desired or when an antenna install is not installed, the potential solutions vary upon the desired VHF stations.</p>
-    <p>For VHF-Hi (RF channels 7&#8211;13) there is a decent chance a UHF+VFH antenna will in fact pull them in for you.</p>
-    <p>If they do not, Antennas Direct sells one called the <a href="https://store.antennasdirect.com/C5-Clearstream-5-vhf-uhf-long-range-outdoor-DTV-antenna.html" title="Internet Resource">ClearStream® 5 VHF Attic/Outdoor HDTV Antenna</a>.</p>
-    <p>That antenna has a list price of $160 but is often sale. Looking at it, is is a loop antenna with a reflector. The technical data sheet seems to indicate it is good for VHF-Hi (RF channels 7&#8211;13) so it may not help very much if at all with VHF-Lo (RF channels 2&#8211;6)</p>
-    <p>If you also want UHF you will likely need to use a combiner to join the signal from this antenna with an antenna for UHF.</p>
-    <p>For VHF-Lo where a Yagi-Uda antenna is not an option, you may need to build your own.</p>
-    <p>In my case, VHF-Lo Channel 6 is a channel I want. I have an idea for building an antenna that should pick it up, along with <abbr>FM</abbr> radio stations, while still remaining small enough for a practical attic install. If my idea pans out I will add a section on how to replicate it. Demand for VHF-Lo from an attic antenna just seems to be too low for antenna manufacturers to address it.</p>
-  </section>
-  <section id="radio" aria-labelledby="radio.label">
-    <h2 id="radio.label">The Spirit of Radio</h2>
-    <p>Many people are not very interested in the <abbr>FM</abbr> Radio band however it is worth mentioning because most component <abbr>AM</abbr>/<abbr>FM</abbr> receivers have a 75Ω coaxial female F-connector antenna jack and can have improved reception from a television antenna that picks up that radio band.</p>
-    <figure aria-labelledby="figure.stereo.label">
-      <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
-      <figcaption id="figure.stereo.label">The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack</figcaption>
-    </figure>
-    <p>While analog <abbr>FM</abbr> broadcasts will likely be around for a very long time, some stations also broadcast digital and you can buy a digital FM receiver that receives additional substations on the same frequency that are not available on analog.</p>
-    <p>If you or someone in your home likes listening to the radio then receiving <abbr>FM</abbr> broadcasts through your antenna may be a legitimate consideration.</p>
-    <p>With a quality VHF antenna like the Yagi-Uda that receives both VHF-Lo and VHF-Hi, <abbr>FM</abbr> reception is likely to be very good from it. Just plug a 75Ω coax line from your antenna in and see if reception of the stations you want improves.</p>
-    <p>Another option is to buy an antenna specifically for <abbr>FM</abbr> reception and use a signal combiner to add it to the signal used for UHF/VHF-Hi.</p>
-    <p>Of course if there are only a few radios in the house that need <abbr>FM</abbr> reception you could just run it seperately from the coax for your television.</p>
-    <p>Some preamplifiers intentionally block the broadcast <abbr>FM</abbr> band to prevent overload from a close radio station that when amplified could interfere with television reception. If you do combine an <abbr>FM</abbr> antenna with another antenna, either make sure the amplifier does not block that frequency range or combine the signals after the preamplifier.</p>
-    <p><abbr>AM</abbr> radio operates from 550&#8211;1720 kHz (within the Medium Frequency band) and would not benefit from a television antenna like <abbr>FM</abbr> radio does.</p>
+    <p>The live broadcast stations we get with XFinity that we will miss are the Fox affiliate KTVU and the PBS affiliate KQED as their transmitters are blocked from us by Mount Diablo. However we will get a Fox affiliate that carries all the 49er games and <em>usually</em> carries the non-49er games carried by KTVU and we will get a PBS that carries much of the content KQED carries.</p>
+    <blockquote>&#8230;But if you try sometimes, well, you just might find&#8212;You get what you need (Rolling Stones)</blockquote>
   </section>
   <section id="combiner" aria-labelledby="combiner.label">
     <h2 id="combiner.label">Signal Combiner</h2>
@@ -135,6 +139,14 @@
     <p>Many cities that do not have local television broadcast transmitters do have local <abbr>FM</abbr> broadcast transmitters. In that case, amplifying the broadcast <abbr>FM</abbr> signal can cause signal overload that prevents television from signals from working. In that scenario, you want to combine the signal from the broadcast <abbr>FM</abbr> antenna after preamplification of the antennas for television.</p>
     <p>If you have two antennas <em>pointed in the same direction</em> and there is overlap in the frequencies they receive, the signal for those frequencies can be damaged by the reception from the two antennas being out of phase. In that scenario, you can use a low-pass or high-pass filter on one or both antenna <em>before</em> joining their signal.</p>
     <p>For example, if using one antenna for VHF and another for UHF, you may want a low-pass filter on the feed from the VHF antenna to filter out every frequency above the VHF band and a high-pass filter on the UHF feed to filter out every frequency below the UHF band. Then it will be safe to combine them. There are some combiners sold specifically for that purpose that have those filters built-in.</p>
+  </section>
+  <section id="vendors" aria-labelledby="vendors.label">
+    <h2 id="vendors.label">Antenna Vendors</h2>
+    <p>For a bedroom/living room antenna&#8212;what is often called an &#8216;indoor antenna&#8217;&#8212;you have to be careful because there is a lot of cheap junk on the market. When they work the picture is just as beautiful as the expensive antennas, but their range is quite limited and they often have trouble decoding the digital signal if someone happens to be standing in the wrong place.</p>
+    <p>I would likely recommend the &#8216;ClearStream ECLIPSE® Amplified Indoor HDTV Antenna&#8217; from <a href="https://store.antennasdirect.com/indoor-tv-antennas.html" title="Internet Resource">Antennas Direct</a>. It does not receive any VHF channels.</p>
+    <p>For attic antennas, I also would recommend <a href="https://store.antennasdirect.com/attic-tv-antennas.html" title="Internet Resource">Antennas Direct</a> but the particular model depends upon your needs. Most of those will also work installed on the roof.</p>
+    <p>For an outdoor Yagi-Uda antenna, I would recommend looking at what <a href="https://www.channelmaster.com/Outdoor_Antennas_s/20.htm" title="Internet Resource">Channel Master</a> has to offer.</p>
+    <p>For a fun science project with the kids, good designs for building your own antenna can be found on the web.</p>
   </section>
 </section>
 </body>
