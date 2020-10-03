@@ -29,6 +29,7 @@
     <!-- css -->
     <item href="css/fonts.css" id="css.fonts" media-type="text/css"/>
     <item href="css/common.css" id="css.common" media-type="text/css"/>
+    <item href="css/mathml.css" id="css.mathml" media-type="text/css"/>
     <item href="css/a11y.css" id="css.a11y" media-type="text/css"/>
     <!-- fonts -->
     <item href="fonts/ClearSans-Regular-wlatin.ttf" id="font.ClearSans.Regular" media-type="font/otf"/>
@@ -41,8 +42,9 @@
     <item href="images/water_main.jpg" id="images.water_main.jpg" media-type="image/jpeg"/>
     <item href="images/stereo75.jpg" id="images.stereo75.jpg" media-type="image/jpeg"/>
     <item href="images/transmap.jpg" id="images.transmap.jpg" media-type="image/jpeg"/>
+    <item href="mathml/wavelength.svg" id="mathml.wavelength.svg" media-type="image/svg+xml"/>
     <!-- pages -->
-    <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml"/>
+    <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml" properties="mathml"/>
     <item href="bond_earth_ground.xhtml" id="bond.earth.ground" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>

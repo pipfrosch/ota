@@ -1,0 +1,15 @@
+/* https://mathmlcloud.org/ */
+
+span[role="math"] object {
+  display: inline-block;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+#mathml-wavelength-svg {
+  width: 6.5ex;
+  height: 3.333ex;
+  vertical-align: -1.5ex;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
