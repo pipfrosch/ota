@@ -13,3 +13,11 @@ span[role="math"] object {
   margin-bottom: 1px;
   margin-top: 1px;
 }
+
+#mathml-L-svg {
+  width: 1.667ex;
+  height: 1.667ex;
+  vertical-align: -0.167ex;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
