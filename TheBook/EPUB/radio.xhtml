@@ -13,7 +13,7 @@
 <section epub:type="chapter" role="doc-chapter" aria-labelledby="radio.label">
   <h1 id="radio.label"><abbr>AM</abbr>/<abbr>FM</abbr> Radio</h1>
   <p>Television is not the only source of news and entertainment that uses radio transmissions that are free to receive. <abbr>AM</abbr> and <abbr>FM</abbr> radio predate television considerably and are both still very much alive.</p>
-  <p>Please note that if you are <em>only</em> interested in <abbr>FM</abbr> radio, things are somewhat simpler. The <abbr>FM</abbr> band fallse between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> and most modern radio tuners with antenna input use the same 75Ω coaxial female F-connector antenna jack that ATSC television uses.</p>
+  <p>Please note that if you are <em>only</em> interested in <abbr>FM</abbr> radio, things are somewhat simpler. The <abbr>FM</abbr> band falls between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> and most modern radio tuners with antenna input use the same 75Ω coaxial female F-connector antenna jack that ATSC television uses.</p>
   <figure aria-labelledby="figure.stereo.label">
     <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
     <figcaption id="figure.stereo.label">The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack for <abbr>FM</abbr> and 300Ω two-wire antenna connector for <abbr>AM</abbr>.</figcaption>
@@ -25,10 +25,45 @@
   <p>This appendix chapter will discuss setting up an <abbr>AM</abbr>/<abbr>FM</abbr> antenna distributed to multiple receivers via coaxial cable along with notes about setting up a similar system that is <abbr>FM</abbr> only.</p>
   <section id="test" aria-labelledby="test.label">
     <h2 id="test.label">Test Environment</h2>
-    <p>An inexpensive &#8216;Antop AT-212FM Curved Panel Amplified Indoor <abbr>AM</abbr>/<abbr>FM</abbr> Antenna&#8217; connected directly to the test receiver will be used as a reference antenna.</p>
+    <p>An inexpensive &#8216;Antop AT-212FM Curved Panel Amplified Indoor <abbr>AM</abbr>/<abbr>FM</abbr> Antenna&#8217; connected directly to the test receiver will be used as a reference antenna. I chose that as my reference antenna because it is a decent quality yet inexpensive indoor antenna with better reception than the junk that typically ships with a receiver. For many people it may be good enough. This guide is about saving money, not geek pride.</p>
     <p>My analog only Yamaha R-S201 receiver will be used to test how many stations on both bands are received, and how well they come in. As such digital <abbr>AM</abbr>/<abbr>FM</abbr> reception will not be tested.</p>
-    <p>During the tests, my <abbr>PC</abbr>, <abbr>television</abbr>, and <abbr>WiFi</abbr> router will be turned off as they are all possible sources of interference <em>except</em> in the final test.</p>
+    <p>During all tests <em>except for the final test</em> my <abbr>PC</abbr>, <abbr>television</abbr>, and <abbr>WiFi</abbr> router will be turned off as they are all possible sources of interference. The final test will test the performance of the antenna system with those possible sources of interference turned on, but television muted.</p>
     <p>Due to physical logistics, the tests can not be performed all on the same day so it is possible atmospheric difference can impact the results. All tests will be performed between the hours of 1:00 <abbr>A.M.</abbr> and 3:00 <abbr>A.M.</abbr> when reception is typically very good.</p>
+  </section>
+  <section id="antenna" aria-labelledby="antenna.label">
+    <h2 id="antenna.label">Antenna Selection</h2>
+    <p>If you are only interested in distributing <abbr>FM</abbr> through a coaxial system to multiple receivers, there are many choices including models that often do well in an attic, though installation on a roof top is generally better.</p>
+    <p>If you are trying to receive a very distant <abbr>FM</abbr> station, a directional antenna installed on your roof is the best bet. Generally, an <abbr>FM</abbr> antenna distributed to several receivers should probably be omni-directional.</p>
+    <p>Some models&#8212;such as the horizontal folded loop antennas that often work well in an attic&#8212;are only <em>mostly</em> omnidirectional and you might have to play with the direction to find the best reception position but generally you can leave it once you have found the sweet spot.</p>
+    <p>Mono-pole &#8216;whip&#8217; antennas mounted vertically are truly omnidirectional but are less likely to do as well inside an attic though sometimes they do just fine.</p>
+    <p>For <abbr>AM</abbr> in addition to <abbr>FM</abbr>, the only choice I found that works well distributed through a coaxial cable system is the Pixel Technologies <a href="https://www.xm-radio-satellite.com/afhd-4-outdoor-am-fm-hd-radio-antenna-kit/" title="Internet Resource">AFHD-4 kit</a>. It is a mono-pole &#8216;whip&#8217; antenna with a 48 inch rod. It could be installed in some attics but the height of the rod limits the locations in within an attic which may make it difficult to install away from sources of interference, such as the <abbr>HVAC</abbr> system or solar related equipment. <abbr>AM</abbr> reception is particularly impacted by noise.</p>
+    <p>Note that the AFHD-4 kit is just for <abbr>AM</abbr>/<abbr>FM</abbr> reception. If you want SiriusXM as well, they have kits to facilitate SiriusXM in addition to <abbr>AM</abbr>/<abbr>FM</abbr> with that antenna. SiriusXM however is beyond the scope of this guide.</p>
+    <p>The AFHD-4 kit is what I am using for the tests.</p>
+  </section>
+  <section id="location" aria-labelledby="location.label">
+    <h2 id="location.label">Antenna Location</h2>
+    <p>Generally the higher the antenna, the better the reception will be. However there are some considerations.</p>
+    <p>The highest possible install point at our home would be the chimney. The chimney is also farthest from possible most sources of noise at our home. However the chimney is on the south-east side of the home and the grounding rod is on the north-west side of the home. Properly earthing the antenna would not be possible.</p>
+    <p>The next best location height-wise would be at the roof peak on the west side of the home. It could be earthed, but installing the mast and antenna would be expensive because it would require a professional installer.</p>
+    <p>There are some fake windows along the north side of the roof. Properly earthing the antenna may not be possible, I am not sure. It also could be considered an eye-sore generating complaints from neighbors.</p>
+    <p>The location I chose is on the west side of the house where the house roof meets the garage roof.</p>
+    <p>This location is fairly close to the grounding rod. it is set back from the street so that the antenna is not as visible from the street. The required ladder is reasonable. It is also close to two of the three rooms that will have <abbr>AM</abbr>/<abbr>FM</abbr> receivers. There is also already an existing mast for a <abbr>TV</abbr> sattelite that we do not use.</p>
+    <p>The downside is that there is a fluorescent ballast in the garage and it is fairly close to our wireless router, both potential sources of <abbr>AM</abbr> interference.</p>
+  </section>
+  <section id="splitter" aria-labelledby="splitter.label">
+    <h2 id="splitter.label">Splitting the Signal</h2>
+    <p>If you are only interested in <abbr>FM</abbr>, you can use the same kind of splitters or amplified distributors you would use with a television install. For <abbr>FM</abbr> only I would recommend just using a regular amplified distributor.</p>
+    <p>The frequency used by <abbr>AM</abbr> however is way too low for those devices. You <em>must</em> use splitters specifically designed for 0.5 MHz at the bottom end. Also, if you are distributing SiriusXM as well, you need a splitter than handles up to 2400 MHz. Many splitters / aplified distributors for television do but some only handle up to about 1000 MHz.</p>
+    <p>The Pixel Technologies <a href="https://www.xm-radio-satellite.com/pixel-mbs-4-siriusxm-multi-band-splitter/" title="Internet Resource">MBS-4</a> is designed specifically for the 0.5&#8211;2400 MHz frequency range.</p>
+    <p>Note that splitting the signal will almost certainly require amplification. The necessary amplifier for the <abbr>AM</abbr> band does not have a separate input for power, so one of the outputs on that splitter will need to be used for amplification.</p>
+    <section id="preamp" aria-labelledby="preamp.label">
+      <h3 id="preamp.label"><abbr>AM</abbr> Compatible Inline Amp</h3>
+      <p>Amplifiers used for broadcast and sattelite televion <strong>WILL NOT WORK</strong> for an <abbr>AM</abbr> radio signal.</p>
+      <p>To amplify a coaxial signal carrying <abbr>AM</abbr> radio, use the Pixel Technologies <a href="https://www.xm-radio-satellite.com/multi-band-amplifier-amplifies-am-band-thru-xm-band/" title="Internet Resource">MBA-12 Inline Amp</a>.</p>
+      <p>That amp should be placed as close to the antenna as possible to reduce the amplification of noise that enters the signal after the signal leaves the antenna.</p>
+      <p>To power that amp, you will need a Pixel Technologies <a href="https://www.xm-radio-satellite.com/xm-satellite-radio-power-inserter/" title="Internet Resource">PS-1 Power Inserter</a>. That adapter connects via coaxial cable to one of the splitter outputs.</p>
+      <p>Please note that the power inserter is 5 volts. The 12 volt adapters sometimes used with television preamplifiers and amplified distributors is too much voltage for the MBA-12 Inline Amp.</p>
+    </section>
   </section>
 </section>
 </body>
