@@ -45,6 +45,7 @@
     <!-- mathml svg -->
     <item href="mathml/wavelength.svg" id="mathml.wavelength.svg" media-type="image/svg+xml"/>
     <item href="mathml/L.svg" id="mathml.L.svg" media-type="image/svg+xml"/>
+    <item href="mathml/c.svg" id="mathml.c.svg" media-type="image/svg+xml"/>
     <!-- pages -->
     <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml" properties="mathml"/>
     <item href="bond_earth_ground.xhtml" id="bond.earth.ground" media-type="application/xhtml+xml"/>

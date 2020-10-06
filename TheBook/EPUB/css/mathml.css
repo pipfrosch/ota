@@ -21,3 +21,11 @@ span[role="math"] object {
   margin-bottom: 1px;
   margin-top: 1px;
 }
+
+#mathml-c-svg {
+  width: 1ex;
+  height: 1.167ex;
+  vertical-align: -0.167ex;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
