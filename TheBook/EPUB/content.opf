@@ -49,9 +49,11 @@
     <!-- pages -->
     <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml" properties="mathml"/>
     <item href="bond_earth_ground.xhtml" id="bond.earth.ground" media-type="application/xhtml+xml"/>
+    <item href="radio.xhtml" id="am_fm_radio" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>
     <itemref idref="antenna.selection"/>
     <itemref idref="bond.earth.ground"/>
+    <itemref idref="am_fm_radio"/>
   </spine>
 </package>
