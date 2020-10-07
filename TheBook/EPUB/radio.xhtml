@@ -3,7 +3,7 @@
   xmlns:epub="http://www.idpf.org/2007/ops">
 <head>
   <meta charset="utf-8"/>
-  <title>AM/FM Radio</title>
+  <title>The Spirit of Radio</title>
   <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
   <link rel="stylesheet" type="text/css" href="css/mathml.css"/>
@@ -11,60 +11,119 @@
 </head>
 <body epub:type="bodymatter">
 <section epub:type="chapter" role="doc-chapter" aria-labelledby="radio.label">
-  <h1 id="radio.label"><abbr>AM</abbr>/<abbr>FM</abbr> Radio</h1>
+  <h1 id="radio.label">The Spirit of Radio</h1>
   <p>Television is not the only source of news and entertainment that uses radio transmissions that are free to receive. <abbr>AM</abbr> and <abbr>FM</abbr> radio predate television considerably and are both still very much alive.</p>
-  <p>Please note that if you are <em>only</em> interested in <abbr>FM</abbr> radio, things are somewhat simpler. The <abbr>FM</abbr> band falls between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> and most modern radio tuners with antenna input use the same 75Ω coaxial female F-connector antenna jack that ATSC television uses.</p>
-  <figure aria-labelledby="figure.stereo.label">
+  <blockquote>Invisible airwaves crackle with life&#8212;Bright antennae bristle with the energy (Rush)</blockquote>
+  <p>Please note that if you are <em>only</em> interested in <abbr>FM</abbr> radio, things are somewhat simpler. The <abbr>FM</abbr> band falls between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> and most modern radio tuners (in the United States) with antenna input use the same 75Ω coaxial female F-connector antenna jack that ATSC television uses.</p>
+  <figure id="figure.stereo" aria-labelledby="figure.stereo.label">
     <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
     <figcaption id="figure.stereo.label">The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack for <abbr>FM</abbr> and 300Ω two-wire antenna connector for <abbr>AM</abbr>.</figcaption>
   </figure>
-  <p>This allows the same splitters and signal amplifiers that work with <abbr>OTA</abbr> television to also work with <abbr>FM</abbr> broadcast.</p>
+  <p>This allows the same splitters and signal amplifiers that work with <abbr>OTA</abbr> television to also work well with <abbr>FM</abbr> broadcast.</p>
   <p>In fact for <abbr>FM</abbr> radio, if your antenna&#8212;such as many but not all Yagi-Uda antennas&#8212;works with both <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> there is a good possibility it also works well for <abbr>FM</abbr>, at least for <abbr>FM</abbr> broadcast from the same direction for which the antenna is pointed.</p>
-  <p>In theory you can use a combiner to combine the output of an <abbr>FM</abbr> antenna with your television antenna but in practice that is not very realistic. <abbr>ATSC</abbr> tuners do not decode <abbr>FM</abbr> signals (analog or digital) so you would lose about 4 dB when combining the signal only to lose about 4 dB again when you split the signal to feed both an <abbr>ATSC</abbr> tuner and an <abbr>FM</abbr> tuner. That is a 7&#8211;8 dB loss.</p>
-  <p>If you also want <abbr>AM</abbr> radio, <abbr>AM</abbr> broadcasts from 550&#8211;1720 kHz (0.55&#8211;1.72 MHz) which unfortunately is well below the operational range for amplifiers and splitters that are used for <abbr>OTA</abbr> television.</p>
-  <p>This appendix chapter will discuss setting up an <abbr>AM</abbr>/<abbr>FM</abbr> antenna distributed to multiple receivers via coaxial cable along with notes about setting up a similar system that is <abbr>FM</abbr> only.</p>
-  <section id="test" aria-labelledby="test.label">
-    <h2 id="test.label">Test Environment</h2>
-    <p>An inexpensive &#8216;Antop AT-212FM Curved Panel Amplified Indoor <abbr>AM</abbr>/<abbr>FM</abbr> Antenna&#8217; connected directly to the test receiver will be used as a reference antenna. I chose that as my reference antenna because it is a decent quality yet inexpensive indoor antenna with better reception than the junk that typically ships with a receiver. For many people it may be good enough. This guide is about saving money, not geek pride.</p>
-    <p>My analog only Yamaha R-S201 receiver will be used to test how many stations on both bands are received, and how well they come in. As such digital <abbr>AM</abbr>/<abbr>FM</abbr> reception will not be tested.</p>
-    <p>During all tests <em>except for the final test</em> my <abbr>PC</abbr>, <abbr>television</abbr>, and <abbr>WiFi</abbr> router will be turned off as they are all possible sources of interference. The final test will test the performance of the antenna system with those possible sources of interference turned on, but television muted.</p>
-    <p>Due to physical logistics, the tests can not be performed all on the same day so it is possible atmospheric difference can impact the results. All tests will be performed between the hours of 1:00 <abbr>A.M.</abbr> and 3:00 <abbr>A.M.</abbr> when reception is typically very good.</p>
-  </section>
+  <p>In theory you can use a combiner to combine the output of an <abbr>FM</abbr> antenna with your television antenna but in practice that is usually not the right solution. <abbr>ATSC</abbr> tuners do not decode <abbr>FM</abbr> signals (analog or digital) so you would lose about 4 dB when combining the signal only to lose about 4 dB again when you then split the signal to feed both an <abbr>ATSC</abbr> tuner and an <abbr>FM</abbr> tuner. That is a 7&#8211;8 dB loss.</p>
+  <p>If you also want <abbr>AM</abbr> radio, <abbr>AM</abbr> broadcasts from 550&#8211;1720 kHz (0.55&#8211;1.72 MHz) which unfortunately is well below the operational range for the amplifiers and splitters that are commonly used for <abbr>OTA</abbr> television.</p>
+  <p>This chapter discusses setting up an <abbr>AM</abbr>/<abbr>FM</abbr> antenna distributed to multiple receivers via coaxial cable <em>independent of the television coaxial cables</em> along with variation notes for those setting up a similar coax system that is either <abbr>FM</abbr> only or that also supports SiriusXM satelite radio.</p>
+  
   <section id="antenna" aria-labelledby="antenna.label">
     <h2 id="antenna.label">Antenna Selection</h2>
     <p>If you are only interested in distributing <abbr>FM</abbr> through a coaxial system to multiple receivers, there are many choices including models that often do well in an attic, though installation on a roof top is generally better.</p>
-    <p>If you are trying to receive a very distant <abbr>FM</abbr> station, a directional antenna installed on your roof is the best bet. Generally, an <abbr>FM</abbr> antenna distributed to several receivers should probably be omni-directional.</p>
-    <p>Some models&#8212;such as the horizontal folded loop antennas that often work well in an attic&#8212;are only <em>mostly</em> omnidirectional and you might have to play with the direction to find the best reception position but generally you can leave it once you have found the sweet spot.</p>
-    <p>Mono-pole &#8216;whip&#8217; antennas mounted vertically are truly omnidirectional but are less likely to do as well inside an attic though sometimes they do just fine.</p>
-    <p>For <abbr>AM</abbr> in addition to <abbr>FM</abbr>, the only choice I found that works well distributed through a coaxial cable system is the Pixel Technologies <a href="https://www.xm-radio-satellite.com/afhd-4-outdoor-am-fm-hd-radio-antenna-kit/" title="Internet Resource">AFHD-4 kit</a>. It is a mono-pole &#8216;whip&#8217; antenna with a 48 inch rod. It could be installed in some attics but the height of the rod limits the locations in within an attic which may make it difficult to install away from sources of interference, such as the <abbr>HVAC</abbr> system or solar related equipment. <abbr>AM</abbr> reception is particularly impacted by noise.</p>
-    <p>Note that the AFHD-4 kit is just for <abbr>AM</abbr>/<abbr>FM</abbr> reception. If you want SiriusXM as well, they have kits to facilitate SiriusXM in addition to <abbr>AM</abbr>/<abbr>FM</abbr> with that antenna. SiriusXM however is beyond the scope of this guide.</p>
-    <p>The AFHD-4 kit is what I am using for the tests.</p>
+    <p>If you are trying to receive a very distant <abbr>FM</abbr> station, a directional antenna installed on your roof is the best bet. Generally however an <abbr>FM</abbr> antenna distributed to several receivers should <em>probably</em> be omni-directional.</p>
+    <p>Some models&#8212;such as the horizontal folded loop antennas that often work well in an attic&#8212;are only <em>mostly</em> omni-directional and you might have to play with the direction to find the best reception position but generally you can leave it once you have found the sweet spot.</p>
+    <p>Mono-pole &#8216;whip&#8217; antennas mounted vertically are truly omni-directional but are less likely to do as well inside an attic though sometimes they do just fine.</p>
+    <p>For <abbr>AM</abbr> broadcasts in addition to <abbr>FM</abbr> broadcasts, the only choice I found that works well distributed to multiple outputs through a coaxial cable system is the Pixel Technologies <a href="https://pixelsatradio.com/collections/antennas/products/afhd-4-long-range-am-fm-hd-radio-antenna" title="Internet Resource">AFHD-4 Antenna kit</a>. It is a mono-pole &#8216;whip&#8217; antenna with a 48 inch rod. It could be installed in some attics but the height of the rod limits the locations within an attic which may make it difficult to install away from sources of interference, such as the <abbr>HVAC</abbr> system or solar related equipment. <abbr>AM</abbr> broadcast reception is particularly impacted by interference noise.</p>
+    <p>Note that the AFHD-4 kit is just for <abbr>AM</abbr>/<abbr>FM</abbr> reception. If you want SiriusXM as well as <abbr>AM</abbr>/<abbr>FM</abbr>, then you should get the <a href="https://pixelsatradio.com/collections/antennas/products/afxsm-5-am-fm-hd-siriusxm-radio-multi-signal-antenna-kit" title="Internet Resource">AFXSM-5 Antenna Kit</a> or the <a href="https://pixelsatradio.com/collections/antennas/products/pixel-technologies-multi-band-outdoor-antenna-pro600-kit" title="Internet Resource">AFXSM-6 Antenna Kit</a> instead.</p>
+    <p>The AFHD-4 kit is what I used for the tests at the end of this chapter. I did not use the AFXSM-{5,6} kits though I believe the <abbr>AM</abbr>/<abbr>FM</abbr> antenna in those kits is identical to the AFHD-4.</p>
   </section>
   <section id="location" aria-labelledby="location.label">
     <h2 id="location.label">Antenna Location</h2>
     <p>Generally the higher the antenna, the better the reception will be. However there are some considerations.</p>
-    <p>The highest possible install point at our home would be the chimney. The chimney is also farthest from possible most sources of noise at our home. However the chimney is on the south-east side of the home and the grounding rod is on the north-west side of the home. Properly earthing the antenna would not be possible.</p>
-    <p>The next best location height-wise would be at the roof peak on the west side of the home. It could be earthed, but installing the mast and antenna would be expensive because it would require a professional installer.</p>
-    <p>There are some fake windows along the north side of the roof. Properly earthing the antenna may not be possible, I am not sure. It also could be considered an eye-sore generating complaints from neighbors.</p>
-    <p>The location I chose is on the west side of the house where the house roof meets the garage roof.</p>
-    <p>This location is fairly close to the grounding rod. it is set back from the street so that the antenna is not as visible from the street. The required ladder is reasonable. It is also close to two of the three rooms that will have <abbr>AM</abbr>/<abbr>FM</abbr> receivers. There is also already an existing mast for a <abbr>TV</abbr> sattelite that we do not use.</p>
-    <p>The downside is that there is a fluorescent ballast in the garage and it is fairly close to our wireless router, both potential sources of <abbr>AM</abbr> interference.</p>
+    <p>The highest possible install point at our home would be the chimney. The chimney is also farthest from obvious possible sources of noise at our home. However the chimney is on the south-east side of the home and the grounding rod is on the north-west side of the home. Properly <a href="bond_earth_ground.xhtml">earthing</a> the antenna would not be possible.</p>
+    <p>The next best location height-wise would be at the roof peak on the west side of the home. It could be earthed there, but installing the mast and antenna would be expensive because it would require a professional installer. I simply do not feel comfortable climbing that high on a ladder that would have to be fairly steep due to the fence with our neighbor.</p>
+    <p>There are some fake windows along the north side of the roof. Properly earthing the antenna there though may not be possible, I am not sure. That location also could be considered an eye-sore generating complaints from neighbors.</p>
+    <p>The location I did choose is on the west side of the house where the house roof meets the garage roof.</p>
+    <p>This location is fairly close to the grounding rod. It is set back from the street so that the antenna is barely visible from the street. The required ladder is reasonable. It is also close to two of the three rooms that will have <abbr>AM</abbr>/<abbr>FM</abbr> receivers. As a bonus there is also already an existing mast for an ancient <abbr>TV</abbr> sattelite that we do not use.</p>
+    <p>The downside to that location is that there is a fluorescent ballast in that garage and it is fairly close to our wireless router, both of which are potential sources of <abbr>AM</abbr> interference.</p>
   </section>
   <section id="splitter" aria-labelledby="splitter.label">
     <h2 id="splitter.label">Splitting the Signal</h2>
-    <p>If you are only interested in <abbr>FM</abbr>, you can use the same kind of splitters or amplified distributors you would use with a television install. For <abbr>FM</abbr> only I would recommend just using a regular amplified distributor.</p>
-    <p>The frequency used by <abbr>AM</abbr> however is way too low for those devices. You <em>must</em> use splitters specifically designed for 0.5 MHz at the bottom end. Also, if you are distributing SiriusXM as well, you need a splitter than handles up to 2400 MHz. Many splitters / aplified distributors for television do but some only handle up to about 1000 MHz.</p>
-    <p>The Pixel Technologies <a href="https://www.xm-radio-satellite.com/pixel-mbs-4-siriusxm-multi-band-splitter/" title="Internet Resource">MBS-4</a> is designed specifically for the 0.5&#8211;2400 MHz frequency range.</p>
-    <p>Note that splitting the signal will almost certainly require amplification. The necessary amplifier for the <abbr>AM</abbr> band does not have a separate input for power, so one of the outputs on that splitter will need to be used for amplification.</p>
+    <p>If you do not need to split the signal to service more than one tuner, <a href="#coax">skip ahead</a>.</p>
+    <p>If you are only interested in <abbr>FM</abbr>, you can use the same kind of splitters, amplified distributors, and preamplifiers you would use with a television antenna install. However there are some television preamplifiers that filter the <abbr>FM</abbr> band, so avoid those.</p>
+    <p>The frequency used by <abbr>AM</abbr> however is way too low for those television targeted devices. You <em>must</em> use splitters specifically designed for 0.5 MHz (550 KHz) at the bottom end. Also, if you are distributing SiriusXM as well, you need a splitter than handles up to 2400 MHz. Many splitters and aplified distributors for television do but some only handle up to about 1000 MHz.</p>
+    <p>The Pixel Technologies <a href="https://pixelsatradio.com/collections/am-fm-products/products/pixel-mbs-4-siriusxm-multi-band-splitter" title="Internet Resource">MBS-4 Multi-band Splitter</a> is designed specifically for the 0.5&#8211;2400 MHz frequency range.</p>
     <section id="preamp" aria-labelledby="preamp.label">
       <h3 id="preamp.label"><abbr>AM</abbr> Compatible Inline Amp</h3>
-      <p>Amplifiers used for broadcast and sattelite televion <strong>WILL NOT WORK</strong> for an <abbr>AM</abbr> radio signal.</p>
-      <p>To amplify a coaxial signal carrying <abbr>AM</abbr> radio, use the Pixel Technologies <a href="https://www.xm-radio-satellite.com/multi-band-amplifier-amplifies-am-band-thru-xm-band/" title="Internet Resource">MBA-12 Inline Amp</a>.</p>
-      <p>That amp should be placed as close to the antenna as possible to reduce the amplification of noise that enters the signal after the signal leaves the antenna.</p>
-      <p>To power that amp, you will need a Pixel Technologies <a href="https://www.xm-radio-satellite.com/xm-satellite-radio-power-inserter/" title="Internet Resource">PS-1 Power Inserter</a>. That adapter connects via coaxial cable to one of the splitter outputs.</p>
-      <p>Please note that the power inserter is 5 volts. The 12 volt adapters sometimes used with television preamplifiers and amplified distributors is too much voltage for the MBA-12 Inline Amp.</p>
+      <p>Amplifiers typically used for broadcast and sattelite televion <strong>WILL NOT WORK</strong> for an <abbr>AM</abbr> radio signal.</p>
+      <p>To amplify a coaxial signal carrying <abbr>AM</abbr> radio, use the Pixel Technologies <a href="https://pixelsatradio.com/products/ultra-wide-band-line-amplifier-for-am-fm-hd-radio-over-the-air-tv-and-satellite-radio" title="Internet Resource">MBA-12 Inline Amp</a>.</p>
+      <p><strong>WARNING:</strong> Do not buy the Pixel Technologies SBA-1 inline amplifier by mistake. It is specific to the frequencies used by SeriusXM (2320&#8211;2345 MHz). It will not work with either <abbr>AM</abbr> or <abbr>FM</abbr> frequencies.</p>
+      <p>The MBA-12 amp should be placed as close to the antenna as possible to reduce the amplification of noise that enters the signal after the signal leaves the antenna.</p>
+      <p>To power the MBA-12, you will need a Pixel Technologies <a href="https://pixelsatradio.com/collections/power-accessories/products/pixel-technologies-siriusxm-5vdc-power-inserter-kit-ps-1" title="Internet Resource">PS-1 Power Inserter</a>. That power inserter has and adapter with one F connector that connects to the coaxial line coming from the antenna/amplifier, one F connector that would lead to the splitter, and one F connector that connects to the 5V DC power source. However if you are not using all four outputs on the MBS-4 splitter, you can also just feed the PS-1 to an unused output on the MBS-4 splitter. That is what I am doing as I only need three outputs.</p>
+      <p>Please note that the power inserter is 5 volts. The 12 volt adapters sometimes used with television preamplifiers and amplified distributors may work but may be too much. With a SiriusXM receiver I <em>believe</em> 5 volts is all you can use but I might be wrong.</p>
     </section>
   </section>
+  <section id="coax" aria-labelledby="coax.label">
+    <h2 id="coax.label">Coaxial Cable</h2>
+    <p>For <abbr>FM</abbr> radio you <em>should</em> use quad-shield RG-6 but you can often get away with dual-shield, especially for things like short runs from the wall plate to the receiver.</p>
+    <p>With <abbr>AM</abbr> radio however quad-shield RG-6 really is a <strong>MUST</strong> for every part of the run.</p>
+    <p>If you are running SiriusXM or want to leave that option open for a future upgrade, it may be a good idea to use solid copper core RG-6. With some satellite TV it can be imperative in order to send control signals to the antenna, I do not know if satelite radio has the same issues. Solid core RG-6 is a bit more expensive but it certainly would not hurt to use it and may give you an easier upgrade path to sattelite radio in the future.</p>
+    <p>For <abbr>FM</abbr> you lose just under 3dB of signal for every 100 feet which is almost half the signal strength. Total run from antenna to receiver should be kept under 200 feet, the shorter the better. Longer runs are likely to require more amplification than what is used just to overcome the signal splitting. For an <abbr>FM</abbr> only run, the same kind of amplification used with television signal should work.</p>
+    <p>With <abbr>AM</abbr> the signal loss is far less, only about &#8531;dB is lost per 100 feet, signal loss is not really a problem. However when <em>amplifying the signal for <abbr>FM</abbr></em> then <abbr>AM</abbr> does in fact become a problem.</p>
+    <p>When long runs are involved that include both <abbr>AM</abbr> and <abbr>FM</abbr>, if there is a problem with <abbr>FM</abbr> reception you may want to contact Pixel Technologies for amplification solutions if the 12dB provided by the MBA-12 Inline Amp is not enough.</p>
+  </section>
+  <section id="bandsplit" aria-labelledby="bandsplit.label">
+    <h2 id="bandsplit.label">Receiver Connection</h2>
+    <p>At the coaxial endpoint, if you are only interested in <abbr>FM</abbr> you can just attach the coaxial cable at the end of the run to the 75Ω coaxial female F-connector antenna jack on the <abbr>FM</abbr> tuner. Some <abbr>FM</abbr> receivers designed for use with a folded dipole antenna expect a twin lead 300Ω impedance connection. In those cases you will need a 75Ω to 300Ω balun adapter. They are pretty cheap and are available from a wide variety of sources.</p>
+    <p>For receiving both <abbr>AM</abbr> and <abbr>FM</abbr> broadcasts the bands need to be split. This is done with the Pixel Technologies <a href="https://pixelsatradio.com/products/am-fm-band-separator" title="Internet Resource">AMFMBS-1 Band Separator</a>. If (and only if) you are also using the same coaxial run for SiriusXM Satelite Radio, you would <em>instead</em> want the <a href="https://pixelsatradio.com/collections/am-fm-products/products/am-fm-satellite-radio-triplexer" title="Internet Resource">AFST-1 Triplexer</a>.</p>
+    <p>The <abbr>FM</abbr> output can then attach to your receiver <abbr>FM</abbr> antenna input and the <abbr>AM</abbr> output can then attach to your <abbr>AM</abbr> antenna input. However, receivers do not typically come with a F-connector antenna jack for <abbr>AM</abbr>. You will almost certainly need to use a <a href="https://pixelsatradio.com/products/am-twin-lead-adaptor-for-am-antenna-terminals" title="Internet Resource">Twin Lead Adaptor for <abbr>AM</abbr> Antenna Terminals</a>.</p>
+    <p>Unfortunately there are several different methods of attaching an <abbr>AM</abbr> antenna to a receiver. Many if not most current receivers do use spring clip connectors, such as what is shown in the <a href="#figure.stereo">Opening Figure</a> of the back of my analog receiver.</p>
+    <p>Some receivers used other types of connectors for the <abbr>AM</abbr> antenna. You probably will have to wire such a connector to the twin leads youself in those cases, it seems historically there were many different <abbr>AM</abbr> antenna connector types used by different receivers over the years.</p>
+    <section id="sepkits" aria-labelledby="sepkits.label">
+      <h3 id="sepkits.label">Seperator Kits</h3>
+      <p>Everything you need to split a coax into separate <abbr>AM</abbr> and <abbr>FM</abbr> feeds can be purchased in the Pixel Technologies <a href="https://pixelsatradio.com/collections/siriusxm-satellite-radio-splitter-kits/products/am-fm-radio-signal-separator-kit" title="Internet Resource"><abbr>AM</abbr> <abbr>FM</abbr> Radio Signal Separator Kit</a>. One of these kits is included with the AFHD-4 Antenna kit, but you will need to buy additional kits if using a splitter to distribute the signal to multiple outputs.</p>
+      <p>If you are also running SeriusXM on the same coax, then instead you would want the Pixel Technologies <a href="https://pixelsatradio.com/collections/siriusxm-satellite-radio-splitter-kits/products/pixel-afst-1-multi-band-signal-separator-for-am-fm-sirius-xm-radio-signals" title="Internet Resource">AFST-1 Multi-band Signal Separator Kit</a>. One of these kits is included with the AFXSM-{5,6} AM FM HD SiriusXM Antenna Kit, but you will need to buy additional kits if using a splitter to distribute the signal to multiple outputs.</p>
+    </section>
+  </section>
+  <section id="sangean" aria-labelledby="sangean.label">
+    <h2 id="sangean.label">Sangean HDT-20 <abbr>AM</abbr>/<abbr>FM</abbr>/<abbr>HD</abbr> Tuner</h2>
+    <p>For a digital radio experience in your home entertainment center, I recommend the <a href="https://www.sangean.com/products/product.asp?mid=198&amp;cid=3" title="Internet Resource">Sangean HDT-20</a>.</p>
+    <p>It will pick up analog radio for stations that do not yet broadcast in digital and for stations that do broadcast digital, it will use the digital signal and also provide all side-stations broadcast on the same frequency.</p>
+    <p>The back has a standard 75Ω coaxial female F-connector antenna jack for <abbr>FM</abbr> reception and it has push-pin connectors for <abbr>AM</abbr> reception that work perfectly with the Twin Lead Adaptor for <abbr>AM</abbr> Antenna Terminals.</p>
+    <p>Historically, stereo system <abbr>AM</abbr>/<abbr>FM</abbr> tuners were also receivers that amplified audio signals and sent them to speakers. With digital audio the industry is now moving away from that model. The Sangean HDT-20 is <em>just a tuner</em>. It does require the use of a <em>separate</em> receiver to amplify the audio for your speakers, though there is a headphone jack on the front.</p>
+    <p>The unit does have left and right <abbr>RCA</abbr> analog audio output jacks if your receiver is not yet digital, but it also has both optical and coaxial <abbr>SPDIF</abbr> audio outputs for a digital receiver.</p>
+    <p>The unit comes with a cheap <abbr>AM</abbr> loop antenna if you want very limited <abbr>AM</abbr> capabilities and only want to distribute <abbr>FM</abbr> through a coaxial system, saving some money by allowing the use of common <abbr>TV</abbr> antenna grade splitters and amplifiers for the coaxial antenna run. Just be careful as some <abbr>TV</abbr> antenna grade amplifiers do intentionally filter out the <abbr>FM</abbr> band.</p>
+    <p>Of course your personal <abbr>FM</abbr> needs may be met by something like the Antop AT-212FM that I used for my analog reference test, it is a good antenna. There is nothing special about digital radio that requires a special type of antenna, and the only advantage to using a coaxial system to distribute a broadcast radio signal is the potential increased range from a larger antenna mounted in a better location as well as reduction in signal interference from appliances. The digital signal is still transmitted on an analog wave and there is no such thing as a &#8216;digital&#8217; <abbr>AM</abbr>/<abbr>FM</abbr> antenna, that is just marketing speak.</p>
+  </section>
+  
+  <section id="teste" aria-labelledby="teste.label">
+    <h2 id="teste.label">Test Environment</h2>\
+    <p>I decided to test the benefits of the AFHD-4 in my specific environment. This test is somewhat of an anecdote, your results performing a similar test would likely vary.</p>
+    <p>An inexpensive &#8216;Antop AT-212FM Curved Panel Amplified Indoor <abbr>AM</abbr>/<abbr>FM</abbr> Antenna&#8217; connected directly to the test receiver will be used as a reference antenna. I chose that as my reference antenna because it is a decent quality yet inexpensive indoor antenna with better reception than the junk that typically ships with a receiver. For many people it may be good enough. This guide is about saving money, not geek gadget pride.</p>
+    <p>My analog only Yamaha R-S201 receiver will be used to test how many stations on both bands are received for most of the tests. The very last test will use a <a href="#sangean">Sangean HDT-20</a> digital tuner to test the signal strength on the longest run from the splitter as well as which stations broadcasting digital radio are picked up as digital radio.</p>
+    <p>During all tests <em>except for the final interference tests</em> the fluorescent ballast in the garage adjacent to test room and antenna location, my <abbr>PC</abbr>, my <abbr>television</abbr>, and the <abbr>WiFi</abbr> router will all be turned off as they are all possible sources of interference. The interference tests will test the performance of the antenna system with those possible sources of interference turned on, but television will be muted.</p>
+    <p>Due to physical logistics, the tests can not be performed all on the same day so it is possible atmospheric difference can impact the results. All tests will be started at 1:00 <abbr>A.M.</abbr> when reception is typically very good.</p>
+  </section>
+  <section id="tests" aria-labelledby="tests.label">
+    <h2 id="tests.label">The Tests</h2>
+    <p>Each test will have a row of data indicating the frequency, call letters, heading, distance, transmission power (if known), reference reception quality, and test reception quality. Quality will simply indicate &#8216;N&#8217; for &#8216;Null&#8217;, &#8216;H&#8217; for &#8216;Horrid&#8217;, &#8216;P&#8217; for &#8216;Poor&#8217;, or &#8216;G&#8217; for &#8216;Hood&#8217;.</p>
+    <p>A rating of &#8216;Null&#8217; indicates I could not tell a station was there. A rating of &#8216;Horrid&#8217; indicates I can tell a station is there but I can not make any content out. A rating of &#8216;Poor&#8217; indicates I can make out the content but the audio content leaves a lot to be desired. A rating of &#8216;Good&#8217; indicates the content is clear.</p>
+    <p>The following five tests will be performed:</p>
+    <dl>
+      <dt>Reference:</dt>
+        <dd>Antop AT-212FM is connected directly to the analog receiver. This is to provide a reference for the performance of the AFHD-4 at my chosen install location relative to a less expensive but decent quality small indoor antenna.</dd>
+      <dt>Test 1:</dt>
+        <dd>The AFHD-4 Antenna is connected directly to the receiver without any amplification or splitting. A coaxial line will run straight from the antenna through my window to my receiver. This is to provide a reference for the capabilities of the AFHD-4 at my chosen install location.</dd>
+      <dt>Test 2:</dt>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter but the amplifier is bypassed, no signal amplification. This is to give a picture of what is lost as a result of unamplified signal splitting.</dd>
+      <dt>Test 3:</dt>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply. This is to guage whether or not the MBA-12 adds sufficient amplification for the splits and additional coaxial length involved.</dd>
+      <dt>Test 4:</dt>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply and possible sources of interference are active. This is to guage how potential sources of interference impact my intended installation location.</dd>
+      <dt>Test 5:</dt>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply and possible sources of interference are active. Rather than testing with the analog receiver attached to the shortest run from the splitter, the test is performed with a digital tuner attached to the longest run from the splitter. In this test, stations received as digital audio will have a &#8216;(DA)&#8217; after the rating code.</dd>
+    </dl>
+  </section>
+  
+  
 </section>
 </body>
 </html>
