@@ -30,7 +30,7 @@
     <item href="css/fonts.css" id="css.fonts" media-type="text/css"/>
     <item href="css/common.css" id="css.common" media-type="text/css"/>
     <item href="css/mathml.css" id="css.mathml" media-type="text/css"/>
-    <item href="css/radio.css" id="css.radio" media-type="text/css"/>
+    <item href="css/radiosvg.css" id="css.radio" media-type="text/css"/>
     <item href="css/a11y.css" id="css.a11y" media-type="text/css"/>
     <!-- fonts -->
     <item href="fonts/ClearSans-Regular-wlatin.ttf" id="font.ClearSans.Regular" media-type="font/otf"/>
