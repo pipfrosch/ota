@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
   <link rel="stylesheet" type="text/css" href="css/mathml.css"/>
+  <link rel="stylesheet" type="text/css" href="css/radio.css"/>
   <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
 </head>
 <body epub:type="bodymatter">
@@ -14,10 +15,12 @@
   <h1 id="radio.label">The Spirit of Radio</h1>
   <p>Television is not the only source of news and entertainment that uses radio transmissions that are free to receive. <abbr>AM</abbr> and <abbr>FM</abbr> radio predate television considerably and are both still very much alive.</p>
   <blockquote>&#8230;Invisible airwaves crackle with life&#8212;Bright antennae bristle with the energy&#8230;(Rush)</blockquote>
+  <hr class="half"/>
   <aside class="disclaimer" aria-labelledby="disclaimer.label">
     <h3 id="disclaimer.label">Disclaimer</h3>
     <p>This chapter heavily references parts from a company called Pixel Technologies. No money or discounts were received from Pixel Technologies, my only interactions with that company was as a full paying customer. Their parts are heavily referenced here because they make and sell quality parts needed to work with the broadcast <abbr>AM</abbr> band, I was not able to find any other companies that cared much about the <abbr>AM</abbr> band even though <abbr>AM</abbr> radio can often can be an extremely valuable resource for information and should not be ignored.</p>
   </aside>
+  <hr class="half"/>
   <p>Please note that if you are <em>only</em> interested in <abbr>FM</abbr> radio, things are somewhat simpler. The <abbr>FM</abbr> band falls between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> and most modern radio tuners (in the United States) with antenna input use the same 75Ω coaxial female F-connector antenna jack that ATSC television uses.</p>
   <figure id="figure.stereo" aria-labelledby="figure.stereo.label">
     <img src="images/stereo75.jpg" alt="Photo of ports on back of stereo receiver"/>
@@ -25,7 +28,7 @@
   </figure>
   <p>These 75Ω impedence antenna jacks and the location of the <abbr>FM</abbr> band within the <abbr>OTA</abbr> television bands allow for the same splitters and signal amplifiers that work with <abbr>OTA</abbr> television to also work well with <abbr>FM</abbr> broadcast.</p>
   <p>In fact for broadcast <abbr>FM</abbr> radio, if your television antenna works with both <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr> there is a good possibility it also works well for broadcast <abbr>FM</abbr> (at least for broadcasts from the same direction for which the antenna is pointed&#8230;)</p>
-  <p>To distribute <abbr>FM</abbr> broadcast to multiple destinations in your home you could just use a signal combiner to combine the output of an <abbr>FM</abbr> antenna with your television antenna. However in practice that is usually not the right solution. <abbr>ATSC</abbr> tuners do not decode <abbr>FM</abbr> signals (analog or digital) so thus you would lose about 4 dB of strength from each antenna when combining the signals only to then lose another 4 dB when the coaxial line is then split to feed both an <abbr>ATSC</abbr> tuner and an <abbr>FM</abbr> tuner in a room that wants both. That is a 7&#8211;8 dB loss can be avoided by running separate coaxial cables for television and radio.</p>
+  <p>To distribute only <abbr>FM</abbr> broadcast to multiple destinations in your home you could just use a signal combiner to combine the output of an <abbr>FM</abbr> antenna with your television antenna. However in practice that is usually not the right solution. <abbr>ATSC</abbr> tuners do not decode <abbr>FM</abbr> signals (analog or digital) so thus you would lose about 4 dB of signal strength from each antenna when combining the signals only to then lose another 4 dB when the coaxial line is then split to feed both an <abbr>ATSC</abbr> tuner and an <abbr>FM</abbr> tuner in a room that wants both. That is a 7&#8211;8 dB loss for both television and <abbr>FM</abbr> radio can be avoided by running separate coaxial cables for television and <abbr>FM</abbr> radio.</p>
   <p>If you also want <abbr>AM</abbr> radio, <abbr>AM</abbr> broadcasts in the 550&#8211;1720 kHz (0.55&#8211;1.72 MHz) band which unfortunately is well below the operational range for the amplifiers and splitters that are commonly used for <abbr>OTA</abbr> television.</p>
   <p>This chapter discusses setting up an <abbr>AM</abbr>/<abbr>FM</abbr> antenna for a signal distributed to multiple receivers through a coaxial cable <em>independent of the television coaxial cables</em>.</p>
   <p>Notes are also provided for those setting up a similar coaxial system that is either <abbr>FM</abbr> only or one that also supports distribution of a SiriusXM satelite radio signal.</p>
@@ -44,18 +47,18 @@
   <section id="location" aria-labelledby="location.label">
     <h2 id="location.label">Antenna Location</h2>
     <p>Generally the higher the antenna, the better the reception will be. However there are some considerations.</p>
-    <p>The highest possible install point at our home would be the chimney. The chimney is also farthest from obvious possible sources of noise at our home. However the chimney is on the south-east side of the home and the grounding rod is on the north-west side of the home. Properly <a href="bond_earth_ground.xhtml">earthing</a> the antenna would not be possible.</p>
+    <p>The highest possible install point at our home would be the chimney. The chimney is also farthest from obvious possible sources of electrical noise at our home. However the chimney is on the south-east side of the home and the grounding rod is on the north-west side of the home. Properly <a href="bond_earth_ground.xhtml">earthing</a> the antenna would not be possible.</p>
     <p>The next best location height-wise would be at the roof peak on the west side of the home. It could be earthed there, but installing the mast and antenna would be expensive because it would require a professional installer. I simply do not feel comfortable climbing that high on a ladder that would have to be fairly steep due to the fence location with our neighbor.</p>
     <p>There are some fake windows along the north side of the roof. Properly (in code compliance) earthing the antenna there though may not be possible, I am not sure. That location also could be considered an eye-sore generating complaints from neighbors.</p>
     <p>The location I did choose is on the west side of the house where the house roof meets the garage roof.</p>
-    <p>This location is fairly close to the grounding rod. It is set back from the street so that the antenna is barely visible from the street. The required ladder does need need to go as hight. It is also close to two of the three rooms that will have <abbr>AM</abbr>/<abbr>FM</abbr> receivers. As a bonus there is also already an existing mast for an ancient <abbr>TV</abbr> satellite that we do not use, that mast can be repurposed.</p>
+    <p>This location is fairly close to the grounding rod. It is set back from the street so that the antenna is barely visible from the street. The required ladder does need need to go as high. It is also close to three of the four rooms that will have <abbr>AM</abbr>/<abbr>FM</abbr> receivers. As a bonus there is also already an existing mast for an ancient <abbr>TV</abbr> satellite that we do not use, that mast can be repurposed.</p>
     <p>The downside to that location is that there is a fluorescent ballast in that garage and it is fairly close to our wireless router, both of which are potential sources of <abbr>AM</abbr> interference.</p>
   </section>
   <section id="splitter" aria-labelledby="splitter.label">
     <h2 id="splitter.label">Splitting the Signal</h2>
     <p>If you do not need to split the signal to service more than one tuner, <a href="#coax">skip ahead to Coaxial Cable</a>.</p>
     <p>If you are only interested in broadcast <abbr>FM</abbr>&#8212;you can use the same kind of splitters, amplified distributors, and preamplifiers you would use with a television antenna install. However there are some television preamplifiers that filter out the <abbr>FM</abbr> band, so avoid those.</p>
-    <p>The frequency band used by broadcast <abbr>AM</abbr> is way too low for most splitter and amplifiers. You <em>must</em> use splitters specifically designed to accomodate 0.55 MHz (550 KHz) at the bottom end. Also, if you are distributing SiriusXM as well, you need a splitter than handles up to 2400 MHz (2.4 GHz). Many splitters and aplified distributors for television do handle 2400 MHz but some only handle up to about 1000 MHz.</p>
+    <p>The frequency band used by broadcast <abbr>AM</abbr> is way too low for most splitters and amplifiers. You <em>must</em> use splitters specifically designed to accomodate 0.55 MHz (550 KHz) at the bottom end. Also, if you are distributing SiriusXM as well, you need a splitter than handles up to 2400 MHz (2.4 GHz). Many splitters and aplified distributors for television do handle 2400 MHz but some only handle up to about 1000 MHz.</p>
     <p>The Pixel Technologies <a href="https://pixelsatradio.com/collections/am-fm-products/products/pixel-mbs-4-siriusxm-multi-band-splitter" title="Internet Resource">MBS-4 Multi-band Splitter</a> is designed specifically for the 0.5&#8211;2400 MHz frequency wide-band.</p>
     <p><strong>Important:</strong> Any output that is not used should have a 75Ω termination cap.</p>
     <section id="preamp" aria-labelledby="preamp.label">
@@ -64,7 +67,7 @@
       <p>To amplify a coaxial signal carrying <abbr>AM</abbr> radio, use the Pixel Technologies <a href="https://pixelsatradio.com/products/ultra-wide-band-line-amplifier-for-am-fm-hd-radio-over-the-air-tv-and-satellite-radio" title="Internet Resource">MBA-12 Inline Amplifier</a>.</p>
       <p><strong>WARNING:</strong> Do not buy the Pixel Technologies SBA-1 inline amplifier by mistake. It is cheaper but it is specific to the frequency band used by SiriusXM (2320&#8211;2345 MHz). It will not work with either <abbr>AM</abbr> or <abbr>FM</abbr> frequencies.</p>
       <p>The MBA-12 amplifier should be placed as close to the antenna as possible to reduce the amplification of noise that enters the signal after the signal leaves the antenna.</p>
-      <p>To power the MBA-12, you will need a Pixel Technologies <a href="https://pixelsatradio.com/collections/power-accessories/products/pixel-technologies-siriusxm-5vdc-power-inserter-kit-ps-1" title="Internet Resource">PS-1 Power Inserter</a>. That power adapter comes with a coaxial insertion adapter that has one F connector that connects to the coaxial line coming from the antenna/amplifier, one F connector that would lead to the radio/splitter, and one F connector that connects to the 5V DC transformer (power brick). However if you are not using all four outputs on the MBS-4 splitter, you can also just feed the 5V power adapter to an unused output on the MBS-4 splitter. I do however still recommend using the inserter and terminating unused outputs.</p>
+      <p>To power the MBA-12, you will need a Pixel Technologies <a href="https://pixelsatradio.com/collections/power-accessories/products/pixel-technologies-siriusxm-5vdc-power-inserter-kit-ps-1" title="Internet Resource">PS-1 Power Inserter</a>. That power inserter comes with a coaxial insertion adapter that has one F connector that connects to the coaxial line coming from the antenna/amplifier, one F connector that would lead to the radio/splitter, and one F connector that connects to the 5V DC transformer (power brick). However if you are not using all four outputs on the MBS-4 splitter, you can also just feed the 5V power adapter to an unused output on the MBS-4 splitter. I do however still recommend using the inserter and terminating unused outputs.</p>
       <p>The power inserter should be inside the home even if the MBA-12 is outside the home. A coaxial grounding block between the MBA-12 and the PS-1 (where the coaxial line enters the home) will not hamper the operation of the amplifier. The DC voltage runs along the copper core, not the shielding that is what the grounding block bonds to the grounding rod.</p>
       <p>Please note that the power supply is 5 volts. The 12 volt power supplies sometimes used with television preamplifiers and amplified distributors may work but may be too much. When using the PS-1 to also power SiriusXM hardware I <em>believe</em> only using 5 volts is required but I <em>might</em> be wrong about that, I do not use SiriusXM. Anyway, just use the 5V DC transformer the PS-1 comes with.</p>
     </section>
@@ -74,7 +77,7 @@
     <p>For <abbr>FM</abbr> radio you <em>should</em> use quad-shield RG-6 but you can often get away with dual-shield, especially for things like short runs from the wall plate to the receiver.</p>
     <p>With <abbr>AM</abbr> radio however quad-shield RG-6 really is a <strong>MUST</strong> for every part of the run.</p>
     <p>It is fine to use copper clad steel core from the MBS-4 splitter to your destinations, but everything that carries voltage from the PS-1 transformer to the MBA-12 amplifier really should be the more expensive solid copper core RG-6. If you have a SiriusXM antenna, I <em>suspect</em> everything from the PS-1 transformer to the SiriusXM antenna also needs to be solid copper core RG-6.</p>
-    <p>For the <abbr>FM</abbr> broadcast band RG-6 loses just under 3 dB of signal strength for every 100 feet. The total run length from antenna to stereo receiver should therefore be kept under 200 feet and the shorter the better. Longer runs are likely to require more amplification than what is supplied by the MBA-12.</p>
+    <p>For the <abbr>FM</abbr> broadcast band RG-6 loses just under 3 dB of signal strength for every 100 feet. The total coaxial run length from the antenna to the stereo receiver should therefore be kept under 200 feet and the shorter the better. Longer runs are likely to require more amplification than what is supplied by the MBA-12.</p>
     <p>With the broadcast <abbr>AM</abbr> band the signal loss is far less, only about &#8531; dB is lost per 100 feet. Signal loss due to coaxial length is not really a problem for <abbr>AM</abbr> frequencies. However when <em>amplifying the signal for <abbr>FM</abbr></em> then <abbr>AM</abbr> does in fact become a problem because you <strong>must</strong> use an amplifier designed for the <abbr>AM</abbr> frequency band.</p>
     <p>When runs over 200 feet are involved that include both <abbr>AM</abbr> and <abbr>FM</abbr>, if there is a problem with <abbr>FM</abbr> reception you may want to contact Pixel Technologies for suggestions on amplification solutions if the 12 dB provided by the MBA-12 inline amplifier is not enough.</p>
   </section>
@@ -95,7 +98,7 @@
   <section id="sat" aria-labelledby="sat.label">
     <h2 id="sat.label">SiriusXM Expansion</h2>
     <p>If you initially wire your coaxial runs using components that can handle up to 2400 MHz (2.4 GHz), whether using the AFHD-4 antenna or if just using an <abbr>FM</abbr> only antenna, you can add SiriusXM in the future.</p>
-    <p>Contact <a href="https://pixelsatradio.com/" title="Internet Resource">Pixel Technologies</a> to discuss which SiriusXM satellite antenna and receivers you wish to use (they offer a couple models of each) and how it can be combined with the signal from your existing antenna. Make sure in such a contact to include a wiring diagram of your existing coaxial run for radio including the part numbers for each point along the way (e.g. your splitter, amplifier, etc.) and if possible, the lengths of each coaxial run as well as the coaxial specification of each run (e.g. quad core RG-6, solid copper core or copper clad steel, etc.)</p>
+    <p>Contact <a href="https://pixelsatradio.com/" title="Internet Resource">Pixel Technologies</a> to discuss which SiriusXM satellite antenna and receivers you wish to use (they offer a couple models of each) and how it can be combined with the signal from your existing antenna. Make sure in such a contact query to include wiring details of your existing coaxial run for radio, such as the part numbers for each point along the way (e.g. your splitter, amplifier, etc.) and if possible, the lengths of each coaxial run as well as the coaxial specification of each run (e.g. quad core RG-6, solid copper core or copper clad steel, etc.)</p>
     <p>They are good people and were pleasant to deal with even at the start of my wiring project when my purchases were small.</p>
   </section>
   <section id="sangean" aria-labelledby="sangean.label">
@@ -103,15 +106,15 @@
     <p>For a digital radio experience in your home entertainment center, I recommend the <a href="https://www.sangean.com/products/product.asp?mid=198&amp;cid=3" title="Internet Resource">Sangean HDT-20</a>. There are other options of course, but that model has the 17" width common for components installed within a home entertainment center.</p>
     <p>The Sangean HDT-20 will pick up analog radio for stations that do not yet broadcast in digital and for stations that do broadcast digital, it will of course use the digital signal and also provide any additional digital only content from side-stations broadcast on the same frequency.</p>
     <p>The back of the unit has a standard 75Ω coaxial female F-connector antenna jack for <abbr>FM</abbr> reception and it has push-pin connectors for <abbr>AM</abbr> reception that work perfectly with the Twin Lead Adaptor for <abbr>AM</abbr> Antenna Terminals.</p>
-    <p>Historically, stereo system <abbr>AM</abbr>/<abbr>FM</abbr> tuners were also receivers with speaker wiring jacks. With digital audio the industry is now moving away from that model and that actually makes sense as digital receivers often are designed for digital video as well as digital audio.</p>
-    <p>The Sangean HDT-20 is <em>just a tuner</em>. It requires the use of a <em>separate</em> receiver to amplify the audio and connect to your speakers, though there is a headphone jack on the front.</p>
+    <p>Historically, stereo system <abbr>AM</abbr>/<abbr>FM</abbr> tuners were also receivers with speaker wiring jacks. With digital audio the industry is now moving away from that model and that actually makes sense. Digital receivers are usually designed for digital video as well as digital audio.</p>
+    <p>The Sangean HDT-20 is <em>just a tuner</em>. It requires the use of a <em>separate</em> receiver to amplify the audio and send it to your speakers, though there is a headphone jack on the front.</p>
     <p>The unit does have left and right <abbr>RCA</abbr> analog audio output jacks if your audio receiver is not yet digital, but it also has both optical and coaxial <abbr>SPDIF</abbr> audio outputs for a digital audio receiver.</p>
-    <p>Please note that the Sangean HDT-20 is not a SiriusXM receiver. It would be nice to have a single component that does both Analog and Digital <abbr>AM</abbr>/<abbr>FM</abbr> as well as SiriusXM but there may not be enough market demand for mass manufacture a single component that does all of that as patent licenses in addition to parts would add to manufacturing costs. I despise how long patents last, that hurts both innovation and the consumer (<em>opinion</em>).</p>
+    <p>Please note that the Sangean HDT-20 is not a SiriusXM receiver. It would be nice to have a single component that does both Analog and Digital <abbr>AM</abbr>/<abbr>FM</abbr> as well as SiriusXM but there may not be enough market demand for mass manufacture a single component that does all of that as patent licenses in addition to parts would add to the manufacturing costs. I despise how long patents last, that hurts both innovation and the consumer (<em>opinion</em>).</p>
   </section>
   
   <section id="teste" aria-labelledby="teste.label">
     <h2 id="teste.label">Test Environment</h2>
-    <p>I decided to test the benefits of the AFHD-4 antenna in my specific environment. This test is somewhat limited in scope. Results performing a similar test at same house but with a different antenna install location could vary significantly.</p>
+    <p>I decided to test the benefits of the AFHD-4 antenna in my specific environment. This test is somewhat limited in scope. Results performing a similar test at the same house but with a different antenna install location could vary significantly.</p>
     <p>An inexpensive &#8216;Antop AT-212FM Curved Panel Amplified Indoor <abbr>AM</abbr>/<abbr>FM</abbr> Antenna&#8217; connected directly to the test analog tuner/receiver is used as the reference antenna. I chose that as my reference antenna because it is a decent quality yet inexpensive indoor antenna which has better reception than the junk antennas that currently ships bundled with a tuner (usually just a piece of wire for <abbr>FM</abbr> and a wire loop mounted inside cheap plastic for <abbr>AM</abbr>.)</p>
     <p>My analog only Yamaha R-S201 receiver will be used to test how many stations on both bands are received for most of the tests. The very last test will use a <a href="#sangean">Sangean HDT-20</a> digital tuner to test the signal strength on the longest run from the splitter as well as which stations broadcasting digital radio are picked up as digital radio.</p>
     <p>During all tests <em>except for the final interference tests</em> the fluorescent ballast in the garage adjacent to test room and antenna location, my <abbr>PC</abbr>, my <abbr>television</abbr>, and the <abbr>WiFi</abbr> router will all be turned off as they are all possible sources of interference. The two final tests will test the performance of the antenna system with those possible sources of interference turned on, but my television will be muted.</p>
@@ -120,7 +123,7 @@
   <section id="tests" aria-labelledby="tests.label">
     <h2 id="tests.label">The Tests</h2>
     <p>The test results are presented in a table with row of data indicating the frequency, call letters, heading, distance, transmission power (if known), and inidividual test quality. Quality will simply indicate &#8216;N&#8217; for &#8216;Null&#8217;, &#8216;H&#8217; for &#8216;Horrid&#8217;, &#8216;P&#8217; for &#8216;Poor&#8217;, or &#8216;G&#8217; for &#8216;Good&#8217;.</p>
-    <p>A rating of &#8216;Null&#8217; indicates I could not tell a station was there. A rating of &#8216;Horrid&#8217; indicates I can tell a station is there but I can not make any content out. A rating of &#8216;Poor&#8217; indicates I can make out the content but the audio content leaves a lot to be desired. A rating of &#8216;Good&#8217; indicates the content is clearly audible.</p>
+    <p>A rating of &#8216;Null&#8217; indicates I could not tell a station was there. A rating of &#8216;Horrid&#8217; indicates I can tell a station is there but I can not make any content out. A rating of &#8216;Poor&#8217; indicates I can make out the content but the audio quality leaves a lot to be desired. A rating of &#8216;Good&#8217; indicates the content is clearly audible.</p>
     <p>The following five tests will be performed:</p>
     <dl>
       <dt>Reference:</dt>
@@ -130,19 +133,76 @@
       <dt>Test 2:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter but the amplifier is bypassed, no signal amplification. This is to give a picture of what is lost as a result of unamplified signal splitting.</dd>
       <dt>Test 3:</dt>
-        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply. This is to guage whether or not the MBA-12 adds sufficient amplification for the splits and additional coaxial length involved.</dd>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter. This is to guage whether or not the MBA-12 adds sufficient amplification for the splits and additional coaxial length involved.</dd>
       <dt>Test 4:</dt>
-        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply and possible sources of interference are active. This is to guage how potential sources of interference impact my intended installation location.</dd>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter and possible sources of interference are active. This is to guage how potential sources of interference impact my intended installation location.</dd>
       <dt>Test 5:</dt>
-        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power supply and possible sources of interference are active. Rather than testing with the analog receiver attached to the shortest run from the splitter, the test is performed with a digital tuner attached to the longest run from the splitter. In this test, stations received as digital audio will have a &#8216;(DA)&#8217; after the rating code. Stations that should be received as digital but were only tuned as analog with have a &#8216;(AA)&#8217; after the rating code. Stations that only broadcast in analog will not have either after the rating code.</dd>
-        <dd>Due to scrolling limitations in most ePub viewers, the results table is actually broken up into several tables.</dd>
+        <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter and possible sources of interference are active. Rather than testing with the analog receiver attached to a short run from the splitter, the test is performed with a digital tuner attached to the longest run from the splitter. In this test, stations received as digital audio will have a &#8216;(DA)&#8217; after the rating code. Stations that should be received as digital but were only tuned as analog with have a &#8216;(AA)&#8217; after the rating code. Stations that only broadcast in analog will not have either after the rating code.</dd>
     </dl>
+  <p>Due to scrolling limitations in most ePub viewers, the results table is actually broken up into several tables.</p>
   </section>
   <section id="diagram" aria-labelledby="diagram.label">
     <h2 id="diagram.label">Wiring Diagram of My Setup</h2>
   </section>
+  <svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+     width="100%" role="img"
+     aria-labelledby="thesvgtitle"
+     aria-describedby="thesvgdesc"
+     viewBox="0 0 560 714" preserveAspectRatio="xMaxYMin">
+<title id="thesvgtitle">Radio Antenna Coaxial Distribution</title>
+<desc id="thesvgdesc">
+Description here
+</desc>
+<image xlink:href="svg/radio.svg" width="560" height="714" x="0" y="0"/>
+<g id="legend">
+  <path stroke="none" fill="red" d="
+    M23,213 l24,0 l0,24 l-24,0 l0,-24z
+  "/>
+  <text x="55" y="225" class="mdb">RF Signal Input Connector</text>
+  <circle cx="35" cy="264" r="12" fill="blue"/>
+  <text x="55" y="264" class="mdb">RF Signal Output Connector</text>
+  <path stroke="black" stroke-width="6" fill="none" d="M23,303 l24,0"></path>
+  <text x="55" y="303" class="mdb">RF Signal RG6</text>
+  <path stroke="black" stroke-width="6" stroke-dasharray="3 2" fill="none" d="M23,342 l24,0"></path>
+  <text x="55" y="342" class="mdb">Amp Power RG6</text>
   
+  <text x="50" y="32" class="mta">AFHD-4</text>
   
+  <text x="160" y="115" class="mta">Surge</text>
+  <text x="300" y="100" class="mta">MBA 12 (+12 dB)</text>
+  
+  <text x="455" y="95" class="mta">Grounding</text>
+  <text x="455" y="115" class="mta">Block</text>
+  <text x="505" y="250" class="mta">Earth</text>
+  
+  <text x="335" y="315" class="mta mdb">PS-1 PI</text>
+  <text x="485" y="375" class="mta">+5V DC</text>
+  <text x="485" y="395" class="mta">PS-1 Brick</text>
+  <text x="485" y="415" class="mta">(Garage)</text>
+  
+  <text x="280" y="447.5" class="mta mdb">MBS-4</text>
+  
+  <text x="112" y="590" class="mta mdb">AMFMBS-1</text>
+  <text x="77" y="672" class="eta">AM</text>
+  <text x="142" y="672" class="mta">75Ω FM</text>
+  <text x="112" y="692" class="mta">(Yamaha R-S201)</text>
+  
+  <text x="448" y="590" class="mta mdb">AMFMBS-1</text>
+  <text x="413" y="672" class="eta">AM</text>
+  <text x="478" y="672" class="mta">75Ω FM</text>
+  <text x="448" y="692" class="mta">(Sangean HDT-20)</text>
+  
+  <text x="224" y="587" class="mta">75Ω FM</text>
+  <text x="224" y="607" class="mta">(Bose Wave)</text>
+  
+  <text x="336" y="587" class="mta">75Ω</text>
+  <text x="336" y="607" class="mta">Terminated</text>
+  <text x="336" y="627" class="mta">(future use)</text>
+  
+</g>
+</svg>
 </section>
 </body>
 </html>

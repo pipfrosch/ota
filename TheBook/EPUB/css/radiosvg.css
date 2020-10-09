@@ -1,0 +1,15 @@
+text {
+  font-family: 'Clear Sans', sans-serif;
+}
+
+text.mta {
+  text-anchor: middle;
+}
+
+text.eta {
+  text-anchor: end;
+}
+
+text.mdb {
+  dominant-baseline: middle;
+}

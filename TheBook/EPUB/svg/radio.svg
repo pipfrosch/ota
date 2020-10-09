@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+     viewBox="0 0 560 714" width="1120" height="1428">
+<title>Radio Antenna Coaxial Distribution</title>
+<defs>
+  <g id="output">
+    <circle cx="0" cy="0" r="6" fill="blue" />
+  </g>
+  <g id="input">
+    <path fill="red" stroke="none" d="
+    M-6,6 l12,0 l0,-12 l-12,0 l0,12z
+    "/>
+  </g>
+  <g id="antenna">
+    <path stroke="black" stroke-width="2" fill="none" d="M0,0 l0,-90 m-25,0 l25,35 l25,-35"/>
+    <path stroke="none" fill="black" d="M0,-20 l-10,-20 l20,0 l-10,20z"/>
+  </g>
+  <g id="surge">
+    <circle cx="0" cy="0" r="25" stroke="black" stroke-width="2" fill="none" />
+    <path stroke="none" fill="black" d="M-4,0 l-13,7 l0,-14 l13,7z"/>
+    <path stroke="none" fill="black" d="M4,0 l13,7 l0,-14 l-13,7z"/>
+    <circle cx="-8" cy="10" r="3" fill="black" />
+  </g>
+  <g id="amp">
+    <path stroke="black" fill="none" stroke-width="2" d="M0,-25 l0,50 l60,-25 l-60,-25z"/>
+    <path stroke="black" fill="none" stroke-width="1" d="M40,-7 l0,-30"/>
+    <path stroke="black" fill="none" stroke-width="1" d="M40,7 l0,30"/>
+    <path stroke="black" fill="none" stroke-width="1" d="M45,-35 l14,0 m-7,-7 l0,14"/>
+    <path stroke="black" fill="none" stroke-width="1" d="M45,35 l14,0"/>
+  </g>
+  <g id="block">
+    <path stroke="black" stroke-width="2" fill="none" d="M0,-25 l0,50 l50,0 l0,-50 l-50,0z"/>
+    <path stroke="black" stroke-width="1" fill="none" d="M50,15 l10,0 a 15,40 0 0 1 15,40 l0,20 m-15,0 l30,0 m-25,5 l20,0 m-15,5 l10,0"/>
+  </g>
+  <g id="pi">
+    <path stroke="black" stroke-width="2" fill="none" d="M0,-15 l0,50 l-80,0 l0,-50 l80,0z"/>
+    <path stroke="black" stroke-width="3" stroke-dasharray="3 2" fill="none" d="M0,20 l110,0 l0,25"/>
+    <path stroke="black" fill="none" stroke-width="1" d="M-20,20 l14,0 m-7,-7 l0,14"/>
+  </g>
+  <g id="splitter">
+    <path stroke="black" stroke-width="2" fill="none" d="
+    M-80,0 l0,65 l160,0 l0,-65 l-160,0z
+    "/>
+  </g>
+  <g id="separator">
+    <path stroke="black" stroke-width="2" fill="none" d="
+    M-55,0 l110,0 l0,50 l-110,0 l0,-50z
+    "/>
+  </g>
+</defs>
+
+<path stroke="none" fill="wheat" d="M0,0 l560,0 l0,714 l-560,0 l0,-714z"/>
+
+<path stroke-width="3" stroke="black" fill="none" d=" M50,130 l0,20 l100,0 m20,0 l100,0 m60,0 l100,0 m25,25 l0,140 l-80,0 m-80,0 l-15,0 l0,100 m-48,65 l0,25 l-120,0 l0,60 m152,-85 l0,50 l-40,0 l0,35 m72,-85 l0,50 l40,0 l0,35 m-8,-85 l0,25 l120,0 l0,60
+m-366,50 l0,35
+m60,-35 l0,35
+m276,-35 l0,35
+m60,-35 l0,35
+"/>
+
+
+<use xlink:href="#antenna" x="50" y="130" />
+<use xlink:href="#surge" x="160" y="150" />
+<use xlink:href="#amp" x="270" y="150" />
+<use xlink:href="#block" x="430" y="150" />
+<use xlink:href="#pi" x="375" y="315" />
+<use xlink:href="#splitter" x="280" y="415" />
+<use id="sep1" xlink:href="#separator" x="112" y="565"/>
+<use id="sep4" xlink:href="#separator" x="448" y="565"/>
+
+<use id="antenna_output" xlink:href="#output" x="50" y="130" />
+<use id="surge_input" xlink:href="#input" x="135" y="150" />
+<use id="surge_output" xlink:href="#output" x="185" y="150" /> 
+<use id="amp_input" xlink:href="#input" x="270" y="150" />
+<use id="amp_output" xlink:href="#output" x="330" y="150" />
+<use id="gb_input" xlink:href="#input" x="430" y="150" />
+<use id="gb_output" xlink:href="#output" x="455" y="175" />
+<use id="pi_input" xlink:href="#input" x="375" y="315" />
+<use id="pi_output" xlink:href="#output" x="295" y="315" />
+<use id="split_input" xlink:href="#input" x="280" y="415" />
+
+<use id="split_out1" xlink:href="#output" x="232" y="480"/>
+<use id="split_out2" xlink:href="#output" x="264" y="480"/>
+<use id="split_out3" xlink:href="#output" x="296" y="480"/>
+<use id="split_out4" xlink:href="#output" x="328" y="480"/>
+
+<use id="wall_1" xlink:href="#input" x="112" y="565"/>
+<use id="wall_2" xlink:href="#input" x="224" y="565"/>
+<use id="wall_3" xlink:href="#input" x="336" y="565"/>
+<use id="wall_4" xlink:href="#input" x="448" y="565"/>
+
+<use id="sep1_am" xlink:href="#output" x="82" y="615"/>
+<use id="sep1_fm" xlink:href="#output" x="142" y="615"/>
+<use id="sep4_am" xlink:href="#output" x="418" y="615"/>
+<use id="sep4_fm" xlink:href="#output" x="478" y="615"/>
+
+<use id="analog_am" xlink:href="#input" x="82" y="650"/>
+<use id="analog_fm" xlink:href="#input" x="142" y="650"/>
+<use id="digital_am" xlink:href="#input" x="418" y="650"/>
+<use id="digital_fm" xlink:href="#input" x="478" y="650"/>
+
+</svg>
