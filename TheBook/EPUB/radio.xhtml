@@ -76,8 +76,8 @@
     <h2 id="coax.label">Coaxial Cable</h2>
     <p>For <abbr>FM</abbr> radio you <em>should</em> use quad-shield RG-6 but you can often get away with dual-shield, especially for things like short runs from the wall plate to the receiver.</p>
     <p>With <abbr>AM</abbr> radio however quad-shield RG-6 really is a <strong>MUST</strong> for every part of the run.</p>
-    <p>It is fine to use copper clad steel core from the MBS-4 splitter to your destinations, but everything that carries voltage from the PS-1 transformer to the MBA-12 amplifier really should be the more expensive solid copper core RG-6. If you have a SiriusXM antenna, I <em>suspect</em> everything from the PS-1 transformer to the SiriusXM antenna also needs to be solid copper core RG-6.</p>
-    <p>For the <abbr>FM</abbr> broadcast band RG-6 loses just under 3 dB of signal strength for every 100 feet. The total coaxial run length from the antenna to the stereo receiver should therefore be kept under 200 feet and the shorter the better. Longer runs are likely to require more amplification than what is supplied by the MBA-12.</p>
+    <p>It is perfectly fine to use copper clad steel core from the MBS-4 splitter to your destinations, RF does not benefit from solid core copper. Everything that carries voltage from the PS-1 transformer to the MBA-12 amplifier really should be the more expensive solid core copper RG-6 <em>if you can find it without needing to buy excessive amounts</em>. Most people who use copper clad steel do not report any issues but for carrying voltage, the solid copper core is technically superior.</p>
+    <p>For the <abbr>FM</abbr> broadcast band RG-6 loses just under 3 dB of signal strength for every 100 feet. The total coaxial run length from the antenna to the stereo receiver should therefore be kept under 200 feet and the shorter the better. Longer runs may require more amplification than what is supplied by the MBA-12.</p>
     <p>With the broadcast <abbr>AM</abbr> band the signal loss is far less, only about &#8531; dB is lost per 100 feet. Signal loss due to coaxial length is not really a problem for <abbr>AM</abbr> frequencies. However when <em>amplifying the signal for <abbr>FM</abbr></em> then <abbr>AM</abbr> does in fact become a problem because you <strong>must</strong> use an amplifier designed for the <abbr>AM</abbr> frequency band.</p>
     <p>When runs over 200 feet are involved that include both <abbr>AM</abbr> and <abbr>FM</abbr>, if there is a problem with <abbr>FM</abbr> reception you may want to contact Pixel Technologies for suggestions on amplification solutions if the 12 dB provided by the MBA-12 inline amplifier is not enough.</p>
   </section>
@@ -98,7 +98,7 @@
   <section id="sat" aria-labelledby="sat.label">
     <h2 id="sat.label">SiriusXM Expansion</h2>
     <p>If you initially wire your coaxial runs using components that can handle up to 2400 MHz (2.4 GHz), whether using the AFHD-4 antenna or if just using an <abbr>FM</abbr> only antenna, you can add SiriusXM in the future.</p>
-    <p>Contact <a href="https://pixelsatradio.com/" title="Internet Resource">Pixel Technologies</a> to discuss which SiriusXM satellite antenna and receivers you wish to use (they offer a couple models of each) and how it can be combined with the signal from your existing antenna. Make sure in such a contact query to include wiring details of your existing coaxial run for radio, such as the part numbers for each point along the way (e.g. your splitter, amplifier, etc.) and if possible, the lengths of each coaxial run as well as the coaxial specification of each run (e.g. quad core RG-6, solid copper core or copper clad steel, etc.)</p>
+    <p>Contact <a href="https://pixelsatradio.com/" title="Internet Resource">Pixel Technologies</a> to discuss which SiriusXM satellite antenna and receivers you wish to use (they offer a couple models of each) and how it can be combined with the signal from your existing antenna. Make sure in such a contact query to include wiring details of your existing coaxial run for radio, such as the part numbers for each point along the way (e.g. your splitter, amplifier, etc.) and if possible, the lengths of each coaxial run.</p>
     <p>They are good people and were pleasant to deal with even at the start of my wiring project when my purchases were small.</p>
   </section>
   <section id="sangean" aria-labelledby="sangean.label">
@@ -143,6 +143,7 @@
   </section>
   <section id="diagram" aria-labelledby="diagram.label">
     <h2 id="diagram.label">Wiring Diagram of My Setup</h2>
+    <p>The following wiring diagram shows how <abbr>AM</abbr> and <abbr>FM</abbr> signals are distributed through the home. Some of the symbols used may not be standard, but the legend should help clarify what is what.</p>
   </section>
   <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -153,7 +154,7 @@
      viewBox="0 0 560 714" preserveAspectRatio="xMaxYMin">
 <title id="thesvgtitle">Radio Antenna Coaxial Distribution</title>
 <desc id="thesvgdesc">
-Description here
+The radio frequency signal, abbreviated as RF, enters the coaxial system from an AFHD-4 antenna. The RF signal then enters and exits a surge surpressor before entering an MBA 12 amplifier where the RF signal is amplified by about 12 decibels. After leaving the amplifier, the RF signal enters a coaxial grounding block which is electrically bonded to the earth through a grounding rod. The RF signal leaves the grounding block where it then enters a PS-1 Power Inserter that supplies the 5 volts of direct current voltage needed by the previously mentioned MBA 12 amplifier. The RF signal leaves the PS-1 Power Inserter where it then enters a MBS-4 signal splitter to be split four ways. The first split from the MBS-4 enters an AMFMBS-1 RF signal separator, where the AM and FM bands are split into distinct RF signals which feed the AM and FM antenna inputs on a Yamaha R-S201 receiver. The second split from the MBS-4 does not have the frequency bands splits, it just enters the FM antenna port on a Bose Wave. The third split from the MBS-4 is currently terminated by a 75Ω termination cap to be used for a radio in the future. The fourth split from the MBS-4 enters a second AMFMBS-1 signal separator where the AM and FM bands are separated to feed the AM and FM antenna inputs on a Sangean HDT-20 tuner.
 </desc>
 <image xlink:href="svg/radio.svg" width="560" height="714" x="0" y="0"/>
 <g id="legend">
