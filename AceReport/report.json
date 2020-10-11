@@ -3,7 +3,7 @@
   "@context": "http://daisy.github.io/ace/ace-report-1.0.jsonld",
   "dct:title": "Ace Report",
   "dct:description": "Report on automated accessibility checks for EPUB",
-  "dct:date": "9/30/2020, 6:57:13 PM",
+  "dct:date": "10/11/2020, 2:20:23 AM",
   "earl:assertedBy": {
     "@type": "earl:software",
     "doap:name": "DAISY Ace",
@@ -15,19 +15,35 @@
     }
   },
   "outlines": {
-    "toc": "<ol xmlns=\"http://www.w3.org/1999/xhtml\">\n    <li>Bonding, Earthing, and Grounding</li>\n  </ol>",
-    "headings": "<ul><li><span class=\"toc-h1\">Bonding, Earthing, and Grounding</span><ul><li><span class=\"toc-h2\">Bonding</span><li><span class=\"toc-h2\">Earthing</span><li><span class=\"toc-h2\">Grounding and Bonding to Ground</span><li><span class=\"toc-h2\">Summary</span><li><span class=\"toc-h2\">Notes</span></li></ul></li></ul>",
-    "html": "<ol><li><ol><li><i>Untitled BODY</i><ol><li>Bonding, Earthing, and Grounding<ol><li>Bonding</li><li>Earthing</li><li>Grounding and Bonding to Ground</li><li>Summary</li><li>Notes</li></ol></li></ol></li></ol></li></ol>"
+    "toc": "<ol xmlns=\"http://www.w3.org/1999/xhtml\">\n    <li>Antenna Selection</li>\n    <li>Bonding, Earthing, and Grounding</li>\n    <li>The Spirit of Radio</li>\n    <li>Author‘s Home</li>\n  </ol>",
+    "headings": "<ul><li><span class=\"toc-h1\">Antenna Selection</span><ul><li><span class=\"toc-h2\">Install Location</span><li><span class=\"toc-h2\">Frequency Bands and Antenna Types</span><ul><li><span class=\"toc-h3\">Loop Antenna</span></li></ul></li><li><span class=\"toc-h2\">Ultra High Frequency Television</span><li><span class=\"toc-h2\">Very High Frequency Television</span><li><span class=\"toc-h2\">The Spirit of Radio</span><li><span class=\"toc-h2\">Distance and Direction</span><li><span class=\"toc-h2\">Signal Combiner</span><li><span class=\"toc-h2\">Antenna Vendors</span></li></ul></li><li><span class=\"toc-h1\">Bonding, Earthing, and Grounding</span><ul><li><span class=\"toc-h2\">Bonding</span><li><span class=\"toc-h2\">Earthing</span><li><span class=\"toc-h2\">Grounding and Bonding to Ground</span><li><span class=\"toc-h2\">Ground Loop</span><li><span class=\"toc-h2\">Summary</span><li><span class=\"toc-h2\">Notes</span></li></ul></li><li><span class=\"toc-h1\">The Spirit of Radio</span><ul><li><span class=\"toc-missing\">Missing heading: h2</span><ul><li><span class=\"toc-h3\">Disclaimer</span></li></ul></li><li><span class=\"toc-h2\">Antenna Selection</span><li><span class=\"toc-h2\">Antenna Location</span><li><span class=\"toc-h2\">Splitting the Signal</span><ul><li><span class=\"toc-h3\">AM Compatible Inline Amplifier</span></li></ul></li><li><span class=\"toc-h2\">Coaxial Cable</span><li><span class=\"toc-h2\">Receiver Connection</span><ul><li><span class=\"toc-h3\">Seperator Kits</span></li></ul></li><li><span class=\"toc-h2\">SiriusXM Expansion</span><li><span class=\"toc-h2\">Sangean HDT-20 AM/FM/HD Tuner</span><li><span class=\"toc-h2\">Test Environment</span><li><span class=\"toc-h2\">The Tests</span></li></ul></li><li><span class=\"toc-h1\">Author’s Home</span><ul><li><span class=\"toc-h2\">Brief Description of Our Home</span><li><span class=\"toc-h2\">Over The Air Reception Plan</span><li><span class=\"toc-h2\">Phase 1: West Wing</span><li><span class=\"toc-h2\">Phase 2: Amplifier Power</span><li><span class=\"toc-h2\">Phase 3: East Wing</span><li><span class=\"toc-h2\">Phase 4: Entertainment Center Rebuild</span><li><span class=\"toc-h2\">Phase 5: Broadcast Radio Antenna</span><li><span class=\"toc-h2\">Hypothetical Updates</span><li><span class=\"toc-h2\">Coaxial Wiring Diagram for Broadcast Radio Setup</span></li></ul></li></ul>",
+    "html": "<ol><li><ol><li><i>Untitled BODY</i><ol><li>Antenna Selection<ol><li>Install Location</li><li>Frequency Bands and Antenna Types<ol><li>Loop Antenna</li></ol></li><li>Ultra High Frequency Television</li><li>Very High Frequency Television</li><li>The Spirit of Radio</li><li>Distance and Direction</li><li>Signal Combiner</li><li>Antenna Vendors</li></ol></li></ol></li></ol></li><li><ol><li><i>Untitled BODY</i><ol><li>Bonding, Earthing, and Grounding<ol><li>Bonding</li><li>Earthing</li><li>Grounding and Bonding to Ground</li><li>Ground Loop</li><li>Summary</li><li>Notes</li></ol></li></ol></li></ol></li><li><ol><li><i>Untitled BODY</i><ol><li>The Spirit of Radio<ol><li>Disclaimer</li><li>Antenna Selection</li><li>Antenna Location</li><li>Splitting the Signal<ol><li>AM Compatible Inline Amplifier</li></ol></li><li>Coaxial Cable</li><li>Receiver Connection<ol><li>Seperator Kits</li></ol></li><li>SiriusXM Expansion</li><li>Sangean HDT-20 AM/FM/HD Tuner</li><li>Test Environment</li><li>The Tests</li></ol></li></ol></li></ol></li><li><ol><li><i>Untitled BODY</i><ol><li>Author’s Home<ol><li>Brief Description of Our Home</li><li>Over The Air Reception Plan</li><li>Phase 1: West Wing</li><li>Phase 2: Amplifier Power</li><li>Phase 3: East Wing</li><li>Phase 4: Entertainment Center Rebuild</li><li>Phase 5: Broadcast Radio Antenna</li><li>Hypothetical Updates</li><li>Coaxial Wiring Diagram for Broadcast Radio Setup</li></ol></li></ol></li></ol></li></ol>"
   },
   "data": {
     "images": [
+      {
+        "src": "EPUB/images/stereo75.jpg",
+        "alt": "Photo of ports on back of stereo receiver",
+        "role": null,
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/stereo75.jpg\" alt=\"Photo of ports on back of stereo receiver\" />",
+        "figcaption": "The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack",
+        "location": "antenna_selection.xhtml#epubcfi(/4/2/14[radio]/8/2)"
+      },
+      {
+        "src": "EPUB/images/transmap.jpg",
+        "alt": null,
+        "role": null,
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/transmap.jpg\" />",
+        "figcaption": "Generated map showing broadcast transmitter locations centered around the city of Brentwood in the San Francisco Bay Area.",
+        "location": "antenna_selection.xhtml#epubcfi(/4/2/16[clusters]/12[transmap]/2)"
+      },
       {
         "src": "EPUB/images/bonding.jpg",
         "alt": "Photograph of two metal water pipes entering a wall. Attached to each pipe is a ground clamp. An unshielded heavy wire runs between the ground clamps.",
         "role": null,
         "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/bonding.jpg\" alt=\"Photograph of two metal water pipes entering a wall. Attached to each pipe is a ground clamp. An unshielded heavy wire runs between the ground clamps.\" />",
         "figcaption": "Two pipes bonded together with a solid core wire.",
-        "location": "bond_earth_fire.xhtml#epubcfi(/4/2/14[bonding]/6[figure.bonding]/2)"
+        "location": "bond_earth_ground.xhtml#epubcfi(/4/2/16[bonding]/6[figure.bonding]/2)"
       },
       {
         "src": "EPUB/images/water_main.jpg",
@@ -35,7 +51,15 @@
         "role": null,
         "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/water_main.jpg\" alt=\"Photograph of the outside of a house showing the main electrical box, the water main, and the natural gas meter.\" />",
         "figcaption": "This house was built in 2001 and either does not have an actual ground rod or the ground rod is completely burried and is not accessible. However since the water main is within five feet of the main electrical box, the water main could be used as a ground rod. Paint would have to be scraped off before attaching the clamps for the earthing wires from an antenna.",
-        "location": "bond_earth_fire.xhtml#epubcfi(/4/2/22[notes]/8[figure.watermain]/2)"
+        "location": "bond_earth_ground.xhtml#epubcfi(/4/2/26[notes]/8[figure.watermain]/2)"
+      },
+      {
+        "src": "EPUB/images/stereo75.jpg",
+        "alt": "Photo of ports on back of stereo receiver",
+        "role": null,
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/stereo75.jpg\" alt=\"Photo of ports on back of stereo receiver\" />",
+        "figcaption": "The back of my Yamaha R-S201 receiver showing a 75Ω coaxial female F-connector antenna jack for FM and a two push-wire connectors for AM.",
+        "location": "radio.xhtml#epubcfi(/4/2/16[figure.stereo]/2)"
       }
     ]
   },
@@ -44,7 +68,7 @@
     "hasBindings": false,
     "hasSVGContentDocuments": false,
     "hasFormElements": false,
-    "hasMathML": false,
+    "hasMathML": true,
     "hasPageBreaks": false
   },
   "earl:testSubject": {
@@ -73,7 +97,7 @@
         "noSoundHazard",
         "noMotionSimulationHazard"
       ],
-      "dcterms:modified": "2020-10-01T01:57:09Z"
+      "dcterms:modified": "2020-10-11T09:20:18Z"
     },
     "links": {}
   },
@@ -108,16 +132,118 @@
     {
       "@type": "earl:assertion",
       "earl:result": {
+        "earl:outcome": "fail"
+      },
+      "assertions": [
+        {
+          "@type": "earl:assertion",
+          "earl:result": {
+            "earl:outcome": "fail",
+            "dct:description": "Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+            "earl:pointer": {
+              "cfi": [
+                "/4/2/16[clusters]/12[transmap]/2"
+              ],
+              "css": [
+                "img[src$=\"transmap\\.jpg\"]"
+              ]
+            },
+            "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/transmap.jpg\" />"
+          },
+          "earl:assertedBy": "aXe",
+          "earl:mode": "automatic",
+          "earl:test": {
+            "earl:impact": "critical",
+            "dct:title": "image-alt",
+            "dct:description": "Ensures <img> elements have alternate text or a role of none or presentation",
+            "help": {
+              "url": "http://kb.daisy.org/publishing/docs/html/images.html",
+              "dct:title": "Images",
+              "dct:description": "Images must have alternate text"
+            },
+            "rulesetTags": [
+              "cat.text-alternatives",
+              "wcag2a",
+              "wcag111",
+              "section508",
+              "section508.22.a"
+            ]
+          }
+        }
+      ],
+      "earl:testSubject": {
+        "url": "antenna_selection.xhtml",
+        "dct:title": "Antenna Selection"
+      }
+    },
+    {
+      "@type": "earl:assertion",
+      "earl:result": {
         "earl:outcome": "pass"
       },
       "assertions": [],
       "earl:testSubject": {
-        "url": "bond_earth_fire.xhtml",
+        "url": "bond_earth_ground.xhtml",
         "dct:title": "Bonding, Earthing, and Grounding"
+      }
+    },
+    {
+      "@type": "earl:assertion",
+      "earl:result": {
+        "earl:outcome": "fail"
+      },
+      "assertions": [
+        {
+          "@type": "earl:assertion",
+          "earl:result": {
+            "earl:outcome": "fail",
+            "dct:description": "Heading order invalid",
+            "earl:pointer": {
+              "cfi": [
+                "/4/2/10/2[disclaimer.label]"
+              ],
+              "css": [
+                "#disclaimer\\.label"
+              ]
+            },
+            "html": "<h3 xmlns=\"http://www.w3.org/1999/xhtml\" id=\"disclaimer.label\">Disclaimer</h3>"
+          },
+          "earl:assertedBy": "aXe",
+          "earl:mode": "automatic",
+          "earl:test": {
+            "earl:impact": "moderate",
+            "dct:title": "heading-order",
+            "dct:description": "Ensures the order of headings is semantically correct",
+            "help": {
+              "url": "http://kb.daisy.org/publishing/docs/html/headings.html",
+              "dct:title": "Headings",
+              "dct:description": "Heading levels should only increase by one"
+            },
+            "rulesetTags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      ],
+      "earl:testSubject": {
+        "url": "radio.xhtml",
+        "dct:title": "The Spirit of Radio"
+      }
+    },
+    {
+      "@type": "earl:assertion",
+      "earl:result": {
+        "earl:outcome": "pass"
+      },
+      "assertions": [],
+      "earl:testSubject": {
+        "url": "authors_home.xhtml",
+        "dct:title": "Author’s Home"
       }
     }
   ],
   "earl:result": {
-    "earl:outcome": "pass"
+    "earl:outcome": "fail"
   }
 }
