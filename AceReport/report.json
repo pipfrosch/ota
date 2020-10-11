@@ -3,7 +3,7 @@
   "@context": "http://daisy.github.io/ace/ace-report-1.0.jsonld",
   "dct:title": "Ace Report",
   "dct:description": "Report on automated accessibility checks for EPUB",
-  "dct:date": "10/11/2020, 2:25:25 AM",
+  "dct:date": "10/11/2020, 2:27:57 AM",
   "earl:assertedBy": {
     "@type": "earl:software",
     "doap:name": "DAISY Ace",
@@ -31,9 +31,9 @@
       },
       {
         "src": "EPUB/images/transmap.jpg",
-        "alt": null,
+        "alt": "",
         "role": null,
-        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/transmap.jpg\" aria-describedby=\"figure.transmap.label\" />",
+        "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/transmap.jpg\" alt=\"\" aria-describedby=\"figure.transmap.label\" />",
         "describedby": "Generated map showing broadcast transmitter locations centered around the city of Brentwood in the San Francisco Bay Area.",
         "figcaption": "Generated map showing broadcast transmitter locations centered around the city of Brentwood in the San Francisco Bay Area.",
         "location": "antenna_selection.xhtml#epubcfi(/4/2/16[clusters]/12[transmap]/2)"
@@ -98,7 +98,7 @@
         "noSoundHazard",
         "noMotionSimulationHazard"
       ],
-      "dcterms:modified": "2020-10-11T09:25:20Z"
+      "dcterms:modified": "2020-10-11T09:27:53Z"
     },
     "links": {}
   },
@@ -133,45 +133,9 @@
     {
       "@type": "earl:assertion",
       "earl:result": {
-        "earl:outcome": "fail"
+        "earl:outcome": "pass"
       },
-      "assertions": [
-        {
-          "@type": "earl:assertion",
-          "earl:result": {
-            "earl:outcome": "fail",
-            "dct:description": "Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
-            "earl:pointer": {
-              "cfi": [
-                "/4/2/16[clusters]/12[transmap]/2"
-              ],
-              "css": [
-                "img[src$=\"transmap\\.jpg\"]"
-              ]
-            },
-            "html": "<img xmlns=\"http://www.w3.org/1999/xhtml\" src=\"images/transmap.jpg\" aria-describedby=\"figure.transmap.label\" />"
-          },
-          "earl:assertedBy": "aXe",
-          "earl:mode": "automatic",
-          "earl:test": {
-            "earl:impact": "critical",
-            "dct:title": "image-alt",
-            "dct:description": "Ensures <img> elements have alternate text or a role of none or presentation",
-            "help": {
-              "url": "http://kb.daisy.org/publishing/docs/html/images.html",
-              "dct:title": "Images",
-              "dct:description": "Images must have alternate text"
-            },
-            "rulesetTags": [
-              "cat.text-alternatives",
-              "wcag2a",
-              "wcag111",
-              "section508",
-              "section508.22.a"
-            ]
-          }
-        }
-      ],
+      "assertions": [],
       "earl:testSubject": {
         "url": "antenna_selection.xhtml",
         "dct:title": "Antenna Selection"
