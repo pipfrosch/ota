@@ -51,6 +51,7 @@
     <item href="mathml/c.svg" id="mathml.c.svg" media-type="image/svg+xml"/>
     <!-- pages -->
     <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml" properties="mathml"/>
+    <item href="authors_home.xhtml" id="authors_home" media-type="application/xhtml+xml"/>
     <item href="bond_earth_ground.xhtml" id="bond.earth.ground" media-type="application/xhtml+xml"/>
     <item href="radio.xhtml" id="am_fm_radio" media-type="application/xhtml+xml" properties="svg"/>
   </manifest>

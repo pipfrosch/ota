@@ -79,7 +79,7 @@
     <p>It is perfectly fine to use copper clad steel core from the MBS-4 splitter to your destinations, RF does not benefit from solid core copper. Everything that carries voltage from the PS-1 transformer to the MBA-12 amplifier really should be the more expensive solid core copper RG-6 <em>if you can find it without needing to buy excessive amounts</em>. Most people who use copper clad steel do not report any issues but for carrying voltage, the solid copper core is technically superior.</p>
     <p>For the <abbr>FM</abbr> broadcast band RG-6 loses just under 3 dB of signal strength for every 100 feet. The total coaxial run length from the antenna to the stereo receiver should therefore be kept under 200 feet and the shorter the better. Longer runs may require more amplification than what is supplied by the MBA-12.</p>
     <p>With the broadcast <abbr>AM</abbr> band the signal loss is far less, only about &#8531; dB is lost per 100 feet. Signal loss due to coaxial length is not really a problem for <abbr>AM</abbr> frequencies. However when <em>amplifying the signal for <abbr>FM</abbr></em> then <abbr>AM</abbr> does in fact become a problem because you <strong>must</strong> use an amplifier designed for the <abbr>AM</abbr> frequency band.</p>
-    <p>When runs over 200 feet are involved that include both <abbr>AM</abbr> and <abbr>FM</abbr>, if there is a problem with <abbr>FM</abbr> reception you may want to contact Pixel Technologies for suggestions on amplification solutions if the 12 dB provided by the MBA-12 inline amplifier is not enough.</p>
+    <p>When runs over 200 feet are involved that include both <abbr>AM</abbr> and <abbr>FM</abbr>, if there is a problem with <abbr>FM</abbr> reception you can try installing a second MBA-12 inline with the first. It appears that you only need one power inserter to power two MBA-12 amplifiers installed in series but I have not tried that configuration.</p>
   </section>
   <section id="bandsplit" aria-labelledby="bandsplit.label">
     <h2 id="bandsplit.label">Receiver Connection</h2>
@@ -126,17 +126,17 @@
     <p>A rating of &#8216;Null&#8217; indicates I could not tell a station was there. A rating of &#8216;Horrid&#8217; indicates I can tell a station is there but I can not make any content out. A rating of &#8216;Poor&#8217; indicates I can make out the content but the audio quality leaves a lot to be desired. A rating of &#8216;Good&#8217; indicates the content is clearly audible.</p>
     <p>The following five tests will be performed:</p>
     <dl>
-      <dt>Reference:</dt>
+      <dt id="reftest">Reference:</dt>
         <dd>Antop AT-212FM is connected directly to the analog receiver. This is to provide a reference for the performance of the AFHD-4 at my chosen install location relative to a less expensive but decent quality small indoor antenna.</dd>
-      <dt>Test 1:</dt>
+      <dt id="test1">Test 1:</dt>
         <dd>The AFHD-4 Antenna is connected directly to the receiver without any amplification or splitting. A coaxial line will run straight from the antenna through my window to my receiver. This is to provide a reference for the capabilities of the AFHD-4 at my chosen install location.</dd>
-      <dt>Test 2:</dt>
+      <dt id="test2">Test 2:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter but the amplifier is bypassed, no signal amplification. This is to give a picture of what is lost as a result of unamplified signal splitting.</dd>
-      <dt>Test 3:</dt>
+      <dt id="test3">Test 3:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter. This is to guage whether or not the MBA-12 adds sufficient amplification for the splits and additional coaxial length involved.</dd>
-      <dt>Test 4:</dt>
+      <dt id="test4">Test 4:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter and possible sources of interference are active. This is to guage how potential sources of interference impact my intended installation location.</dd>
-      <dt>Test 5:</dt>
+      <dt id="test5">Test 5:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter and possible sources of interference are active. Rather than testing with the analog receiver attached to a short run from the splitter, the test is performed with a digital tuner attached to the longest run from the splitter. In this test, stations received as digital audio will have a &#8216;(DA)&#8217; after the rating code. Stations that should be received as digital but were only tuned as analog with have a &#8216;(AA)&#8217; after the rating code. Stations that only broadcast in analog will not have either after the rating code.</dd>
     </dl>
   <p>Due to scrolling limitations in most ePub viewers, the results table is actually broken up into several tables.</p>
@@ -171,7 +171,7 @@ The radio frequency signal, abbreviated as RF, enters the coaxial system from an
   
   <text x="50" y="32" class="mta">AFHD-4</text>
   
-  <text x="160" y="115" class="mta">Surge</text>
+  <text x="160" y="115" class="mta">4645F</text>
   <text x="300" y="100" class="mta">MBA 12 (+12 dB)</text>
   
   <text x="455" y="95" class="mta">Grounding</text>
@@ -204,6 +204,9 @@ The radio frequency signal, abbreviated as RF, enters the coaxial system from an
   
 </g>
 </svg>
+  <p>All coaxial cable from the Antenna to the MBS-4 is quad shield solid core copper. The runs from the MBS-4 to the coaxial jacks in the wall use quad shield copper clad steel as they do not carry any <abbr>DC</abbr> voltage.</p>
+  <p>Allegedly the MBS-4 has a 12 dB signal loss per output opposed to the 7&#8211;8 dB typical of 4-way splitters designed for the smaller television band. In essence, that means MBA-12 compensates for the splitter but does not compensate for cable length.</p>
+  <p>I do not know what the dB signal loss is for the AMFMBS-1 band splitter.</p>
 </section>
 </body>
 </html>
