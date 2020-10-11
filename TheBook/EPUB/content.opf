@@ -59,5 +59,6 @@
     <itemref idref="antenna.selection"/>
     <itemref idref="bond.earth.ground"/>
     <itemref idref="am_fm_radio"/>
+    <itemref idref="authors_home"/>
   </spine>
 </package>
