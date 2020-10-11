@@ -6,8 +6,6 @@
   <title>The Spirit of Radio</title>
   <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
-  <link rel="stylesheet" type="text/css" href="css/mathml.css"/>
-  <link rel="stylesheet" type="text/css" href="css/radiosvg.css"/>
   <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
 </head>
 <body epub:type="bodymatter">
@@ -139,75 +137,9 @@
       <dt id="test5">Test 5:</dt>
         <dd>The AFHD-4 Antenna signal is passed through the MBS-4 four-way splitter with MBA-12 amplifier powered by the PS-1 power inserter and possible sources of interference are active. Rather than testing with the analog receiver attached to a short run from the splitter, the test is performed with a digital tuner attached to the longest run from the splitter. In this test, stations received as digital audio will have a &#8216;(DA)&#8217; after the rating code. Stations that should be received as digital but were only tuned as analog with have a &#8216;(AA)&#8217; after the rating code. Stations that only broadcast in analog will not have either after the rating code.</dd>
     </dl>
+  <p>A wiring diagram of the radio coaxial network used for tests 3&#8211;5 can be viewed at <a href="authors_home.xhtml#radio.diagram">Coaxial Wiring Diagram for Broadcast Radio Setup</a>.</p>
   <p>Due to scrolling limitations in most ePub viewers, the results table is actually broken up into several tables.</p>
   </section>
-  <section id="diagram" aria-labelledby="diagram.label">
-    <h2 id="diagram.label">Wiring Diagram of My Setup</h2>
-    <p>The following wiring diagram shows how <abbr>AM</abbr> and <abbr>FM</abbr> signals are distributed through the home. Some of the symbols used may not be standard, but the legend should help clarify what is what.</p>
-  </section>
-  <svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     version="1.1"
-     width="100%" role="img"
-     aria-labelledby="thesvgtitle"
-     aria-describedby="thesvgdesc"
-     viewBox="0 0 560 714" preserveAspectRatio="xMaxYMin">
-<title id="thesvgtitle">Radio Antenna Coaxial Distribution</title>
-<desc id="thesvgdesc">
-The radio frequency signal, abbreviated as RF, enters the coaxial system from an AFHD-4 antenna. The RF signal then enters and exits a surge surpressor before entering an MBA 12 amplifier where the RF signal is amplified by about 12 decibels. After leaving the amplifier, the RF signal enters a coaxial grounding block which is electrically bonded to the earth through a grounding rod. The RF signal leaves the grounding block where it then enters a PS-1 Power Inserter that supplies the 5 volts of direct current voltage needed by the previously mentioned MBA 12 amplifier. The RF signal leaves the PS-1 Power Inserter where it then enters a MBS-4 signal splitter to be split four ways. The first split from the MBS-4 enters an AMFMBS-1 RF signal separator, where the AM and FM bands are split into distinct RF signals which feed the AM and FM antenna inputs on a Yamaha R-S201 receiver. The second split from the MBS-4 does not have the frequency bands splits, it just enters the FM antenna port on a Bose Wave. The third split from the MBS-4 is currently terminated by a 75Ω termination cap to be used for a radio in the future. The fourth split from the MBS-4 enters a second AMFMBS-1 signal separator where the AM and FM bands are separated to feed the AM and FM antenna inputs on a Sangean HDT-20 tuner.
-</desc>
-<image xlink:href="svg/radio.svg" width="560" height="714" x="0" y="0"/>
-<g id="legend">
-  <path stroke="none" fill="red" d="
-    M23,213 l24,0 l0,24 l-24,0 l0,-24z
-  "/>
-  <text x="55" y="225" class="mdb">RF Signal Input Connector</text>
-  <circle cx="35" cy="264" r="12" fill="blue"/>
-  <text x="55" y="264" class="mdb">RF Signal Output Connector</text>
-  <path stroke="black" stroke-width="6" fill="none" d="M23,303 l24,0"></path>
-  <text x="55" y="303" class="mdb">RF Signal RG6</text>
-  <path stroke="black" stroke-width="6" stroke-dasharray="3 2" fill="none" d="M23,342 l24,0"></path>
-  <text x="55" y="342" class="mdb">Amp Power RG6</text>
-  
-  <text x="50" y="32" class="mta">AFHD-4</text>
-  
-  <text x="160" y="95" class="mta">4645F</text>
-  <text x="160" y="115" class="mta">Surge</text>
-  <text x="300" y="100" class="mta">MBA 12 (+12 dB)</text>
-  
-  <text x="455" y="95" class="mta">Grounding</text>
-  <text x="455" y="115" class="mta">Block</text>
-  <text x="505" y="250" class="mta">Earth</text>
-  
-  <text x="335" y="315" class="mta mdb">PS-1 PI</text>
-  <text x="485" y="375" class="mta">+5V DC</text>
-  <text x="485" y="395" class="mta">PS-1 Brick</text>
-  <text x="485" y="415" class="mta">(Garage)</text>
-  
-  <text x="280" y="447.5" class="mta mdb">MBS-4</text>
-  
-  <text x="112" y="590" class="mta mdb">AMFMBS-1</text>
-  <text x="77" y="672" class="eta">AM</text>
-  <text x="142" y="672" class="mta">75Ω FM</text>
-  <text x="112" y="692" class="mta">(Yamaha R-S201)</text>
-  
-  <text x="448" y="590" class="mta mdb">AMFMBS-1</text>
-  <text x="413" y="672" class="eta">AM</text>
-  <text x="478" y="672" class="mta">75Ω FM</text>
-  <text x="448" y="692" class="mta">(Sangean HDT-20)</text>
-  
-  <text x="224" y="587" class="mta">75Ω FM</text>
-  <text x="224" y="607" class="mta">(Bose Wave)</text>
-  
-  <text x="336" y="587" class="mta">75Ω</text>
-  <text x="336" y="607" class="mta">Terminated</text>
-  <text x="336" y="627" class="mta">(future use)</text>
-  
-</g>
-</svg>
-  <p>All coaxial cable from the Antenna to the MBS-4 is quad shield solid core copper. The runs from the MBS-4 to the coaxial jacks in the wall use quad shield copper clad steel as they do not carry any <abbr>DC</abbr> voltage.</p>
-  <p>Allegedly the MBS-4 has a 12 dB signal loss per output opposed to the 7&#8211;8 dB typical of 4-way splitters designed for the smaller television band. In essence, that means MBA-12 compensates for the splitter but does not compensate for cable length.</p>
-  <p>I do not know what the dB signal loss is for the AMFMBS-1 band splitter.</p>
 </section>
 </body>
 </html>
