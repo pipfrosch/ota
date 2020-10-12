@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8"/>
+  <title>Wiring Safety</title>
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" role="doc-chapter" aria-labelledby="nec.label">
+  <h1 id="nec.label">Wiring Safety</h1>
+  <aside class="disclaimer" aria-labelledby="disclaimer.label">
+    <h2 id="disclaimer.label">Disclaimer</h2>
+    <p>I am not an electrician and I did not even sleep at a Holliday Inn Express last night.</p>
+    <p>It is <em>your</em> responsibility to know and comply with federal, state, a local electrical building codes before you do any projects that involves conductive wiring, including coaxial cable runs.</p>
+  </aside>
+  <hr class="half" />
+  <p>When wiring coaxial runs for an antenna, there are several safety considerations you must comply.</p>
+  <section id="outdoor" aria-labelledby="outdoor.label">
+    <h2 id="outdoor.label">Outdoor Antenna</h2>
+    <p>Any outdoor antenna mast <strong>MUST</strong> be properly <a href="bond_earth_ground.xhtml">earthed</a> (bonded to grounding rod) as described in Article 810 of the <a href="https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70" title="Internet Resource">National Electrical Code</a>. This involves installing an appropriately sized grounding clamp to the mast and running 10 <abbr>AWG</abbr> solid (not stranded) copper wire from the grounding clamp to the house ground rod so that the antenna mast is bonded to the grounding rod.</p>
+    <p>Any outdoor coaxial run <strong>MUST</strong> be properly earthed (bonded to grounding rod) as described in Article 810 of the <a href="https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70" title="Internet Resource">National Electrical Code</a>. This involves the mounting of a coaxial grounding block <em>where the coaxial run enters the house</em> and running 10 <abbr>AWG</abbr> solid (not stranded) copper wire from the grounding clamp to the house ground rod so that the antenna mast is bonded to the grounding rod.</p>
+    <p>The ground clamp from the antenna mast and the coaxial grounding block must have <em>seperate</em> runs of 10 <abbr>AWG</abbr> solid copper wire leading to the grounding rod. It can be tempting to splice them or bond the antenna mast to the coaxial grounding block and then bond the coaxial grounding block to the grounding rod but you should not do either.</p>
+    <p>Also, you can not just install a new grounding rod where you want your antenna. Installation of an additional grounding rod to an existing home requires professional installation including a permit and an inspection and is rarely a sane option. Your house literally may lose the benefit of a grounding rod in electrical storms if the installation of an additional grounding rod is not done properly. Very rarely is the installation of an additional grounding rod justified and it is a major undertaking when it is justified.</p>
+    <p>Note that for indoor installations, including in an attic, antennas and coaxial runs should not be earthed or bonded to ground as the lightening danger is not present. Bonding to ground increases the odds of a ground loop that can causes reception interference in the event the coaxial cable happens to have another path to ground (a ground loop can act as an antenna picking up stray electromagnetic signals).</p>
+  </section>
+  <section id="wall" aria-labelledby="wall.label">
+    <h2 id="wall.label">Coaxial Wall Runs</h2>
+    <p>Coaxial cables run through a wall must be rated for in-wall use with at least a &#8216;CL2&#8217; rating as defined in Article 725 of the <a href="https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70" title="Internet Resource">National Electrical Code</a>. This rating ensures that the jacket can protect against surges of up to 150 Volts.</p>
+    <p>If there is 220 wiring in the wall, you <em>may</em> be required to use &#8216;CL3&#8217; but I am not sure. The &#8216;CL3&#8217; rating protects against surges of up to 300 volts.</p>
+    <p>Always make sure and double verify that all wiring within a wall is turned off at the circuit breaker before cutting or drilling into a wall.</p>
+    <p>Coaxial cables that lead from your wall jack to your tuner do not need to be &#8216;CL2&#8217; rated.</p>
+  </section>
+  <section id="wall" aria-labelledby="plenum.label">
+    <h2 id="plenum.label">Plenum Runs</h2>
+    <p>This rarely applies to residential installs but it might apply to some.</p>
+    <p>If you are running coaxial cables either through a plenum area or <abbr>HVAC</abbr> ducts, you <em>must</em> use cable that is rated for plenum spaces as defined in Article 800 of the <a href="https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70" title="Internet Resource">National Electrical Code</a>. This reduces dangerous fumes from being spread through the air recirculation system in the event there is a fire that melts or burns the cable.</p>
+  </section>
+</section>
