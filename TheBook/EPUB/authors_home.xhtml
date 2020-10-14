@@ -18,6 +18,10 @@
   <ol>
     <li><a href="#home">Brief Description of Our Home</a></li>
     <li><a href="#ota">Over The Air Reception Plan</a></li>
+    <li><a href="#atsc.antenna"><abbr>ATSC</abbr> Antenna</a><ol>
+      <li><a href="#vhf.note"><abbr>VHF Note</abbr></a></li>
+    </ol></li>
+    <li><a href="#radio.antenna"><abbr>AM</abbr>/<abbr>FM</abbr> Antenna</a></li>
     <li><a href="#phase1">Phase 1: West Wing</a></li>
     <li><a href="#phase2">Phase 2: Amplifier Power</a></li>
     <li><a href="#phase3">Phase 3: East Wing</a></li>
@@ -45,11 +49,36 @@
     <p>Power for both the television antenna amplified distributor and the radio antenna amplifier would be supplied from the West Garage where it is relatively easy to troubleshoot or replace the transformer bricks if one or both of them fail in the future.</p>
     <p>Accomplishing all of this was broken down into a four phases in order to spread the financial burden without needing a lot of financing. Note that the money saved from just one year of cable television will more than pay for it, but there is still an upfront cost.</p>
   </section>
+
+  <section id="atsc.antenna" aria-labelledby="atsc.antenna.label">
+    <h2 id="atsc.antenna.label"><abbr>ATSC</abbr> Antenna</h2>
+    <p>As all transmission towsers we are interested in are within 25 miles and in the same general direction, we went with the <a href="https://store.antennasdirect.com/ClearStream-2MAX-Indoor-Outdoor-TV-Antenna.html" title="Internet Resource">ClearStream 2MAX®</a> along with the <a href="https://store.antennasdirect.com/ClearStream-2MAX-Reflector-Assembly-C2M-REF.html" title="Internet Resource">Reflector Assembly</a> for that model.</p>
+    <p>The reflector assembly acts as a parasitic element for the <abbr>UHF</abbr> loop antennas, adding gain in the direction the antenna is pointed at the cost of reducing gain from other directions. It is that reduction of gain from other directions that compelled me to buy the reflector assembly, with an <abbr>HVAC</abbr> unit in the attic and with reflective <abbr>HVAC</abbr> ducts I wanted to reduce interference from directions in which we are not interested in receiving signal.</p>
+    <section id="vhf.note" aria-labelledby="vhf.note.label">
+      <h3 id="vhf.note.label"><abbr>VHF Note</abbr></h3>
+      <p>Note that the previously mentioned reflector kit does not benefit <abbr>VHF</abbr> reception. It actually sits between the <abbr>VHF</abbr> dipole and the <abbr>UHF</abbr> double loop and is clearly engineered for the double loop.</p>
+      <p><abbr>VHF</abbr> transmits with less power, the antenna has less gain for <abbr>VHF</abbr> (2.6 dBi versus 8.7 dBi) and the direction reflector only benefits <abbr>UHF</abbr>. <abbr>VHF</abbr> is sort-of an afterthought with this antenna setup.</p>
+      <p>We have only one <abbr>VHF</abbr> channel of interest, <a href="https://www.kvie.org/" title="Internet Resource">KVIE</a> which uses virtual channels 6.1&#8211;6.4 but broadcasts on <abbr>VHF</abbr> channel 9 (189 MHz). The dipole that is part of the ClearStream 2MAX® has dipoles that are 15 inches in length, which is optimized for channel 10 (195 MHz) which is in the middle of the <abbr>VHF-Hi</abbr> band.</p>
+      <p>When first testing the antenna in my bedroom, a channel scan saw the <abbr>VHF</abbr> KVIE channels but was not able to tune them. All of the <abbr>UHF</abbr> channels came in well. Installed in the attic, KVIE works but there are still occassional tuning problems.</p>
+      <p>As <abbr>VHF</abbr> broadcast channel 9 is the only <abbr>VHF</abbr> frequency of interest, rather than spend ~ $140 on a <a href="https://store.antennasdirect.com/C5-Clearstream-5-vhf-uhf-long-range-outdoor-DTV-antenna.html" title="Internet Resource">ClearStream® 5 VHF</a> antenna to supplement the current antenna, I will build a homemade folded dipole antenna optimized for broadcast channel 9 (189 MHz) with its own reflector. Folded dipole antennas have roughly a 300Ω impedence so I will have to add a 300Ω to 75Ω balun but those are cheap. I can then use a signal combiner to combine the signals and that should solve the problem. Given that both antennas will be pointed in the same direction, I may need to use a low-pass filter on the <abbr>VHF</abbr> antenna and a high-pass filter on the <abbr>UHF</abbr> antenna to avoid signal cancellation. They would likely be installed on the same mast which may require buying a larger mast than what shipped with the ClearStream 2MAX®.</p>
+      <p>It should be noted that while building a homemade folded dipole with more dBi gain than the ClearStream 2MAX® has for the <abbr>VHF</abbr> 189 MHz frequency is not difficult, there will be dB loss when combining the signal with the <abbr>UHF</abbr> frequencies from the ClearStream 2MAX®. What I am actually trying to achieve is a higher signal to noise ratio for that specific Channel 9 frequency band, that is what I <em>believe</em> is the actual issue. I <em>believe</em> a folded dipole of optimal size in combination with a parasitic reflector will accomplish just that.</p>
+    </section>
+  </section>
+  <section id="radio.antenna" aria-labelledby="radio.antenna.label">
+    <h2 id="atsc.antenna.label"><abbr>AM</abbr>/<abbr>FM</abbr> Antenna</h2>
+    <p>Had I only wanted <abbr>FM</abbr>, there would have been many options available including options that often work well inside an attic.</p>
+    <p>As I wish to distribute <abbr>AM</abbr> as well as <abbr>FM</abbr>, other than trying to make such an antenna myself, the only real option I had was the <a href="https://pixelsatradio.com/collections/antennas/products/afhd-4-long-range-am-fm-hd-radio-antenna" title="Internet Resource">Pixel Technologies AFHD-4</a>.</p>
+    <p>This antenna is a 48 inch (~ 122 cm) monopole whip antenna. For <abbr>FM</abbr> the length falls somewhere between a quarter-wave and a half-wave antenna, assuming the full 48 inches of the rod is used for the monopole.</p>
+    <p>As a monopole antenna, it is omnidirectional and does not need to be aimed, but the omnidirectional nature also makes it susceptible to noise from any direction which can have a rather large impact to <abbr>AM</abbr> reception. As we do have an <abbr>HVAC</abbr> unit in the attic, an outdoor install was the best option.</p>
+    <p>If <abbr>FM</abbr> had been all we were interested in, we <em>probably</em> would have tried a <a href="https://www.amazon.com/FM-Loop-Antenna-Outdoor-Attic-mount/dp/B006SLV25C" title="Internet Resource"><abbr>FM</abbr> Loop Antenna</a> mounted in the attic and only moved it outside if interference was suspected of causing the reception to be unsatisfactory. With <abbr>AM</abbr> in play, I just assumed interference would be a problem with the start.</p>
+  </section>
+
+
   <section id="phase1" aria-labelledby="phase1.label">
     <h2 id="phase1.label">Phase 1: West Wing</h2>
     <p>For this phase, the initial phase, the television antenna is installed in the attic and the coaxial runs for the bedroom in the &#8216;West Wing&#8217; are run. Even though the radio antenna is not installed yet, running the coaxial cable for radio in those two rooms makes sense as we will be using a single &#8216;low voltage&#8217; bracket for both of the televion and radio coaxial outputs.</p>
     <p>We could have also done the coaxial run for the radio in the West Entry Room at this point, but that room has a Bose Wave with the intent to install it permanently in wall of bookshelves that are being used as sort of a china cabinet. That would require finding which bookshelf has the outlet behind it, moving that bookshelf and drilling a hole in the back of the bookshelf, <abbr>etc.</abbr> so that was delayed until Phase 2.</p>
-    <p>Phase 1 thus involves five coaxial runs, three from television and two for radio. Hardware required involves the antenna, the three-way passive splitter for television, the four-way passive splitter for radio, three &#8216;old work&#8217; 1 gang boxes, two &#8216;two port&#8217; wall inserts and one &#8216;one port&#8217; wall inserts. Along with cover plates.</p>
+    <p>Phase 1 thus involves five coaxial runs, three from television and two for radio. Hardware required involves the antenna, the three-way passive splitter for television, the four-way passive splitter for radio, three &#8216;old work&#8217; 1 gang boxes, two &#8216;two port&#8217; wall inserts and one &#8216;one port&#8217; wall inserts. Along with cover plates. We also started the <abbr>Cat6</abbr> ethernet run for the fifth phase.</p>
     <p>A 250 foot pull box of quad-shield copper-clad steel core RG-6 coaxial cable along with compression connectors was also needed. 250 feet is excessive but the excess will be used.</p>
     <p>Also bought for Phase 1 were cable labels, staples for guiding the coaxial runs in the attic, and 75Ω termination caps.</p>
     <p>For the television 3-way passive splitter, the run for the <abbr>DVR</abbr> got the -3.5 dB output and the two runs for televisions got the -7 dB outputs. All outputs were used. For the radio 4-way passive splitter, only two outputs were used so two 75Ω termination caps were loosely (hand tight) put into the unused outputs just to protect them from possible moisture.</p>
@@ -141,9 +170,9 @@ The radio frequency signal, abbreviated as RF, enters the coaxial system from an
   <circle cx="35" cy="264" r="12" fill="blue"/>
   <text x="55" y="264" class="mdb">RF Signal Output Connector</text>
   <path stroke="black" stroke-width="6" fill="none" d="M23,303 l24,0"></path>
-  <text x="55" y="303" class="mdb">RF Signal RG6</text>
+  <text x="55" y="303" class="mdb">RF Signal RG-6</text>
   <path stroke="black" stroke-width="6" stroke-dasharray="3 2" fill="none" d="M23,342 l24,0"></path>
-  <text x="55" y="342" class="mdb">Amp Power RG6</text>
+  <text x="55" y="342" class="mdb">Amp Power RG-6</text>
   
   <text x="50" y="32" class="mta">AFHD-4</text>
   

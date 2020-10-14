@@ -37,7 +37,6 @@
   <g id="pi">
     <path stroke="black" stroke-width="2" fill="none" d="M0,-15 l0,50 l-80,0 l0,-50 l80,0z"/>
     <path stroke="black" stroke-width="3" stroke-dasharray="3 2" fill="none" d="M0,20 l110,0 l0,25"/>
-    <!-- path stroke="black" fill="none" stroke-width="1" d="M-20,20 l14,0 m-7,-7 l0,14"/ -->
   </g>
   <g id="splitter">
     <path stroke="black" stroke-width="2" fill="none" d="
