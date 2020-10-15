@@ -52,6 +52,7 @@
     <!-- pages -->
     <item href="nec.xhtml" id="nec" media-type="application/xhtml+xml"/>
     <item href="antenna_selection.xhtml" id="antenna.selection" media-type="application/xhtml+xml" properties="mathml"/>
+    <item href="coax.xhtml" id="coax" media-type="application/xhtml+xml"/>
     <item href="authors_home.xhtml" id="authors_home" media-type="application/xhtml+xml" properties="svg"/>
     <item href="bond_earth_ground.xhtml" id="bond.earth.ground" media-type="application/xhtml+xml"/>
     <item href="radio.xhtml" id="am_fm_radio" media-type="application/xhtml+xml"/>
@@ -59,6 +60,7 @@
   <spine>
     <itemref idref="nec"/>
     <itemref idref="antenna.selection"/>
+    <itemref idref="coax"/>
     <itemref idref="bond.earth.ground"/>
     <itemref idref="am_fm_radio"/>
     <itemref idref="authors_home"/>
