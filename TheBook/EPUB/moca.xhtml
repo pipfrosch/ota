@@ -10,7 +10,7 @@
 </head>
 <body epub:type="bodymatter">
 <section epub:type="chapter" role="doc-chapter" aria-labelledby="moca.label">
-  <h1 id="amp.label"><abbr>MoCA</abbr> Networks</h1>
+  <h1 id="moca.label"><abbr>MoCA</abbr> Networks</h1>
   <p>Comprehensive coverage of MoCA is beyond the scope of this digital book but it is definitely worth mentioning.</p>
   <p>A <abbr>MoCA</abbr> (Multimedia over Coax Alliance) network is a network that extends your home wireless network using existing 75Ω coaxial cable runs. It can be used to overcome &#8216;dead spots&#8217; in your wireless network and it can prevent the occassional buffering issues that happen when streaming media over a wireless network by providing a fast 1 Gbps wired connection.</p>
   <p>There are some terms and concepts that I initially found to be a bit confusing which is why this appendix chapter exists.</p>
@@ -18,7 +18,7 @@
   <p>However if your house already has a coaxial network or if you are adding a coaxial network to distribute a television antenna signal, you can use one of those coaxial networks for <abbr>MoCA</abbr> as well and get the advantages of a wired network without needing to run Cat6 cable.</p>
   
   <section id="band" aria-labelledby="band.label">
-    <h2><abbr>MoCA</abbr> Bands</h2>
+    <h2 id="band.label"><abbr>MoCA</abbr> Bands</h2>
     <p><abbr>MoCA</abbr> 1.0/1.1 can use three different bands, which they call bands &#8216;D&#8217;, &#8216;E&#8217;, and &#8216;F&#8217; and has an 8 node maximum. <abbr>MoCA</abbr> 2.0 extends the the channel bandwidth within those bands (thus increasing the data transfer rate), adds an &#8216;Extended D&#8217; band, and increases the maximum number of nodes to 16. <abbr>MoCA</abbr> 2.0 also allows <abbr>RF</abbr> channel bonding between two adjacent channels which doubles the data throughput (in ideal conditions). <abbr>MoCA</abbr> 2.5 increases the channel bonding to 3&#8211;5 <abbr>RF</abbr> channel which further increases the potential data transfer rate but it still has a 16 node maximum.</p>
     <p><dfn>Band &#8216;D&#8217;</dfn> operates with a frequency of 1125 MHz to 1525 MHz. Band &#8216;D&#8217; does not interfere with broadcast television frequencies or most cable service providers. It does however interfere with satellite television services. This is the most common band used for <abbr>MoCA</abbr> 1.0/1.1 systems.</p>
     <p><dfn>Band &#8216;D Extended&#8217;</dfn> is the same as Band &#8216;D&#8217; except it extends the frequency range used to 1625 MHz. This is the most common band used for <abbr>MoCA</abbr> 2.0/2.5 systems and is <em>probably</em> the band you want to use.</p>
@@ -32,7 +32,7 @@
     <p>Unless the coaxial run you are going to use for <abbr>MoCA</abbr> is also used for sattelite television, I recommend using the <abbr>MoCA</abbr> 2.0/2.5 &#8216;D Extended&#8217; band even if it means upgrading existing splitters so that they can handle 1625 MHz (splitters are cheap).</p>
   </section>
   <section id="poe" aria-labelledby="poe.label">
-    <h2>Point of Entry</h2>
+    <h2 id="poe.label">Point of Entry</h2>
     <p>The &#8216;Point of Entry&#8217; is often abbreviated as simplly &#8216;PoE&#8217; <em>without explanation</em> in <abbr>MoCA</abbr> documentation which is a poor choice of terms and a poor choice of abbreviations, especially on Ethernet connected devices where <em>the same acronym</em> is often used to indicate &#8216;Power Over Ethernet&#8217; which is something completely different.</p>
     <p>&#8216;Point of Entry also <em>does not</em> refer to the point where <abbr>MoCA</abbr> devices enter the home network.</p>
     <p><dfn>Point of Entry</dfn> references the first splitter of an incoming signal service the coaxial cable is being used for that is unrelated to the <abbr>MoCA</abbr> network.</p>
