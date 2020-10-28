@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8"/>
+  <title>MoCA Networks</title>
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" role="doc-chapter" aria-labelledby="moca.label">
+  <h1 id="amp.label"><abbr>MoCA</abbr> Networks</h1>
+  <p>Comprehensive coverage of MoCA is beyond the scope of this digital book but it is definitely worth mentioning.</p>
+  <p>A <abbr>MoCA</abbr> (Multimedia over Coax Alliance) network is a network that extends your home wireless network using existing 75Ω coaxial cable runs. It can be used to overcome &#8216;dead spots&#8217; in your wireless network and it can prevent the occassional buffering issues that happen when streaming media over a wireless network by providing a fast 1 Gbps wired connection.</p>
+  <p>There are some terms and concepts that I initially found to be a bit confusing which is why this appendix chapter exists.</p>
+  <p>Please not that the purpose of <abbr>MoCA</abbr> is to repurpose unused frequency bands of <em>existing</em> coaxial runs for a wired <abbr>IP</abbr> network. Do not run new coaxial cable just for <abbr>MoCA</abbr>, it would be better to run Cat6 which supports 10 Gbps uplinks.</p>
+  <p>However if your house already has a coaxial network or if you are adding a coaxial network to distribute a television antenna signal, you can use one of those coaxial networks for <abbr>MoCA</abbr> as well and get the advantages of a wired network without needing to run Cat6 cable.</p>
+  
+  <section id="band" aria-labelledby="band.label">
+    <h2><abbr>MoCA</abbr> Bands</h2>
+    <p><abbr>MoCA</abbr> 1.0/1.1 can use three different bands, which they call bands &#8216;D&#8217;, &#8216;E&#8217;, and &#8216;F&#8217; and has an 8 node maximum. <abbr>MoCA</abbr> 2.0 extends the the channel bandwidth within those bands (thus increasing the data transfer rate), adds an &#8216;Extended D&#8217; band, and increases the maximum number of nodes to 16. <abbr>MoCA</abbr> 2.0 also allows <abbr>RF</abbr> channel bonding between two adjacent channels which doubles the data throughput (in ideal conditions). <abbr>MoCA</abbr> 2.5 increases the channel bonding to 3&#8211;5 <abbr>RF</abbr> channel which further increases the potential data transfer rate but it still has a 16 node maximum.</p>
+    <p><dfn>Band &#8216;D&#8217;</dfn> operates with a frequency of 1125 MHz to 1525 MHz. Band &#8216;D&#8217; does not interfere with broadcast television frequencies or most cable service providers. It does however interfere with satellite television services. This is the most common band used for <abbr>MoCA</abbr> 1.0/1.1 systems.</p>
+    <p><dfn>Band &#8216;D Extended&#8217;</dfn> is the same as Band &#8216;D&#8217; except it extends the frequency range used to 1625 MHz. This is the most common band used for <abbr>MoCA</abbr> 2.0/2.5 systems and is <em>probably</em> the band you want to use.</p>
+    <p><dfn>Band &#8216;E&#8217;</dfn> operates with a frequency of 400 MHz to 700 MHz. Band &#8216;E&#8217; interferes with with broadcast television frequencies and cable service providers. This band is often used when the coaxial cable network is being used for a sattelite television service.</p>
+    <p><dfn>Band &#8216;F&#8217;</dfn> operates with a frequency of 650 MHz to 875 MHz. After the <time>2020</time> broadcast television &#8216;re-pack&#8217; this band no longer interferes with broadcast television. This band is often used when the coaxial cable network is being used for a sattelite television service. Hypothetically it could also be used with a cable service provider or television antenna system that has splitters with a 1 GHz upper frequency limit but in those cases it is better to upgrade the splitters so that the &#8216;D Extended&#8217; band can be used.</p>
+    <p><abbr>MoCA</abbr> adapters that use Band &#8216;E&#8217; or &#8216;F&#8217; are often referred to as <abbr>DECA</abbr> (DirectTV Ethernet to Coaxial Adapter) in marketing but are just <abbr>MoCA</abbr> adapters.</p>
+    <p><abbr>MoCA</abbr> adapters that use Band &#8216;D&#8217; or &#8216;D Extended&#8217; are often just referred to as &#8216;MoCA adapters&#8217;.</p>
+    <p>I recommend against using <abbr>MoCA</abbr> 1.0/1.1 equipment for new <abbr>MoCA</abbr> systems.</p>
+    <p>As of <time>2020</time> <abbr>MoCA</abbr> 2.5 is still relatively new and there are not as many adapters that support it. That combined with the &#8216;real world&#8217; benefits not really being that much better than <abbr>MoCA</abbr> 2.0, I would say buy <abbr>MoCA</abbr> 2.5 adapters when available but it is okay to but <abbr>MoCA</abbr> 2.0 adapters.</p>
+    <p>Just make sure your devices are designed for the same frequency band: &#8216;D Extended&#8217; (1125&#8211;1625 MHz&#8212;sometimes referred to as &#8216;High-RF&#8217;) or &#8216;E/F&#8217; (400&#8211;875 MHz&#8212;sometimes referred to as &#8216;<abbr>DECA</abbr> or Mid-RF&#8217;). Some <abbr>MoCA</abbr> adapters/devices support all of the band options.</p>
+    <p>Unless the coaxial run you are going to use for <abbr>MoCA</abbr> is also used for sattelite television, I recommend using the <abbr>MoCA</abbr> 2.0/2.5 &#8216;D Extended&#8217;</dfn> band even if it means upgrading existing splitters so that they can handle 1625 MHz (splitters are cheap).</p>
+  </section>
+  <section id="poe" aria-labelledby="poe.label">
+    <h2>Point of Entry</h2>
+    <p>The &#8216;Point of Entry&#8217; is often abbreviated as simplly &#8216;PoE&#8217; <em>without explanation</em> in <abbr>MoCA</abbr> documentation which is a poor choice of terms and a poor choice of abbreviations, especially on Ethernet connected devices where <em>the same acronym</em> is often used to indicate &#8216;Power Over Ethernet&#8217; which is something completely different.</p>
+    <p>&#8216;Point of Entry also <em>does not</em> refer to the point where <abbr>MoCA</abbr> devices enter the home network.</p>
+    <p><dfn>Point of Entry</dfn> references the first splitter of an incoming signal service the coaxial cable is being used for that is unrelated to the <abbr>MoCA</abbr> network.</p>
+    <p>For cable television service, the &#8216;Point of Entry&#8217; is the first splitter from the cable company feed. For an <abbr>OTA</abbr> reception antenna system, the &#8216;Point of Entry&#8217; is the first splitter off of the antenna signal feed. For a sattelite television reception system, the &#8216;Point of Entry&#8217; is the first splitter after the satellite feed.</p>
+    <p>The &#8216;Point of Entry&#8217; splitter and everything coaxial on your <em>device side</em> of the &#8216;Point of Entry&#8217; has to be <abbr>MoCA</abbr> compatible <em>and</em> compatible with the <abbr>MoCA</abbr> band that you are using.</p>
+    <section id="poe.filter" aria-labbeledby="poe.filter.label">
+      <h3 id="poe.filter.label">&#8216;Point of Entry&#8217; Filter</h3>
+      <p>For both improved performance under certain conditions and&#8212;in the case of cable providers&#8212;for improved security of unencrypted (or poorly encrypted) traffic on your home network it is important to have a &#8216;Point of Entry&#8217; Filter (often marketed as a <abbr>PoE</abbr> Filter) on the <em>input</em> coaxial connection of the &#8216;Point of Entry&#8217;.</p>
+      <p>This filter blocks the frequencies used by <abbr>MoCA</abbr> from passing upstream of the &#8216;Point of Entry&#8217; where it can possibly have a negative impact on signal amplifiers and also&#8212;in the case of cable providers&#8212;may be subjected to eavesdropping by malicious actors outside your home. That may sound paranoid, but remember that the <abbr>U.S.</abbr> Government has been caught running mass surveilance on its own citizens before, and there are leading members of <em>both</em> ruling parties who embrace the invasion of our privacy in the interests of &#8216;homeland security&#8217;.</p>
+      <p>When the coaxial network for <abbr>MoCA</abbr> is not connected to the outside world and is not being used for signal transmission other than <abbr>MoCA</abbr>, a &#8216;Point of Entry&#8217; Filter is not needed although <em>allegedly</em> it does improve <abbr>MoCA</abbr> performance if placed on the input of a splitter that otherwise could be a &#8216;Point of Entry&#8217; for another signal. I have not seen benchmark tests that verify this.</p>
+      <p>Make sure the &#8216;Point of Entry&#8217; filter matches the <abbr>MoCA</abbr> band you are using. Very often they come with <abbr>MoCA</abbr> adapters and match the bands the adapter supports.</p>
+    </section>
+  </section>
+  <section id="nodes" aria-labelledby="nodes.label">
+    <h2 id="nodes.label"><abbr>MoCA</abbr> Nodes</h2>
+    <p>A <abbr>MoCA</abbr> node is a point in the <abbr>MoCA</abbr> system where the <abbr>IP</abbr> protocol being carried over a coaxial cable is encoded as a <abbr>RF</abbr> signal or decoded from an <abbr>RF</abbr> signal.</p>
+    <p>In most cases, a <abbr>MoCA</abbr> node is a <abbr>MoCA</abbr> adapter but there are some devices, mostly <abbr>DVR</abbr> devices and Routers, that support <abbr>MoCA</abbr> directly.</p>
+    <p><abbr>MoCA</abbr> 1.0/1.1 support up to 8 nodes on a <abbr>MoCA</abbr> network. <abbr>MoCA</abbr> 2.0/2.5 support up to 16 nodes on a <abbr>MoCA</abbr> network.</p>
+    <p>A node is <em>different</em> than an Internet connected device. For example, you can attach an Ethernet switch or a secondary WiFi Router to a <abbr>MoCA</abbr> adapter and it is still only 1 node regardless of how many Internet connected devices connect through that node. However, all Internet connected devices connected through that node will still share the throughput uplink cap that a single node provides.</p>
+    <section id="adapterd" aria-labelledby="adapters.label">
+      <h3 id="adapters.label"><abbr>MoCA</abbr> Adapters</h3>
+      <p>A <abbr>MoCA</abbr> adapter joins an Ethernet connected device to the <abbr>MoCA</abbr> coaxial network.</p>
+      <p>When purchasing a <abbr>MoCA</abbr> adapter, do not buy a <abbr>MoCA</abbr> 1.0/1.1 adapter even if your existing <abbr>MoCA</abbr> network is <abbr>MoCA</abbr> 1.0/1.1. <abbr>MoCA</abbr> 2.0/2.5 adapters are backwards compatible and will work just fine on a <abbr>MoCA</abbr> 1.0/1.1 network.</p>
+      <p>Some <abbr>MoCA</abbr> adapters have a single coaxial female F connector input and a single Ethernet jack. These are the adapters you want if you do not need the coaxial jack it connects to for other signal purposes (like a television). Some <abbr>MoCA</abbr> adapters also have a second coaxial female F connector output that can be used to connect a television or cable modem.</p>
+      <p><abbr>MoCA</abbr> adapters that are &#8216;bonded&#8217; allow adjacent <abbr>RF</abbr> channels in the coaxial network to be used for the same connection, increasing the network speed. I do recommend buying <abbr>MoCA</abbr> adapters that specify channel bonding.</p>
+      <p>For <abbr>MoCA</abbr> 2.0, &#8216;bonded&#8217; adapters can bond two channels giving the 1 Gbps network throughput that <abbr>MoCA</abbr> is generally known for.</p>
+      <p>For <abbr>MoCA</abbr> 2.5, &#8216;bonded&#8217; adapters can bond up to five channels potentially giving a 2.5 Gbps network throughput. However most <abbr>WiFi</abbr> routers only support 1 Gbps Ethernet connections so the benefit is largely academic and non-existent in the real world unless you have a very expensive WiFi router that offers 10 Gbps on Ethernet connections. Such routers are usually only used in business networks.</p>
+      <p>Most home Internet connections are at or below 1 Gbps so even with such an expensive <abbr>WiFi</abbr> router, the extra <abbr>MoCA</abbr> network throughput would only be of benefit for your local home network and is of no benefit to Internet upload/download throughput.</p>
+      <p>In a nutshell, <abbr>MoCA</abbr> 2.5 has technical benefits over <abbr>MoCA</abbr> 2.0 but <abbr>MoCA</abbr> 2.0 can already fully saturate home <abbr>WiFi</abbr> router ethernet ports and Internet connections. Buy <abbr>MoCA</abbr> 2.5 adapters if the price is right and you like the product, but <abbr>MoCA</abbr> 2.0 is already as good as it will get for most of us.</p>
+      <p><abbr>MoCA</abbr> adapters are often sold in pairs at a lower price than buying two single adapters.</p>
+      <p>I like the <a href="https://www.amazon.com/Motorola-Adapter-Ethernet-2-Pack-MM1002/dp/B078HMDDVS" title="Internet Resource">Motorola <abbr>MoCA</abbr> 2.0 Adapter</a> (2-pack in link, they also sell it individually). It uses the <abbr>MoCA</abbr> &#8216;D/Extended D&#8217; band. Of course there are other brands that work well too.</p>
+    </section>
+    <section id="routers" aria-labelledby="routers.label">
+      <h3 id="routers.label"><abbr>WiFi Router</abbr></h3>
+      <p>Some newer <abbr>WiFi</abbr> routers are already <abbr>MoCA</abbr> enabled but if yours is not, you can use a <abbr>MoCA</abbr> adapter that plugs into an Ethernet port on your home <abbr>WiFi</abbr> router. It appears that most <abbr>WiFi</abbr> routers with built-in <abbr>MoCA</abbr> are provided by Internet Service Providers (such as Verizon Fios) and that the majority of <abbr>WiFi</abbr> routers available to the general public require the use of a separate <abbr>MoCA</abbr> adapter.</p>
+      <p><strong>WARNING:</strong> A lot of WiFi router retailers purchase search results on the keyword &#8216;MoCA&#8217; even though their routers do not actually have &#8216;MoCA&#8217; built-in and <em>still</em> require an adapter. Unfortunately this kind of confusing deceptive marketing is a result of capitalism as if the retailers do not use confusing deception, it drives sales to their competition who do use confusing deception. Technically the routers can be used with &#8216;MoCA&#8217; but an extra part is still needed. Point is, if buying a router specifically for the <abbr>MoCA</abbr> feature, check with the <strong>MANUFACTURER</strong> documentation (sales reps are often very ignorant, sales skills and technical skills do not always overlap) to make sure <abbr>MoCA</abbr> really is a feature of the device itself.</p>
+    </section>
+    <section id="extender" aria-labelledby="extender.label">
+      <h3 id="extender.label"><abbr>WiFi</abbr> Extender</h3>
+      <p>A <abbr>MoCA</abbr> <abbr>WiFi</abbr> extender uses the <abbr>MoCA</abbr> coaxial network to bring fast reliable <abbr>WiFi</abbr> access to &#8216;dead spots&#8217; that have either low or no signal from your home <abbr>WiFi</abbr> router. They provide about twice the wireless bandwidth as wireless repeaters typically used to solve the &#8216;dead spot&#8217; problems in a home wireless network.</p>
+      <p>One such example is the <a href="https://www.amazon.com/Actiontec-802-11ac-Extender-Internet-Antennas/dp/B01BV1Y3W2" title="Internet Resource">Actiontec WCB6200Q 802.11ac Desktop WiFi Extender</a>. This <abbr>MoCA</abbr> 2.0 device specifies it is not compatible with coaxial runs for Sattelite television, indicating it only works with the <abbr>MoCA</abbr> &#8216;D/Extended D&#8217; band. In addition to extending the <abbr>WiFi</abbr> signal, it also has two ethernet ports where that are of benefit to devices like gaming consoles where the lower ping rate of a wired connection are beneficial. Note that it comes with a very weak default username/password combination that should be reset.</p>
+      <p><strong>WARNING:</strong> Do not buy the WCB3000N model by the same manufacturer. It is cheaper, a lot cheaper, cheaper than a <abbr>MoCA</abbr> 2.0 adapter. It is junk and is no longer manufactured by Actiontec, having been replaced by the much better WCB6200Q linked above.</p>
+    </section>
+  </section>
+
+  <section id="splitters" aria-labelledby="splitters.label">
+    <h2 id="splitters.label"><abbr>MoCA</abbr> Splitters</h2>
+    <p>There is nothing special about a &#8220;<abbr>MoCA</abbr> Splitter&#8221;. The specification was designed to increase the odds of it working with existing coaxial networks.</p>
+    <p>You do however need to pay attention to the <em>frequency rating</em> of the splitter.</p>
+    <p>Splitters designed for Antenna reception/Cable <abbr>TV</abbr> service often have an upper frequency limit of 1 GHz (sometimes specified as 1002 MHz). Those will work with <abbr>MoCA</abbr> bands &#8216;E&#8217; and &#8216;F&#8217; but will not work with band &#8216;D&#8217; or &#8216;Extended D&#8217;.</p>
+    <p>Note that splitters that claim to be compatible with <abbr>MoCA</abbr> 2.0 will also work just fine with <abbr>MoCA</abbr> 2.5 (and probably future versions too).</p>
+    <p>If your coaxial cable network has 1 GHz splitters, I would recommend replacing them with Antronix brand MMC100*H-B series:</p>
+    <ul>
+      <li><a href="https://www.amazon.com/Antronix-MMC1002H-B-Splitter-Frontier-Formerly/dp/B07PRYS8YZ" title="Internet Resource">MMC1002H-B</a> (2-way splitter)</li>
+      <li><a href="https://www.amazon.com/Antronix-MMC1003H-B-Splitter-Frontier-Formerly/dp/B07PMLCVHQ" title="Internet Resouece">MMC1003H-B</a> (3-way splitter)</li>
+      <li><a href="https://www.amazon.com/Antronix-MMC1004H-B-Splitter-Frontier-Formerly/dp/B07PNJVKQZ" title="Internet Resource">MMC1004H-B</a> (4-way splitter)</li>
+    </ul>
+    <p>Those splitters are designed for a 5&#8211;1675 MHz range which covers all of <abbr>MoCA</abbr> &#8216;Extended D&#8217; and are a good match for running <abbr>MoCA</abbr> on coaxial networks used for distributing an antenna signal and most Cable <abbr>TV</abbr> service providers.</p>
+    <p>Many brands other than Antronix work well too, including splitters with 2.4 GHz support. I just have had rather good luck with the Antronix brand and have not had good luck with some other brands.</p>
+    <p>Watch out for retailers selling splitters labelled as &#8220;<abbr>MoCA</abbr> Splitters&#8221; that only go to 1GHz (1002 MHz). These do not work with the &#8216;D&#8217; or &#8216;Extended D&#8217; bands which is what the majority of people buying splitters for <abbr>MoCA</abbr> networks actually want as virtually all splitters already work with the &#8216;E&#8217; and &#8216;F&#8217; bands that sattelite users need.</p>    
+  </section>
+  
+  <section id="authors" aria-labelledby="authors.label">
+    <h2 id="authors.label">Author’s Home</h2>
+    <p>The following image shows what the communication box on the side of my home initially looked like. A text description follows the image.</p>
+    <figure id="figure.telcomm" aria-labelledby="figure.telcomm.label">
+      <img src="images/telcomm.jpg" alt="Photograph of the inside of telecommunications box." />
+      <figcaption id="figure.telcomm.label">Inside of telecommunications box.</figcaption>
+    </figure>
+    <p>Neatly coiuled on the far left is some unused Romex wiring. It is only worth noting as the ends should not be touched, they carry up to 15 amps of 115V alternating current. That circuit is GFI protected but still touching the wire endpoint should be avoided. The Romex is of no interest to the <abbr>MoCA</abbr> network.</p>
+    <p>Mounted to the plywood on the back is a Pacific Bell &#8216;Telephone Network Interface&#8217; box. Blue wire that appears to be Cat6 for the house phone wiring comes out of that. That box is also what Sonic uses to provide our home Internet service. The Sonic modem is mounted to the plywood on the back towards the left of the photograph and also has two blue ethernet wire coming out the bottom. The telephone box, Sonic modem, and their wiring is of no interest to the <abbr>MoCA</abbr> network. Some of the Cat6 runs could potentially be used for an Ethernet network but some of them are in use already.</p>
+    <p>On the far right there are two white wires coming in from the top. Those are from a Sattelite television receiver the previous home owners used. It is hard to see, but where those wires end is at a coaxial grounding block just below the Sonic modem. They do not currently connect to any of the house coaxial runs but presumably they did in the past. Those sattelite coaxial cables are of no interest to the <abbr>MoCA</abbr> network.</p>
+    <p>In front of the Sonic modem is an Antrox two-way splitter.</p>
+    <figure id="figure.oldantronix_twoway" aria-labelledby="figure.oldantronix_twoway.label">
+      <img src="images/oldantronix_twoway.jpg" alt="Photograph of old Antronox 2-way splitter" />
+      <figcaption id="figure.oldantronix_twoway.label">Old Antronix Two-way Splitter</figcaption>
+    </figure>
+    <p>That is the so-called &#8216;Point of Entry&#8217; and needs to be upgraded to the <a href="https://www.amazon.com/Antronix-MMC1002H-B-Splitter-Frontier-Formerly/dp/B07PRYS8YZ" title="Internet Resource">MMC1002H-B</a> model that supports 1675MHz to work with the <abbr>MoCA</abbr> 2.0 &#8216;Extended D&#8217; band.</p>
+    <p>Following the &#8216;in&#8217; coaxial connector leads to the grounding block used by the Comcast/XFinity cable provider.</p>
+    <figure id="figure.xfinity_ground" aria-labelledby="figure.xfinity_ground.label">
+      <img src="images/xfinity_ground.jpg" alt="Photograph of the Comcast/Xfinity grounding block." />
+      <figcaption id="figure.xfinity_ground.label">Comcast/Xfinity entry ground block</figcaption>
+    </figure>
+    <p>It is not mounted to anything but there is a shielded back bonding wire coming off if it.</p>
+    <p>I chose to replace it with a <a href="https://www.amazon.com/Belden-2-Pack-POEGB-1GCW-Ground-Integrated/dp/B01C4SG4GE" title="Internet Resource">Belden 2-Pack PPC POEGB-1GCW Ground Block with Integrated MoCA PoE Filter</a> for my &#8216;Point of Entry&#8217; filter, making sure to attach the bonding wire. Another option would have been to attach the filter to the &#8216;in&#8217; coaxial connector. Two filters are included in that order, only one was needed so the other goes in a spare parts drawer.</p>
+    <p>The two &#8216;out&#8217; coaxial connectors on the &#8216;Point of Entry&#8217; splitter each lead to a Antronix 4-way splitter.</p>
+    <figure id="figure.oldantronix_fourway" aria-labelledby="figure.oldantronix_fourway.label">
+      <img src="images/oldantronix_fourway.jpg" alt="Photograph of old Antronox 4-way splitter" />
+      <figcaption id="figure.oldantronix_twoway.label">Old Antronix Four-way Splitter</figcaption>
+    </figure>
+    <p>Both of those needed to be upgraded to the <a href="https://www.amazon.com/Antronix-MMC1004H-B-Splitter-Frontier-Formerly/dp/B07PNJVKQZ" title="Internet Resource">MMC1004H-B</a> model that supports 1675MHz to work with the <abbr>MoCA</abbr> 2.0 &#8216;Extended D&#8217; band.</p>
+    <p>The outputs lead the the various rooms in the house that have Cable TV wall jacks. I know where seven of the outputs are but I still have to hunt down the eighth. I suspect there is a second jack in the master bedroom behind one of the bookshelves.</p>
+    <section id="summary" aria-labelledby="summary.label">
+      <h3 id="summary.label">Summary of Cost and Labor</h3>
+      <p>Total cost (late <time>2020</time> prices) in parts for the coaxial system upgrade: $26.00 plus tax and shipping.</p>
+      <p>Tools needed: 7/16 inch open-end wrench to make sure the coax connections were tight, a screwdriver for attaching the bond wire to the grounding block, and compressed air and a dust rag to clean up the almost two decades of dust that has built up in that access box.</p>
+      <p>Total time: about half and hour including dust removal.</p>
+      <p>Of course, that did not add a <abbr>MoCA</abbr> 2.0 network to the house, it just made the existing Comcast/Xfinity coaxial network compatible with <abbr>MoCA</abbr> 2.0 using the &#8216;Extended D&#8217; band.</p>
+    </section>
+  </section>
+</section>
+</body>
+</html>

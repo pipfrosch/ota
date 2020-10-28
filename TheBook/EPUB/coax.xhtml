@@ -20,6 +20,7 @@
       <li><a href="#rg6qs.clad">Quad-Shield RG-6 Copper-Clad</a></li>
       <li><a href="#rg6qs.core">Quad-Shield RG-6 Copper-Core</a></li>
       <li><a href="#rg11">RG-11</a></li>
+      <li><a href="#reflection">Signal Reflection</a></li>
       <li><a href="#ftools">F Connectors and Coaxial Tools</a><ol>
         <li><a href="#fconnectors">F Connectors</a></li>
         <li><a href="#tools">Coaxial Tools</a></li>
@@ -72,8 +73,8 @@
   </section>
   <section id="rg6qs.core" aria-labelledby="rg6qs.core.label">
     <h2 id="rg6qs.core.label">Quad-Shield RG-6 Copper-Core</h2>
-    <p>A solid copper core versus copper-clad steel core makes absolutely no difference for <abbr>RF</abbr> transmission over the coaxial cable.</p>
-    <p>For the direct current used to power amplification, solid copper core does have less resistance than copper-clad steel and therefore is <em>preferable</em> though it is not critical, amplifiers will still do their job even with copper-clad steel. Allegedly some sattelite dish controllers are touchy and require copper core if the run is over a certain length, check with your sattelite vendor if using RG-6 to carry a voltage to a sattelite dish controller. In the event you are running it in plenum space or in an <abbr>HVAC</abbr> duct, make sure it is plenum rated.</p>
+    <p>A solid copper core versus copper-clad steel core makes <em>absolutely no difference</em> for <abbr>RF</abbr> transmission over the coaxial cable.</p>
+    <p>However for the <em>direct current</em> used to power amplification, solid copper core does have less resistance than copper-clad steel and therefore is <em>preferable</em> though it is not critical. Amplifiers will still do their job even with copper-clad steel. Allegedly some sattelite dish controllers are touchy and require copper core if the run is over a certain length, check with your sattelite vendor for the RG-6 requirements if using RG-6 to carry a voltage to a sattelite dish controller. In the event you are running coaxial cable in plenum space or in an <abbr>HVAC</abbr> duct, make sure it is plenum rated.</p>
     <p>The disadvantage to using copper-core is that it is more expensive than copper-clad steel.</p>
     <p>For coaxial runs that carry <abbr>DC</abbr> voltage, I do recommend using Quad-Shield RG-6 Copper-Core but only if you can find it in lengths that are not excessive to your needs. Phat Satellite <abbr>Intl</abbr> sells it in various lengths on Amazon, e.g. <a href="https://www.amazon.com/PHAT-SATELLITE-INTL-Satellite-Broadband/dp/B01GC0T61A" title="Internet Resource">100 feet Quad Shield Solid Copper 3GHZ RG-6 Coaxial Cable</a> is what I used for my <abbr>DC</abbr> voltage needs.</p>
     <section id="rg6qs.core.klein" aria-labelledby="rg6qs.core.klein.label">
@@ -84,24 +85,32 @@
   <section id="rg11" aria-labelledby="rg11.label">
     <h2 id="rg11.label">RG-11</h2>
     <p>For long runs, RG-11 does have less signal loss than RG-6 but it is expensive, very thick, and extremely difficult to work with for any runs that are not straight.</p>
-    <p>For runs under 100 feet, the reflective properties of RG-11 may actually make it worse than RG-6.</p>
+    <p>For runs under 100 feet, the <a href="#reflection">reflective properties of RG-11</a> may actually make it worse than RG-6.</p>
     <p>For runs from 100 feet to 200 feet, the benefit is not worth the difficulty of working with RG-11, it <em>usually</em> better to overcome signal loss through signal amplification unless there really is not way to power an amplifier at the start of the run.</p>
     <p>For runs that are over 200 feet in length and relatively straight, then RG-11 could be considered.</p>
     <p>Unless you happen to live in a mansion, or if the best place for your antenna is on an out-building, RG-11 is almost certainly the wrong choice.</p>
+  </section>
+  <section id="reflection" aria-labelledby="reflection.label">
+    <h2 id="reflection.label">Signal Reflection</h2>
+    <p>When a signal travels through a wire and meets any form of impedance or resistance, part of the signal will be reflected back. It is like water rushing in a creek that suddenly meets a bottleneck. Some of the water bounces back towards the source. Reflection can degrade the quality of a signal. The reflective distance is how far back the signal will reflect before it is reduced to below the noise floor.</p>
+    <p>The lower the signal loss qualites of a coaxial cable, the large that reflective distance is.</p>
+    <p>We often like to think of an <abbr>RF</abbr> signal traveling from the antenna to our television, but in reality its an oscillation that flows both ways. For this reason, a length of coaxial should be at least <em>twice</em> the reflective distance for that kind of coaxial cable. When a shorter length is needed between two connection points, the coaxial cable should be looped. Looping with RG-11 however is not realistic.</p>
+    <p>With RG-6 the reflective distance is about a foot so coaxial cable lengths of RG-6 should be at least two feet in length. I do not know the reflective distance of RG-59 but the two foot rule for RG-6 is a good rule of thumb as RG-59 will have a lower reflective distance. RG-11 has a fify foot reflective distance so lengths of RG-11 should be at least 100 feet. A damaged coaxial cable (kinked or squashed) could have a reflection point inside it, try to avoid damaging the coaxial cable.</p>
+    <p>Reflection is also why all runs that do not attach to a tuner and all unused outputs on splitter or amplified distributor should have a 75Ω termination cap. When a coaxial output or cable is not connected to something, it is an open circuit and the botleneck that causes reflection is where the run starts, not where it ends. This can result in reflective signal degration for the other runs that are in use. A 75Ω termination cap closes that open circuit reducing the reflection.</p>
   </section>
   <section id="ftools" aria-labelledby="ftools.label">
     <h2 id="ftools.label">F Connectors and Coaxial Tools</h2>
     <section id="fconnectors" aria-labelledby="fconnectors.label">
       <h3 id="fconnectors.label">F Connectors</h3>
-      <p>In the United States, cabling generally uses what are called &#8216;F Connectors&#8217; for 75Ω coaxial television and radio antenna connections. The coaxial cable will always have a &#8216;Male F Connector&#8217; attached to both ends. There are three methods of attaching a &#8216;Male F Connector&#8217;:</p>
+      <p>In the United States, cabling generally uses what are called &#8216;F Connectors&#8217; for 75Ω coaxial television and radio antenna connections. The coaxial cable will typically have a &#8216;Male F Connector&#8217; attached to both ends. There are three methods of attaching a &#8216;Male F Connector&#8217; to coaxial cable:</p>
       <ol>
         <li>&#8216;Push-On&#8217; Connector</li>
         <li>&#8216;Screw-On&#8217; Connector</li>
         <li>Compression Connector</li>
       </ol>
       <p>Do not use the &#8216;Push-On&#8217; connectors. They really are only intended for temporary use despite the fact that they are marketed to consumers as a solution that does not require tools to install. They come off too easily.</p>
-      <p>Do not the use &#8216;Screw-On&#8217; connectors. They are a little better than the &#8216;Push-On&#8217; but not much better. What they do is thread the jacket on the coaxial cable as they are screwed into place. Before I knew better, I used them for my coaxial runs when I lived in Redding and they did work, but they all eventually failed.</p>
-      <p>Do use the Compression connectors. Yes, they require tools to properly install but they are far less likely to come apart.</p>
+      <p>Do not the use &#8216;Screw-On&#8217; connectors. They are a little better than the &#8216;Push-On&#8217; but not much better. What they do is tap a thread into the jacket of the coaxial cable as they are screwed into place. When I lived in Redding and before I knew better, I used &#8216;Screw-On&#8217; connectors for my coaxial runs and they did work, but they all eventually failed.</p>
+      <p>Do use the Compression connectors. Yes, they require an additional tool to properly install but they are far less likely to come apart.</p>
       <p>For the compression connectors, they are often marketed as &#8216;Universal&#8217; but it seems these sometimes are problematic for some users with dual-shield RG-6 and slip off if not used correctly. I recommend only using the the &#8216;Universal&#8217; connectors with quad-shield unless you have no other choice.</p>
       <p>Klein Tools red band F connectors will work with <em>most</em> RG-59 but will not work with RG-6. Klein Tools blue band connectors will work with <em>most</em> Dual-Shield RG-6 but is not likely to work with Quad-Shield RG-6. Klein Tools yellow-band connectors will are &#8216;Universal&#8217; RG-6 and work with <em>most</em> Quad-Shield RG-6 and <em>frequently</em> will also work with Dual-Shield RG-6 but I only recommend it for Quad-Shield RG-6.</p>
       <p>I <em>personally</em> recommend the Klein Tools compression connectors. However since I started using compression connectors I have not tried any other brands. I chose their compression connectors because I chose their tools and was more confident their connectors would work properly with their tools. There likely are other brands that work just as well.</p>
@@ -120,6 +129,7 @@
       <h3 id="wrench.label">7/16 Wrench</h3>
       <p>The nuts that tighten a male F connector to a female receptacle are <abbr>SAE</abbr> 7/16 inch. You can sometimes get away with using a metric 12mm but it will not be a tight fit, you should have an actual 7/16 inch wrench and it should have a short handle both to avoid too much torque and to allow it to be used in tight places.</p>
       <p>The <a href="https://www.homedepot.com/p/TEKTON-7-16-in-Stubby-Combination-Wrench-18046/207112396" title="Internet Resource">Tekton 7/16 inch Stubby Combination Wrench</a> is a good choice. Keep one with your coaxial tools.</p>
+      <p>While not often needed, an angle-head variant can sometimes be beneficial: <a href="https://www.homedepot.com/p/TEKTON-7-16-in-Angle-Head-Open-End-Wrench-WAE83011/307821075" title="Internet Resource">Tekton 7/16 inch Angle Head Open End Wrench</a>.</p>
       <p><strong>IMPORTANT:</strong> Never over-tighten the nut on an F connector or you can break something. Use your fingers to hand tighten it and then use the wrench to just tighten it barely a tad bit more.</p>
     </section>
     <section id="screwdrivers" aria-labelledby="screwdrivers.label">
@@ -149,7 +159,7 @@
       <p>Barrel connectors have two female connections and are used to splice to different pieces of coaxial cables together. A coaxial wall insert for example is just a barrel connector mounted in plastic and is used to splice the run inside the wall with the run to your tuner (or to a splitter <abbr>etc.</abbr>)</p>
       <p>It is a good idea to always have some spare barrel connectors on hand.</p>
       <p>Amazon has them in five packs: <a href="https://www.amazon.com/VCE-Coaxial-Connector-Extension-Adapter/dp/B0107LH932" title="Internet Resource">VCE 5-Pack Coaxial Cable Connector</a>. I am not convinced the gold plating has real-world benefit beyond marketing.</p>
-      <p>Home Depot has them in two packs: <a href="https://www.homedepot.com/p/Ideal-F-Series-Coaxial-Cable-Female-Adapters-2-Pack-85-071/204063261" title="Internet Resource">Ideal F-Series Coaxial Cable Female Adapters</a>.</p>
+      <p>Home Depot has them in ten packs: <a href="https://www.homedepot.com/p/Klein-Tools-3-GHz-F-Splice-Adapter-VDV814-609/203579088" title="Internet Resource">Klein Tools 3 GHz F-Splice Adapter</a>.</p>
       <p>Frequently one end is a little longer than the other. The only reason for that is allow it to easily be used in a wall plate, the longer one is placed through a hole with a really thin nut threaded over the longer end on the other side of of the plate to hold the connector to the plate.</p>
     </section>
     <section id="terminators" aria-labelledby="terminators.label">
@@ -161,8 +171,8 @@
     </section>
     <section id="screws" aria-labelledby="screws.label">
       <h3 id="screws.label">Mounting Screws</h3>
-      <p>For splitters and amplified distributors in the attic I prefer to mount them to the side of a joist or another beam using <a href="https://www.homedepot.com/p/Everbilt-6-x-3-4-in-Phillips-Round-Head-Zinc-Plated-Wood-Screw-8-Pack-808741/204587484" title="Internet Resource">#6 x &#190; inch wood screws</a>. It is always good to have spare screws at all times in case I have to unmount a splitter and I drop the screw into the loose insulation.</p>
-      <p>When making a fresh install with #6 wood screws, drill a 9/64 (&#8539; for soft wood) inch pilot hole with a <a href="https://www.homedepot.com/p/Milwaukee-9-64-in-Red-Helix-Cobalt-Drill-Bit-48-89-2306/203115292" title="Internet Resource">tapered bit</a> first to avoid splitting the wood. See <a href="https://www.boltdepot.com/fastener-information/wood-screws/Wood-Screw-Pilot-Hole-Size.aspx" title="Internet Resource">Wood Screw Pilot Hole Sizes</a>.</p>
+      <p>For splitters and distribution amplifiers in the attic I prefer to mount them to the side of a joist or another beam using <a href="https://www.homedepot.com/p/Everbilt-6-x-3-4-in-Phillips-Round-Head-Zinc-Plated-Wood-Screw-8-Pack-808741/204587484" title="Internet Resource">#6 x &#190; inch wood screws</a>. It is always good to have spare screws at all times in case I have to unmount a splitter and I drop the screw into the loose insulation.</p>
+      <p>When making a fresh install with #6 wood screws, drill a 9/64 (&#8539; for soft wood) inch pilot hole first to avoid splitting the wood. See <a href="https://www.boltdepot.com/fastener-information/wood-screws/Wood-Screw-Pilot-Hole-Size.aspx" title="Internet Resource">Wood Screw Pilot Hole Sizes</a>.</p>
     </section>
     <section id="spare" aria-labelledby="spare.label">
       <h3 id="spare.label">Spare 10 foot Quality Quad-Shield RG-6 Cable</h3>

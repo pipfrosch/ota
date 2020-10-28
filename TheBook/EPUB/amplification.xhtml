@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8"/>
+  <title>Signal Amplification</title>
+  <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/a11y.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" role="doc-chapter" aria-labelledby="amp.label">
+  <h1 id="amp.label">Signal Amplification</h1>
+  <p>There are basically three things an <abbr>ATSC</abbr> (or any) needs to successfully tune a broadcast frequency:</p>
+  <ol>
+    <li>The signal strength at that frequency must not be too low</li>
+    <li>The signal strength at that frequency must not be too high</li>
+    <li>The Signal to Noise Ratio (<abbr>SNR</abbr>) must be high enough</li>
+  </ol>
+  <p>If the signal <em>at the antenna</em> is strong enough, an amplifier can make sure the signal is strong enough at the destinations.</p>
+  <p>An amplifier, if too strong, can cause the second issue.</p>
+  <p>When amplification is close to the antenna, an amplifier can make sure the third condition is true despite noise entering the coaxial system from sources of interference in the home.</p>
+  <p>There are basically three terms for amplification that are used but they both do the same thing to the signal:</p>
+  <ol>
+    <li>Pre-Amplifier</li>
+    <li>Amplified Distributor</li>
+    <li>Indoor Amplifier</li>
+  </ol>
+  <p>They both basically do the same thing, amplify the signal.</p>
+  <p><strong>Disclaimer:</strong> This chapter exclusively references parts from <a href="https://www.channelmaster.com/" title="Internet Resource">Channel Master</a>. No compensation from them was either sought or received. There are other manufacturers that make quality equivalents. For signal amplification, I <em>personally</em> found them to have the best selection to meet most broadcast television signal amplification needs but this does not imply they are the only quality vendor.</p>
+  <section id="preamp" aria-labelledby="preamp.label">
+    <h2 id="preamp.label">Pre-Amplifier</h2>
+    <p>A pre-amplifier is installed on the antenna mast. It has a single coaxial signal input and and a single coaxial signal output. Usually they are powered by a coaxial <abbr>DC</abbr> power inserter that is installed downline from the pre-amplifier, although with attic antenna installs becoming more common some models with a power input on the amplifier itself are starting to appear, such as the <a href="https://www.channelmaster.com/Amplify_TV_Antenna_Preamplifier_p/cm-7777hd.htm" title="Internet Resource">Channel Master Amplify Adjustable Gain Preamplifier</a>.</p>
+    <p>The reason why pre-amplifiers are usually powered by coaxial <abbr>DC</abbr> power inserter is because it is not a good idea to run separate power to an outdoor antenna mast but <abbr>DC</abbr> voltage run along the coax to the antenna is safe. Even in an attic install, I still personally recommend using a <abbr>DC</abbr> power inserter with the power transformer located elsewhere, such as in a garage.</p>
+    <p>Generally speaking, a pre-amplifier provides about ~16 dB of gain or ~26 dB of gain, though models that provide over 30 dB of gain do exist.</p>
+  </section>
+  <section id="dist" aria-labelledby="dist.label">
+    <h2 id="dist.label">Distribution Amplifier</h2>
+    <p>Also sometimes called a drop amplifier.</p>
+    <p>These are installed where signal splitting takes place. Some models can be installed outdoors but many models are only designed for indoor use. They have a single coaxial signal input and <em>usually</em> have multiple coaxial signal outputs. They also have a power input&#8212;usually coaxial&#8212;and do not use a power inserter within the signal coaxial line, although some can be powered that way.</p>
+    <p>A distribution amplifier usually provides 12&#8211;15 dB of gain before splitting the signal to the outputs. For attic antenna installs where the signal from the broadcasters is good and the total coaxial runs are not as long as from a roof antenna, a distribution amplifier is often a better choice than a pre-amplifier.</p>
+    <section id="single" aria-labelledby="single.label">
+      <h3 id="single.label">Single Outpit Amplified Distributor</h3>
+      <p>Channel Master makes the <a href="https://www.channelmaster.com/Antenna_Cable_TV_Amplifier_p/cm-3410.htm" title="Internet Resource">Ultra Mini 1</a> distribution amplifier that only has a single <abbr>RF</abbr> output.</p>
+      <p>When any signal splitting takes place far from the antenna but you do not want to install a pre-amplifier on the antenna mast, you can install this unit closer to the antenna than your splitting rather than using an amplified distributor where you do your splitting. This avoids amplifying noise picked up in the coaxial run between the antenna and your splitting, helping you to keep a healthy <abbr>SNR</abbr>.</p>
+    </section>
+  </section>
+  <section id="indoor" aria-labelledby="indoor.label">
+    <h3 id="indoor.label">Indoor Amplifier</h3>
+    <p>These amplifiers are intended for scenarios with a single antenna in the same room as a single tuner that it services. When the signal strength of these antennas is marginal but the <abbr>SNR</abbr> is still high enough, these inline amplifiers can help.</p>
+    <p>With a roof or attic install, when one room has a particularly long coaxial run compared to the others and does not tune as many stations as the other televisions, one of these may help though it is probably better to either used a distribution amplifier where the split occurs, or a preamplifier at the antenna.</p>
+  </section>
+  <section id="concepts" aria-labelledby="concepts.label">
+    <h2 id="concepts.label">Important Concepts</h2>
+    <p>An amplifier does not extend the range of your antenna. An amplifier only amplifies the existing signal, adding a little noise to the signal as a side-effect.</p>
+    <p>Sometimes adding an amplifier will allow tuning of additional channels that you could not previously tune with a tuner attached directly to the antenna. When this happens, it is because the Signal to Noise Ratio (<abbr>SNR</abbr>) was already high enough at the antenna, but the tuner was not sensitive enough to pick up with the weak signal strength for that frequency. The range of your antenna has not been extended, but rather, insensitivity of the tuner has been compensated for.</p>
+    <p>Amplifiers do not have the ability to distinguish signal from noise. Everything that comes in the input gets amplified, including noise. Noise will enter your coaxial runs. Using quad-shield RG-6 greatly reduces the noise that enters the coaxial runs, but it still enters the coaxial runs. For this reason, it is better to have amplification as close to the antenna as possible <em>before</em> noise enters the coaxial runs. This will prevent such noise from being amplified, keeping a high <abbr>SNR</abbr>.</p>
+    <p>A perfect amplifier that adds no noise of its own does not exist. If you have more than one source of amplification in your system, the second amplifier will amplify the noise of the first, <abbr>etc.</abbr> This can be problematic especially for <abbr>DVR</abbr> devices that have more than one tuner and as a result, have a small amount of amplification themselves to compensate for their internal signal splitting. Whenever possible, try to have only one amplifier between the antenna and your tuners. This is not always possible in some houses but try.</p>
+    <p>The goal of amplification is to compensate both for the length of coaxial cable between your devices and your antenna and for your signal splitters. Additional amplification beyond that will not magically bring in more stations and <em>it could actually damage reception</em> by adding too much signal amplification.</p>
+    <section id="lte" aria-labelledby="lte.label">
+      <h3 id="lte.label"><abbr>LTE</abbr> Filter</h3>
+      <p>The cellular phone <abbr>LTE</abbr> band uses frequencies from 614 MHz upwards and will be picked up by <abbr>UHF</abbr> television antennas. Especially in urban and suburban areas, amplification of these signals can result in signal strength overload for those unwanted frequencies. This overload can damage the frequencies used by broadcast television.</p>
+      <p>Even if you are in a rural area where it is not commonly a problem, it is recommended that use an <abbr>LTE</abbr> filter to remove those unwanted signal frequencies <em>before</em> signal amplification.</p>
+      <p>Some pre-amplifiers come with an <abbr>LTE</abbr> filter built in, but not all do. Distribution amplifiers generally do not come with them built in.</p>
+      <p>The filter I am using is the <a href="https://www.channelmaster.com/TV_Antenna_LTE_Filter_p/cm-3201.htm" title="Internet Resource">Channel Master <abbr>LTE</abbr> Filter</a> at a cost (as of time of writing) of $19.00. Just screw the male F connector end into the female F connector signal input of the pre-amplifier or distribution amplifier and those frequencies will be filtered out of your coaxial signal prior to signal amplification.</p>
+      <p>If buying a pre-amplifier, check to see if the model you are buying already has an <abbr>LTE</abbr> filter</a> before adding an external filter that would thus not add any additional benefit.</p>
+    </section>
+    <section id="fm" aria-labelledby="fm.label">
+      <h3 id="fm.label"><abbr>FM</abbr> Trap</h3>
+      <p>For most people this is not a problem.</p>
+      <p>The frequencies used for broadcast <abbr>FM</abbr> radio is in the <abbr>VHF</abbr> band between <abbr>VHF-Lo</abbr> and <abbr>VHF-Hi</abbr>. There is a frequency gap between the <abbr>FM</abbr> band and <abbr>VHF-Hi</abbr>. As many television antennas on the market are now only designed for <abbr>VHF-Hi</abbr> when they support <abbr>VHF</abbr> at all, and these attenas often have a lower reception gain for <abbr>VHF</abbr> than for <abbr>UHF</abbr>, the impact of <abbr>FM</abbr> frequencies on your television signal is rarely a problem.</p>
+      <p>However if there is an <abbr>FM</abbr> broadcaster close to you <em>and</em> your antenna picks up that frequency then it is possible the reception gain of that frequency will be high enough that amplification of that frequency will result in a signal overload that damages your signal.</p>
+      <p>Demand for an <abbr>FM</abbr> trap for television reception appears to be low enough that stand-alone traps designed for 75Ω impedance systems are hard to find. They do make them commercially for 50Ω impedance systems which is what most amateur radio uses and those <em>might</em> work in a 75Ω system but I would not recommend it.</p>
+      <p>Most of the pre-amplifiers sold by Channel Master have an <abbr>FM</abbr> trap built-in. That is the route I would suggest going if there is a problem with <abbr>FM</abbr> signals in your system.</p>
+      <p>For those who specifically want <abbr>FM</abbr> broadcasts distributed over coaxial cable, I actually recommend running a <a href="radio.xhtml">separate coaxial cable network for radio</a>.</p>
+    </section>
+  </section>
+  <section id="selection" aria-labelledby="selection.label">
+    <h2 id="selection.label">Amplifier Selection</h2>
+    <p>It is important to note that not everyone needs amplification. If you do not need it, do not use it. If it does not make things better, then it might make things worse either initially or in the future if the amplifier starts to fail. Remember <abbr>KISS</abbr>&#8212;Keep It Simple, Silly!</p>
+    <p>If at all possible, test your antenna with a television attached as close as possible with as short a piece of coaxial cable as possible (but not shorter than two feet) between the television and the antenna. Those are the stations you can expect to receive, and if you do not receive them at your endpoints with an amplifier, the problem could be signal overload from too much amplification. Many people have reported better reception when they take amplification out of the picture.</p>
+    <p>Amplification compensates for long coaxial runs and signal splitting. If you have neither, you may not benefit from signal amplification.</p>
+    <section id="testing" aria-labelledby="testing.label">
+      <h3 id="testing.label">Testing for Amplification Need</h3>
+      <p>Start by creating a list of channels that you receive without amplification with a television connected <em>directly</em> to the antenna. For a roof install, test with the shortest length of coaxial cable possible to a safe place to set up a small television. For an attic install, you usually can place a television adjacent to the antenna.</p>
+      <p>I used a small Vizio M190MV. Just make sure it has coaxial input and that you know how to set the input for antenna and scan for channels. The channels that come in well are your reference channels. Of course if some of the channels you want do not come in well, try the antenna at a different location.</p>
+      <p>If some of your target broadcast towers are beyond 40 miles or if you will be splitting the signal to service more than four televisions, it is safe to assume you need amplification.</p>
+      <p>Guestimate the longest amount of coaxial cable between your antenna and a television being serviced by that antenna. If the length is longer than 100 feet, it is safe to assume you need amplification.</p>
+      <p>If all of your target broadcast towers are within 40 miles, you are not splitting to service more than four televisions, and your longest coaxial cable distance will be under 100 feet then test before adding an amplifier to the mix. Run your coax and splitters as if you are not going to use an amplifier and check to see how well the destination televisions pick up the reception. If there is no reception problem, you do not need any amplification. If however some or all the televisions have problems tuning some of the stations in your reference list, then you need amplification.</p>   
+    </section>
+    <section id="dbloss" aria-labelledby="dbloss.label">
+      <h3 id="dbloss.label">Decibel Loss</h3>
+      <p>Estimate the decibel loss between your antenna and each destination.</p>
+      <p>For every two-way split, estimate 4dB of loss. For every three- or four-way split, estimate 8dB of loss.</p>
+      <p>Guestimate the total length of coaxial cable between the antenna and each destination, rounding up to the nearest 25 feet. For every 25 feet, assume 1.5 dB of signal loss.</p>
+      <p>For each destination endpoint, add the loss from splitting plus the loss from coaxial cable. In most cases the largest value is how much amplification you need.</p>
+      <p>If you are planning to use your antenna coaxial network as a <a href="moca.xhtml" title="Internet Resource">MoCA Network</a> as well, add 4 dB to the signal loss estimate as each room that wants both television and MoCA will need a two-way splitter to use both.</p>
+    </section>
+    <section id="preordist" aria-labelledby="preordist.label">
+      <h3 id="preordist.label">Pre-Amplifier or Distribution Amplifier</h3>
+      <p>If your antenna is an outdoor antenna, you need a pre-amplifier.</p>
+      <p>If your largest decibel loss estimate is above 15 decibels, you need a pre-amplifier rather than a distribution amplifier.</p>
+      <p>If you will be using your antenna coaxial network for MoCA, you should use a pre-amplifier because distribution amplifiers tend to be incompatible with MoCA.</p>
+      <p>If the total length of coaxial cable between your antenna and the first signal splitter is 15 feet or more, you need a pre-amplifier rather than a distribution amplifier.</p>
+      <p>In the event you are using a separate antenna for <abbr>VHF</abbr> and <abbr>UHF</abbr>, a <em>specific</em> pre-amplifier (discussed later) that combines <abbr>VHF</abbr> and <abbr>UHF</abbr> inputs is almost certainly your best bet.</p>
+      <p>When your first split is within 15 feet of the antenna and your greatest decibel loss estimate is 15 dB or less, then an amplified distributor may be the best option.</p>
+    </section>
+    <section id="damp" aria-labelledby="damp.label">
+      <h3 id="damp.label">Distribution Amplifier Selection</h3>
+      <p>All of the <a href="https://www.channelmaster.com/Antenna_Distribution_Amplifiers_s/371.htm" title="Internet Resource">Channel Master <abbr>TV</abbr> Antenna Distribution Amplifiers</a> provide about 15 dB in gain before splitting the signal for distribution.</p>
+      <p>If the first split is within 15 feet of the antenna and is a two-way split, get the <a href="https://www.channelmaster.com/Antenna_Cable_TV_Amplifier_p/cm-3412.htm" title="Internet esource">Ultra Mini 2</a> to do the split.</p>
+      <p>If the first split is within 15 feet of the antenna and is a three- to four-way split, get the <a href="https://www.channelmaster.com/Antenna_Cable_TV_Amplifier_p/cm-3414.htm" title="Internet Resource">Ultra Mini 4</a> to do the split.</p>
+      <p>If the first split is within 15 feet of the antenna and is a five- to eight-way split, get the <a href="https://www.channelmaster.com/Antenna_Cable_TV_Amplifier_p/cm-3418.htm" >Ultra Mini 8</a> to do the split.</p>
+      <p>Any unused outputs from a distribution amplifier should be terminated. Channel Master sells a &#8216;<a href="https://www.channelmaster.com/Professional_Grade_Antenna_Port_Terminator_p/cm-7100.htm" title="Internet Resource">Professional-Grade Antenna Port Terminator</a>&#8217; but I can not <em>personally</em> testify to its performance over cheaper generic 75Ω termination caps.</p>
+      <section id="surge" aria-labelledby="surge.label">
+        <h4 id="surge.label">Surge Protection</h4>
+        <p>All of the Channel Master &#8216;Ultra Mini&#8217; distribution amplifiers have surge protection, but the surge protection only works if the ground screw on the unit is bonded to ground.</p>
+        <p>If there is a source of ground conveniently near the installation location then I do recommend bonding that ground screw to ground. However it is not the end of the world if you do not.</p>
+        <p>You should make sure the power transformer brick is plugged into a surge protector, <em>especially</em> if the distribution amplifier is not bonded to ground but also even if it is.</p>
+      </section>
+    </section>
+    <section id="preamp" aria-labelledby="preamp.label">
+      <h3 id="preamp.label">Preamplifier Selection</h3>
+      <p>In the event you need 15 dB of gain or less and you really do not want a pre-amplifier installed on the mast itself, you can use a <a href="https://www.channelmaster.com/Antenna_Cable_TV_Amplifier_p/cm-3410.htm" title="Internet Resource">Ultra Mini 1</a> distribution amplifier instead of a mast-installed pre-amplifier. It should be installed indoors and within 15 feet of coaxial cable of the antenna to avoid too much amplification of noise.</p>
+      <p>If you will be using a separate antenna for <abbr>VHF</abbr> and <abbr>UHF</abbr> then I recommend the <a href="https://www.channelmaster.com/Amplify_Plus_TV_Antenna_Preamplifier_p/cm-7778hd.htm" title="Internet Resource">Amplify+ Adjustable Gain Preamplifier</a>. First try it at the low setting, and if the gain is not enough you can try it at the high setting. This pre-amplifier has a built-in <abbr>LTE</abbr> filter and has an <abbr>FM</abbr> trap you can enable or disable.</p>
+      <p>If your estimated dB loss is somewhere between 16 dB and 24 dB then I recommend the <a href="https://www.channelmaster.com/Amplify_TV_Antenna_Preamplifier_p/cm-7777hd.htm" title="Internet Resource">Amplify Adjustable Gain Preamplifier</a>. First try it at the low setting, and if the gain is not enough you can try it at the high setting. This pre-amplifier has a built-in <abbr>LTE</abbr> filter and an <abbr>FM</abbr> trap.</p>
+      <p>If your estimated dB loss is 16 dB or less, you could use the previously mentioned &#8216;Amplify Adjustable Gain Preamplifier&#8217; but the <a href="https://www.channelmaster.com/TV_Antenna_Preamplifier_p/cm-7778v3.htm" title="Internet Resource">Titan 2 Medium Gain Preamplifier</a> is a little cheaper. However note that it does not include a <abbr>LTE</abbr> filter, so it may be financially better to just buy the &#8216;Amplify Adjustable Gain Preamplifier&#8217;.</p>
+      <p>If your estimated dB loss is closer to 24 dB, you could use the previously mentioned &#8216;Amplify Adjustable Gain Preamplifier&#8217; but the <a href="https://www.channelmaster.com/TV_Antenna_Preamplifier_p/cm-7777v3.htm" title="Internet Resource">Titan 2 High Gain Preamplifier</a> is a little cheaper. However note that it does not include a <abbr>LTE</abbr> filter, so it may be financially better to just buy the &#8216;Amplify Adjustable Gain Preamplifier&#8217;.</p>
+    </section>
+    <section id="special" aria-labelledby="special.label">
+      <h3 id="special.label">Special Cases</h3>
+      <p>There are special cases where you may have to get creative. For example, large houses may have some runs that are much longer and involve more splits along the way, especially if you need an outdoor antenna that has to be located where the grounding rod is accessible for proper <a href="bond_earth_ground.xhtml">earthing</a>.</p>
+      <p>In such cases, I would probably start with a <a href="https://www.channelmaster.com/Amplify_Plus_TV_Antenna_Preamplifier_p/cm-7778hd.htm" title="Internet Resource">Amplify+ Adjustable Gain Preamplifier</a> and if the low setting is not enough for the distant destinations, switch it to the high setting. If that is too high for the nearer destinations, switch it back to low and add additional amplification to the more distant destinations after their runs split from the nearer destinations.</p>
+      <p>In most cases there is a solution, it just may require some creative thinking.</p>
+      <p>I have found that Channel Master customer support is excellent.</p>
+    </section>
+  </section>
+</section>
+</body>
+</html>
